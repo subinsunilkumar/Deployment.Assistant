@@ -3,10 +3,10 @@ amp-manager-5b987cb97-lr7kg                    1/1     Running   0          47d
 auditlogservice-5f4d6fbb9d-dx5f7               1/1     Running   0          48d
 authservice-88f9fd758-jjhfd                    1/1     Running   0          47d
 cad-fe-d4476f687-l2r9z                         1/1     Running   0          47d
-cadbackendservice-7f7c5fd457-cxrgr             1/1     Running   0          2m16s
+cadbackendservice-7f7c5fd457-cxrgr             1/1     Running   0          8m48s
 cadconcordanceservice-557d99d97f-f2z4k         1/1     Running   0          47d
 cadriskcalculatorservice-56d6946d7d-2qrkh      1/1     Running   0          47d
-chest-pain-fe-5f5fd449df-ljln7                 1/1     Running   0          37m
+chest-pain-fe-5f5fd449df-ljln7                 1/1     Running   0          44m
 configurationservice-5459457fc6-lnq2h          1/1     Running   0          48d
 csvreaderservice-5f694dc8db-t9f9g              1/1     Running   0          47d
 dicommetadata-74fb96f86f-9pqgm                 1/1     Running   0          47d
@@ -20,8 +20,8 @@ fhir-import-7767fc8db8-4tr9x                   1/1     Running   0          47d
 filesystem-export-device-5bd7c9ccd-g5w7g       1/1     Running   0          47d
 imageaccessservice-775ddb6cfd-dht2s            1/1     Running   0          47d
 import-orchestrator-6b95cf8fdf-w5qhv           1/1     Running   0          47d
-launchpage-5cf87bbf4c-5rgng                    1/1     Running   0          42m
-launchpageservice-684cd686c9-slvgw             1/1     Running   0          49m
+launchpage-5cf87bbf4c-62jph                    1/1     Running   0          94s
+launchpageservice-6fd95678cf-7wznz             1/1     Running   0          3m11s
 licenseservice-bdd94577b-hcdmh                 1/1     Running   0          47d
 logger-5695b4657c-f56kx                        1/1     Running   0          48d
 loginpage-5d8c7bcffb-ldxtq                     1/1     Running   0          47d

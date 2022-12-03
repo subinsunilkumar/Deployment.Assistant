@@ -348,8 +348,13 @@ namespace Deployment.Assistant
                 {
                     Invoke(new Action(() =>
                     {
-                        deployButton.Enabled = true;
                         deployLabel.Text = "Deployment Successful!";
+                        deployButton.Enabled = true;
+                        deployButton.Enabled = true;
+                        dotNetProjectList.Enabled = true;
+                        deploymentList.Enabled = true;
+                        machineListcomboBox.Enabled = true;
+                        browseButton.Enabled = true;
                     }));
                     client.Disconnect();
                 }
@@ -386,6 +391,10 @@ namespace Deployment.Assistant
             else
             {
                 deployButton.Enabled = false;
+                dotNetProjectList.Enabled = false;
+                deploymentList.Enabled = false;
+                machineListcomboBox.Enabled = false;
+                browseButton.Enabled = false;
                 if (fileName.Contains(".sln"))
                 {
                     BuildAspProject();

@@ -1,167 +1,243 @@
 
-03/12/2022 19:32:22 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:38:37 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Build started for project IDS.Services.BE.LaunchPage
+Build started
 
-03/12/2022 19:32:22 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:38:37 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Command run /c dotnet publish "D:\Old\New\Repos\CDSS Collaboration\Services.BE.LaunchPage\Source\IDS.Services.BE.LaunchPage\IDS.Services.BE.LaunchPage.csproj" -o "D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\ASP-Output"  >> "D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\Build-Deploy.log" 2>&1
-Microsoft (R) Build Engine version 16.11.3+5d7fe36cf for .NET
-Copyright (C) Microsoft Corporation. All rights reserved.
+Command run /c cd /d "D:\Old\New\Repos\CDSS Collaboration\Apps.FE.LaunchPage"& ng build --prod  >> "D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\Build-Deploy.log" 2>&1
+Your global Angular CLI version (14.2.7) is greater than your local version (10.1.3). The local Angular CLI version is used.
 
-  Determining projects to restore...
-  All projects are up-to-date for restore.
-  IDS.Services.BE.LaunchPage.CodeSystem -> D:\Old\New\Repos\CDSS Collaboration\Services.BE.LaunchPage\Source\bin\Debug\IDS.Services.BE.LaunchPage.CodeSystem.dll
-  IDS.Services.BE.LaunchPage.Common -> D:\Old\New\Repos\CDSS Collaboration\Services.BE.LaunchPage\Source\bin\Debug\IDS.Services.BE.LaunchPage.Common.dll
-  IDS.Services.BE.LaunchPage.DataAccess -> D:\Old\New\Repos\CDSS Collaboration\Services.BE.LaunchPage\Source\bin\Debug\IDS.Services.BE.LaunchPage.DataAccess.dll
-  IDS.Services.BE.LaunchPage.Fhir -> D:\Old\New\Repos\CDSS Collaboration\Services.BE.LaunchPage\Source\bin\Debug\IDS.Services.BE.LaunchPage.Fhir.dll
-D:\Old\New\Repos\CDSS Collaboration\Services.BE.LaunchPage\Source\IDS.Services.BE.LaunchPage.Fhir.Core\DependencyProvider.cs(31,17): warning CS0618: 'FhirClient.PreferredFormat' is obsolete: 'Use the FhirClient.Settings property or the settings argument in the constructor instead' [D:\Old\New\Repos\CDSS Collaboration\Services.BE.LaunchPage\Source\IDS.Services.BE.LaunchPage.Fhir.Core\IDS.Services.BE.LaunchPage.Fhir.Core.csproj]
-  IDS.Services.BE.LaunchPage.Fhir.Core -> D:\Old\New\Repos\CDSS Collaboration\Services.BE.LaunchPage\Source\bin\Debug\IDS.Services.BE.LaunchPage.Fhir.Core.dll
-  IDS.Services.BE.LaunchPage.DataAccess.Core -> D:\Old\New\Repos\CDSS Collaboration\Services.BE.LaunchPage\Source\bin\Debug\IDS.Services.BE.LaunchPage.DataAccess.Core.dll
-D:\Old\New\Repos\CDSS Collaboration\Services.BE.LaunchPage\Source\IDS.Services.BE.LaunchPage\Controllers\PatientController.cs(75,27): warning CS1998: This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread. [D:\Old\New\Repos\CDSS Collaboration\Services.BE.LaunchPage\Source\IDS.Services.BE.LaunchPage\IDS.Services.BE.LaunchPage.csproj]
-D:\Old\New\Repos\CDSS Collaboration\Services.BE.LaunchPage\Source\IDS.Services.BE.LaunchPage\Helpers\AuditHelper.cs(39,27): warning CS1998: This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread. [D:\Old\New\Repos\CDSS Collaboration\Services.BE.LaunchPage\Source\IDS.Services.BE.LaunchPage\IDS.Services.BE.LaunchPage.csproj]
-D:\Old\New\Repos\CDSS Collaboration\Services.BE.LaunchPage\Source\IDS.Services.BE.LaunchPage\Controllers\PatientHistoryController.cs(429,17): warning CS0219: The variable 'i' is assigned but its value is never used [D:\Old\New\Repos\CDSS Collaboration\Services.BE.LaunchPage\Source\IDS.Services.BE.LaunchPage\IDS.Services.BE.LaunchPage.csproj]
-D:\Old\New\Repos\CDSS Collaboration\Services.BE.LaunchPage\Source\IDS.Services.BE.LaunchPage\Controllers\PatientController.cs(28,29): warning CS0169: The field 'PatientController.httpContext' is never used [D:\Old\New\Repos\CDSS Collaboration\Services.BE.LaunchPage\Source\IDS.Services.BE.LaunchPage\IDS.Services.BE.LaunchPage.csproj]
-D:\Old\New\Repos\CDSS Collaboration\Services.BE.LaunchPage\Source\IDS.Services.BE.LaunchPage\Startup.cs(77,49): warning ASP0000: Calling 'BuildServiceProvider' from application code results in an additional copy of singleton services being created. Consider alternatives such as dependency injecting services as parameters to 'Configure'. [D:\Old\New\Repos\CDSS Collaboration\Services.BE.LaunchPage\Source\IDS.Services.BE.LaunchPage\IDS.Services.BE.LaunchPage.csproj]
-  IDS.Services.BE.LaunchPage -> D:\Old\New\Repos\CDSS Collaboration\Services.BE.LaunchPage\Source\bin\Debug\IDS.Services.BE.LaunchPage.dll
-  IDS.Services.BE.LaunchPage -> D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\ASP-Output\
+To disable this warning use "ng config -g cli.warnings.versionMismatch false".
 
-03/12/2022 19:32:30 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+chunk {} runtime.acf0dec4155e77772545.js (runtime) 1.45 kB [entry] [rendered]
+chunk {1} main.da87c0e86e9ae9be18b0.js (main) 822 kB [initial] [rendered]
+chunk {2} polyfills.9e3547e0b5c91fd3670a.js (polyfills) 179 kB [initial] [rendered]
+chunk {3} polyfills-es5.b59f21ac53e4482564d7.js (polyfills-es5) 262 kB [initial] [rendered]
+chunk {4} styles.c53f982f07a44d56f956.css (styles) 153 kB [initial] [rendered]
+chunk {scripts} scripts.62c4fd509cd4aa85352d.js (scripts) 2.41 MB [entry] [rendered]
+Date: 2022-12-03T14:09:07.345Z - Hash: b50aa2beac663bc9c094 - Time: 23373ms
+
+WARNING in D:\Old\New\Repos\CDSS Collaboration\Apps.FE.LaunchPage\source\app\app.module.ts depends on '@ids/common.ui.base-services.auth-handler'. CommonJS or AMD dependencies can cause optimization bailouts.
+For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+
+WARNING in D:\Old\New\Repos\CDSS Collaboration\Apps.FE.LaunchPage\node_modules\ngx-virtual-scroller\__ivy_ngcc__\fesm2015\ngx-virtual-scroller.js depends on '@tweenjs/tween.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+
+03/12/2022 19:39:07 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Build Success!
 
-03/12/2022 19:32:30 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:39:07 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Replacing COPY ./launchpageservice . with COPY . .
+Copying D:\Old\New\Repos\CDSS Collaboration\Apps.FE.LaunchPage\nginx.conf to D:\Old\New\Repos\CDSS Collaboration\Apps.FE.LaunchPage\dist\nginx.conf
 
-03/12/2022 19:32:30 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:39:07 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Copying D:\Old\New\Repos\CDSS Collaboration\Services.BE.LaunchPage\Source\Dockerfile to D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\ASP-Output\Dockerfile
+Successfully copied D:\Old\New\Repos\CDSS Collaboration\Apps.FE.LaunchPage\nginx.conf to D:\Old\New\Repos\CDSS Collaboration\Apps.FE.LaunchPage\dist\nginx.conf
 
-03/12/2022 19:32:30 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:39:07 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Copying D:\Old\New\Repos\CDSS Collaboration\Apps.FE.LaunchPage\Dockerfile to D:\Old\New\Repos\CDSS Collaboration\Apps.FE.LaunchPage\dist\Dockerfile
+
+03/12/2022 19:39:07 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Successfully copied D:\Old\New\Repos\CDSS Collaboration\Apps.FE.LaunchPage\Dockerfile to D:\Old\New\Repos\CDSS Collaboration\Apps.FE.LaunchPage\dist\Dockerfile
+
+03/12/2022 19:39:07 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Building Docker Image
 
-03/12/2022 19:32:30 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:39:07 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Command Run /c cd /d D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\ASP-Output & docker build . -t launchpageservice-z004n44u:latest >> "D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\Build-Deploy.log" 2>&1
+Command Run /c cd /d D:\Old\New\Repos\CDSS Collaboration\Apps.FE.LaunchPage\dist & docker build . -t launchpage-z004n44u:latest >> "D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\Build-Deploy.log" 2>&1
 #1 [internal] load build definition from Dockerfile
-#1 sha256:e4aa0f93fb800b1a8b907be7c63d67efab5dbb5e174e3da42850be09142a244d
-#1 transferring dockerfile: 535B done
+#1 sha256:76bf4267bdd4936c4cfae30e86987932280435910ce0be2d39b25be2b1a84bf9
+#1 transferring dockerfile: 32B done
 #1 DONE 0.0s
 
 #2 [internal] load .dockerignore
-#2 sha256:d0bab33c3333ff79124d67a3831dacd524822735716c521fd262b58e81cb79d3
+#2 sha256:ee1e66ce2f881d92ed9001d96e551e4c79cbaf95a3d75997ac661460c6a822cb
 #2 transferring context: 2B done
 #2 DONE 0.0s
 
-#3 [internal] load metadata for mcr.microsoft.com/dotnet/core/aspnet:3.1
-#3 sha256:6ed55082f004e08158b7de81c6d78949cd5140b3f2899e0f69981d4ae515675f
-#3 DONE 0.5s
+#3 [internal] load metadata for docker.io/library/nginx:latest
+#3 sha256:06c466a4eb6821b81bd3e48610e5f38dab858b1e9acb01d6e2f6b11c8fabe6bc
+#3 DONE 2.3s
 
-#4 [1/4] FROM mcr.microsoft.com/dotnet/core/aspnet:3.1@sha256:42d4d3b9f5a2d4f1bbde5c07558c5a94ecc07bd3732b5e9fb049fe480efe655d
-#4 sha256:b412a80721fcd20a9004527367ed3b644f917b695d58d7802e2c67f317a1413b
+#4 [ 1/14] FROM docker.io/library/nginx:latest@sha256:e209ac2f37c70c1e0e9873a5f7231e91dcd83fdf1178d8ed36c2ec09974210ba
+#4 sha256:8aa683cd09411c5606989c886f5f16d8c405a7f93f5b0b5f5f7d53e9509ec639
 #4 DONE 0.0s
 
 #6 [internal] load build context
-#6 sha256:2aced4638c301ea02b32f945e9d43d1941fd1fae2a5845ca5d6d934374c6b3ce
-#6 transferring context: 20.86MB 2.5s done
-#6 DONE 2.5s
+#6 sha256:bc4f17ef6eb6a052deb06b45d8dfbd1c1634f725477d06b66a8e445ac6a90980
+#6 transferring context: 5.11MB 0.8s done
+#6 DONE 0.8s
 
-#5 [2/4] WORKDIR /app
-#5 sha256:3eff73019b28c4fabe166208ea67144a220f9f1167ba375dd5506a56785dad88
+#7 [ 3/14] COPY launch-page/ .
+#7 sha256:34f8ae83d0a83033ac8a535d36bd55675c84bde8d156395d9a7ee14314f18b70
+#7 CACHED
+
+#13 [ 9/14] RUN chown -R AIPCNonRootUser:AIPCNonRootUser /var/run/nginx.pid
+#13 sha256:9ae7d3095e303ff12d95a9d307d82a19f7150e9a9f6cd4037321d12039c82ad2
+#13 CACHED
+
+#15 [11/14] RUN mkdir -p /usr/share/nginx/html/
+#15 sha256:4e65be4cfbb9065f314116466bf97db19ca25d50bb34562613b2399dbed9c250
+#15 CACHED
+
+#16 [12/14] RUN chown AIPCNonRootUser /usr/share/nginx/html/
+#16 sha256:178f045cf40264d916ca6681ffcce2975f2c59aca19ee6130f2ebc576c49395c
+#16 CACHED
+
+#14 [10/14] RUN chmod 770 /var/run/nginx.pid
+#14 sha256:ce7d19cb0eb2de2b6c65c8e640ea465a690d44e9a2f3a2ef2db467aea40e77fe
+#14 CACHED
+
+#10 [ 6/14] RUN chown -R AIPCNonRootUser:AIPCNonRootUser /var/cache/nginx
+#10 sha256:ebb05bd1fa8b9311d4e31a0b4ca6388c07de37780295aec4997e084e215dd1ba
+#10 CACHED
+
+#12 [ 8/14] RUN touch /var/run/nginx.pid
+#12 sha256:e241672451b352d5e066d983d5975fcaacccee23c4b58139ac5620eea3c07d20
+#12 CACHED
+
+#8 [ 4/14] COPY nginx.conf /etc/nginx/nginx.conf
+#8 sha256:f1034a42a2d1068814e24263bf5fe1c8d8a45300386c25ee7df2abc84db557ba
+#8 CACHED
+
+#9 [ 5/14] RUN groupadd --gid 1000 AIPCNonRootUser && useradd --uid 1000 --gid 1000 --home-dir /usr/share/AIPCNonRootUser --no-create-home AIPCNonRootUser
+#9 sha256:e60f66b36e266e2a07e5308dda3b71d46b08bce68930e39f012ffda48a73f701
+#9 CACHED
+
+#17 [13/14] RUN chown -R AIPCNonRootUser:AIPCNonRootUser /etc/nginx
+#17 sha256:bd9ac41289ceb0d6f3cb050b835b9600bdf5ba0ccc606023b59239e41f478fd5
+#17 CACHED
+
+#11 [ 7/14] RUN chmod 770 /var/cache/nginx
+#11 sha256:0ac2d6ee2af1cc0f443007b3d4d2e7c43c6a98c939d1d01a5cf9ce77eb51b1dd
+#11 CACHED
+
+#5 [ 2/14] WORKDIR /usr/share/nginx/html
+#5 sha256:4f2e06bfe84c8717158c05e788b105873dbb0a64d84ddfa779493d097b9b1060
 #5 CACHED
 
-#7 [3/4] COPY . .
-#7 sha256:63c7a2cb9ee03153b91a767e6cccb1d73836a9b8bb7e4aad1d3940e85d1144a6
-#7 DONE 0.2s
+#18 [14/14] RUN chmod 770 /etc/nginx
+#18 sha256:8a5cd6a5d54c0c1448b432c32c721dd73d56c17b88597cbf6b3249201a1c376d
+#18 CACHED
 
-#8 [4/4] RUN groupadd --gid 1000 LaunchBEServiceUser && useradd --uid 1000 --gid 1000 --home-dir /usr/share/LaunchBEServiceUser --no-create-home LaunchBEServiceUser
-#8 sha256:927f18b811ad7c7d4889ebd977c78a960b8a25d30177a54653d482e10cda706c
-#8 DONE 0.7s
-
-#9 exporting to image
-#9 sha256:e8c613e07b0b7ff33893b694f7759a10d42e180f2b4dc349fb57dc6b71dcab00
-#9 exporting layers
-#9 exporting layers 0.2s done
-#9 writing image sha256:385db49e932f560dd738c8680315ab6d6d9e172479bef412aeea779989b6b0e8 done
-#9 naming to docker.io/library/launchpageservice-z004n44u:latest done
-#9 DONE 0.2s
+#19 exporting to image
+#19 sha256:e8c613e07b0b7ff33893b694f7759a10d42e180f2b4dc349fb57dc6b71dcab00
+#19 exporting layers done
+#19 writing image sha256:4ecdbd81d56674ef971b1579bc65dab93fc557c61e85092efabbe0aa1ea058eb done
+#19 naming to docker.io/library/launchpage-z004n44u:latest done
+#19 DONE 0.1s
 
 Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
 
-03/12/2022 19:32:36 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:39:12 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Docker Build Successful for launchpageservice-z004n44u:latest
+Docker Build Successful for launchpage-z004n44u:latest
 
-03/12/2022 19:32:36 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:39:12 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Tagging Docker Image
 
-03/12/2022 19:32:36 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:39:12 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Command Run /c cd /d D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\ASP-Output & docker tag launchpageservice-z004n44u:latest gokarna.azurecr.io/launchpageservice-z004n44u:latest >> "D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\Build-Deploy.log" 2>&1
+Command Run /c cd /d D:\Old\New\Repos\CDSS Collaboration\Apps.FE.LaunchPage\dist & docker tag launchpage-z004n44u:latest gokarna.azurecr.io/launchpage-z004n44u:latest >> "D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\Build-Deploy.log" 2>&1
 
-03/12/2022 19:32:36 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:39:12 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Docker Tag Successful to gokarna.azurecr.io/launchpageservice-z004n44u:latest
+Docker Tag Successful to gokarna.azurecr.io/launchpage-z004n44u:latest
 
-03/12/2022 19:32:36 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:39:12 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Pushing Docker Image
 
-03/12/2022 19:32:36 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:39:12 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Command Run /c cd /d D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\ASP-Output & docker push gokarna.azurecr.io/launchpageservice-z004n44u:latest >> "D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\Build-Deploy.log" 2>&1
-The push refers to repository [gokarna.azurecr.io/launchpageservice-z004n44u]
-0137c9f1c0a1: Preparing
-e232ac88a2f8: Preparing
-53efdbd8ea33: Preparing
-9aaeba8ffab3: Preparing
-b7ebcd96e6bc: Preparing
-b16dc428152e: Preparing
-ab38a8497ed4: Preparing
-dbaf71c29b55: Preparing
-b16dc428152e: Waiting
-ab38a8497ed4: Waiting
-dbaf71c29b55: Waiting
-53efdbd8ea33: Mounted from cadbackendservice-z004n44u
-9aaeba8ffab3: Mounted from cadbackendservice-z004n44u
-b7ebcd96e6bc: Mounted from cadbackendservice-z004n44u
-0137c9f1c0a1: Pushed
-ab38a8497ed4: Mounted from cadbackendservice-z004n44u
-b16dc428152e: Mounted from cadbackendservice-z004n44u
-dbaf71c29b55: Mounted from cadbackendservice-z004n44u
-e232ac88a2f8: Pushed
-latest: digest: sha256:8abb6edee72694291091b6d5f3d924d273c4808d4961126977c4d683de6f2fe8 size: 2001
+Command Run /c cd /d D:\Old\New\Repos\CDSS Collaboration\Apps.FE.LaunchPage\dist & docker push gokarna.azurecr.io/launchpage-z004n44u:latest >> "D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\Build-Deploy.log" 2>&1
+The push refers to repository [gokarna.azurecr.io/launchpage-z004n44u]
+e998c78094cc: Preparing
+d9b830da5392: Preparing
+d9c6bb8cd686: Preparing
+ad6cd5fbbb89: Preparing
+de45c9720662: Preparing
+a62996e38601: Preparing
+ebbd2a3a2b7b: Preparing
+5c93bd5d0344: Preparing
+0ef423a2df57: Preparing
+3891ca1fdbd7: Preparing
+a420a65f5ff1: Preparing
+95d01dff6ea3: Preparing
+5f70bf18a086: Preparing
+6cffb086835a: Preparing
+e2d75d87993c: Preparing
+5a5bafd53f76: Preparing
+f86e88a471f4: Preparing
+f7ed3797e296: Preparing
+ec4a38999118: Preparing
+3891ca1fdbd7: Waiting
+a420a65f5ff1: Waiting
+95d01dff6ea3: Waiting
+5f70bf18a086: Waiting
+a62996e38601: Waiting
+6cffb086835a: Waiting
+e2d75d87993c: Waiting
+ebbd2a3a2b7b: Waiting
+5a5bafd53f76: Waiting
+5c93bd5d0344: Waiting
+f86e88a471f4: Waiting
+0ef423a2df57: Waiting
+de45c9720662: Layer already exists
+ad6cd5fbbb89: Layer already exists
+d9b830da5392: Layer already exists
+d9c6bb8cd686: Layer already exists
+e998c78094cc: Layer already exists
+3891ca1fdbd7: Layer already exists
+ebbd2a3a2b7b: Layer already exists
+95d01dff6ea3: Layer already exists
+a420a65f5ff1: Layer already exists
+5c93bd5d0344: Layer already exists
+6cffb086835a: Layer already exists
+5f70bf18a086: Layer already exists
+a62996e38601: Layer already exists
+e2d75d87993c: Layer already exists
+5a5bafd53f76: Layer already exists
+0ef423a2df57: Layer already exists
+f7ed3797e296: Layer already exists
+ec4a38999118: Layer already exists
+f86e88a471f4: Layer already exists
+latest: digest: sha256:b728c55b04db02a5696312816d5079b440c262a34bb2132a0023ff0d95bdc48b size: 4266
 
-03/12/2022 19:32:44 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:39:17 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Docker Push Successful to gokarna.azurecr.io/launchpageservice-z004n44u:latest
+Docker Push Successful to gokarna.azurecr.io/launchpage-z004n44u:latest
 
-03/12/2022 19:32:44 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:39:17 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Connecting to inblrghma3879ln
 
-03/12/2022 19:32:45 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:39:18 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Successfully connected to inblrghma3879ln
 
-03/12/2022 19:32:45 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:39:18 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Command Run : kubectl get pods -n ai-pc-product
 
-03/12/2022 19:32:46 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:39:19 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 NAME                                           READY   STATUS    RESTARTS   AGE
 amp-manager-5b987cb97-lr7kg                    1/1     Running   0          47d
 auditlogservice-5f4d6fbb9d-dx5f7               1/1     Running   0          48d
 authservice-88f9fd758-jjhfd                    1/1     Running   0          47d
 cad-fe-d4476f687-l2r9z                         1/1     Running   0          47d
-cadbackendservice-7f7c5fd457-cxrgr             1/1     Running   0          2m16s
+cadbackendservice-7f7c5fd457-cxrgr             1/1     Running   0          8m48s
 cadconcordanceservice-557d99d97f-f2z4k         1/1     Running   0          47d
 cadriskcalculatorservice-56d6946d7d-2qrkh      1/1     Running   0          47d
-chest-pain-fe-5f5fd449df-ljln7                 1/1     Running   0          37m
+chest-pain-fe-5f5fd449df-ljln7                 1/1     Running   0          44m
 configurationservice-5459457fc6-lnq2h          1/1     Running   0          48d
 csvreaderservice-5f694dc8db-t9f9g              1/1     Running   0          47d
 dicommetadata-74fb96f86f-9pqgm                 1/1     Running   0          47d
@@ -175,8 +251,8 @@ fhir-import-7767fc8db8-4tr9x                   1/1     Running   0          47d
 filesystem-export-device-5bd7c9ccd-g5w7g       1/1     Running   0          47d
 imageaccessservice-775ddb6cfd-dht2s            1/1     Running   0          47d
 import-orchestrator-6b95cf8fdf-w5qhv           1/1     Running   0          47d
-launchpage-5cf87bbf4c-5rgng                    1/1     Running   0          42m
-launchpageservice-684cd686c9-slvgw             1/1     Running   0          49m
+launchpage-5cf87bbf4c-62jph                    1/1     Running   0          94s
+launchpageservice-6fd95678cf-7wznz             1/1     Running   0          3m11s
 licenseservice-bdd94577b-hcdmh                 1/1     Running   0          47d
 logger-5695b4657c-f56kx                        1/1     Running   0          48d
 loginpage-5d8c7bcffb-ldxtq                     1/1     Running   0          47d
@@ -197,24 +273,19 @@ tika-5776fb956-tfkjt                           1/1     Running   0          47d
 unitconversionservice-68bb5f5c96-9wnlv         1/1     Running   0          47d
 
 
-03/12/2022 19:32:46 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:39:19 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Command Run : kubectl set image deployment/launchpageservice launchpageservice=gokarna.azurecr.io/launchpageservice-z004n44u:latest -n ai-pc-product
+Command Run : kubectl set image deployment/launchpage launchpage=gokarna.azurecr.io/launchpage-z004n44u:latest -n ai-pc-product
 
-03/12/2022 19:32:47 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:39:19 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-deployment.apps/launchpageservice image updated
+Command Run : kubectl delete pod launchpage-5cf87bbf4c-62jph -n ai-pc-product
 
+03/12/2022 19:39:58 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-03/12/2022 19:32:47 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-
-Command Run : kubectl delete pod launchpageservice-684cd686c9-slvgw -n ai-pc-product
-
-03/12/2022 19:32:58 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-
-pod "launchpageservice-684cd686c9-slvgw" deleted
+pod "launchpage-5cf87bbf4c-62jph" deleted
 
 
-03/12/2022 19:32:58 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:39:58 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Deployment Successful!
