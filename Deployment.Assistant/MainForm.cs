@@ -120,6 +120,7 @@ namespace Deployment.Assistant
 
         private void browseButton_Click(object sender, EventArgs e)
         {
+            deploymentList.SelectedIndex = -1;
             var dialog = new OpenFileDialog();
             dialog.Filter = ".sln Files, package.json|*.sln;package.json";
             var result = dialog.ShowDialog();
@@ -143,7 +144,6 @@ namespace Deployment.Assistant
                             dotNetProjectList.Items.Clear();
                             dockerPath.Text = fileList[0];
                             nginxPath.Text = nginx;
-                            machineListcomboBox.Enabled = true;
                             deploymentList.Enabled = true;
                             deployButton.Enabled = true;
                             customNameBox.Enabled = true;
@@ -168,7 +168,6 @@ namespace Deployment.Assistant
                             dotNetProjectList.SelectedIndex = 0;
                             dockerPath.Text = fileList[0];
                             nginxPath.Text = "-";
-                            machineListcomboBox.Enabled = true;
                             deploymentList.Enabled = true;
                             deployButton.Enabled = true;
                             customNameBox.Enabled = true;
@@ -200,21 +199,21 @@ namespace Deployment.Assistant
         {
             var gokarnaLabel = imageName.Text;
             var dockerLabel = gokarnaLabel.Replace("gokarna.azurecr.io/", string.Empty);
-            var command = $"/c cd {path} & docker build . -t {dockerLabel} >> \"{deploymentLogger}\" 2>&1";
+            var command = $"/c cd /d {path} & docker build . -t {dockerLabel} >> \"{deploymentLogger}\" 2>&1";
             WriteLogs($"Building Docker Image");
             WriteLogs($"Command Run {command}");
             var cmdProcess = CreateCmdProcess(command);
             cmdProcess.Start();
             cmdProcess.WaitForExit();
             WriteLogs($"Docker Build Successful for {dockerLabel}");
-            command = $"/c cd {path} & docker tag {dockerLabel} {gokarnaLabel} >> \"{deploymentLogger}\" 2>&1";
+            command = $"/c cd /d {path} & docker tag {dockerLabel} {gokarnaLabel} >> \"{deploymentLogger}\" 2>&1";
             WriteLogs($"Tagging Docker Image");
             WriteLogs($"Command Run {command}");
             cmdProcess = CreateCmdProcess(command);
             cmdProcess.Start();
             cmdProcess.WaitForExit();
             WriteLogs($"Docker Tag Successful to {gokarnaLabel}");
-            command = $"/c cd {path} & docker push {gokarnaLabel} >> \"{deploymentLogger}\" 2>&1";
+            command = $"/c cd /d {path} & docker push {gokarnaLabel} >> \"{deploymentLogger}\" 2>&1";
             WriteLogs($"Pushing Docker Image");
             WriteLogs($"Command Run {command}");
             cmdProcess = CreateCmdProcess(command);
@@ -267,7 +266,7 @@ namespace Deployment.Assistant
             await Task.Factory.StartNew(() =>
             {
                 WriteLogs($"Build started");
-                var buildCommand = $"/c cd \"{parentDir.FullName}\"& ng build --prod  >> \"{deploymentLogger}\" 2>&1";
+                var buildCommand = $"/c cd /d \"{parentDir.FullName}\"& ng build --prod  >> \"{deploymentLogger}\" 2>&1";
                 WriteLogs($"Command run {buildCommand}");
                 var cmdProcess = CreateCmdProcess(buildCommand);
                 cmdProcess.Start();
@@ -324,7 +323,7 @@ namespace Deployment.Assistant
                     podList.ForEach(pod =>
                     {
                         pod = pod.Remove(readyPosition).Trim();
-                        if (pod.Contains(deploymentName))
+                        if (pod.Contains(deploymentName+"-"))
                         {
                             currentPodName = pod;
                         }
@@ -335,6 +334,7 @@ namespace Deployment.Assistant
                     WriteLogs($"Command Run : kubectl delete pod {currentPodName} -n ai-pc-product");
                     result = client.RunCommand(sudoString + $"kubectl delete pod {currentPodName} -n ai-pc-product");
                     WriteLogs(result.Result);
+                    WriteLogs("Deployment Successful!");
                 }
                 finally
                 {
@@ -342,6 +342,7 @@ namespace Deployment.Assistant
                     {
                         deployButton.Enabled = true;
                     }));
+                    MessageBox.Show("Deployment Successful!");
                     client.Disconnect();
                 }
             });
@@ -415,7 +416,13 @@ namespace Deployment.Assistant
             }
             finally
             {
-                deployLogger.ScrollToCaret();
+                Invoke(new Action(() =>
+                {
+                    if (File.Exists(deploymentLogger))
+                    {
+                        deployLogger.ScrollToCaret();
+                    }
+                }));
             }
         }
 

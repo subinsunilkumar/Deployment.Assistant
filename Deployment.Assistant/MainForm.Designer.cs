@@ -31,6 +31,13 @@ namespace Deployment.Assistant
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.deploymentTabPage = new System.Windows.Forms.TabPage();
+            this.refreshLogs = new System.Windows.Forms.Button();
+            this.nginxPath = new System.Windows.Forms.Label();
+            this.nginxLabel = new System.Windows.Forms.Label();
+            this.dockerPath = new System.Windows.Forms.Label();
+            this.dockerLabel = new System.Windows.Forms.Label();
+            this.dotNetProjectLabel = new System.Windows.Forms.Label();
+            this.dotNetProjectList = new System.Windows.Forms.ComboBox();
             this.loginAfterDeployButton = new System.Windows.Forms.Button();
             this.customNameBox = new System.Windows.Forms.TextBox();
             this.customName = new System.Windows.Forms.Label();
@@ -47,13 +54,6 @@ namespace Deployment.Assistant
             this.machineListcomboBox = new System.Windows.Forms.ComboBox();
             this.browseButton = new System.Windows.Forms.Button();
             this.assistantTabControl = new System.Windows.Forms.TabControl();
-            this.dotNetProjectLabel = new System.Windows.Forms.Label();
-            this.dotNetProjectList = new System.Windows.Forms.ComboBox();
-            this.dockerPath = new System.Windows.Forms.Label();
-            this.dockerLabel = new System.Windows.Forms.Label();
-            this.nginxPath = new System.Windows.Forms.Label();
-            this.nginxLabel = new System.Windows.Forms.Label();
-            this.refreshLogs = new System.Windows.Forms.Button();
             this.deploymentTabPage.SuspendLayout();
             this.assistantTabControl.SuspendLayout();
             this.SuspendLayout();
@@ -89,6 +89,79 @@ namespace Deployment.Assistant
             this.deploymentTabPage.TabIndex = 0;
             this.deploymentTabPage.Text = "Deploy Project";
             this.deploymentTabPage.UseVisualStyleBackColor = true;
+            // 
+            // refreshLogs
+            // 
+            this.refreshLogs.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.refreshLogs.Location = new System.Drawing.Point(793, 383);
+            this.refreshLogs.Name = "refreshLogs";
+            this.refreshLogs.Size = new System.Drawing.Size(75, 23);
+            this.refreshLogs.TabIndex = 20;
+            this.refreshLogs.Text = "Refresh";
+            this.refreshLogs.UseVisualStyleBackColor = true;
+            this.refreshLogs.Click += new System.EventHandler(this.refreshLogs_Click);
+            // 
+            // nginxPath
+            // 
+            this.nginxPath.AutoSize = true;
+            this.nginxPath.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.nginxPath.Location = new System.Drawing.Point(145, 293);
+            this.nginxPath.Name = "nginxPath";
+            this.nginxPath.Size = new System.Drawing.Size(12, 15);
+            this.nginxPath.TabIndex = 19;
+            this.nginxPath.Text = "-";
+            // 
+            // nginxLabel
+            // 
+            this.nginxLabel.AutoSize = true;
+            this.nginxLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nginxLabel.Location = new System.Drawing.Point(28, 294);
+            this.nginxLabel.Name = "nginxLabel";
+            this.nginxLabel.Size = new System.Drawing.Size(89, 26);
+            this.nginxLabel.TabIndex = 18;
+            this.nginxLabel.Text = "Nginx Path\r\n(Auto-Detected)";
+            // 
+            // dockerPath
+            // 
+            this.dockerPath.AutoSize = true;
+            this.dockerPath.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.dockerPath.Location = new System.Drawing.Point(145, 239);
+            this.dockerPath.Name = "dockerPath";
+            this.dockerPath.Size = new System.Drawing.Size(12, 15);
+            this.dockerPath.TabIndex = 17;
+            this.dockerPath.Text = "-";
+            // 
+            // dockerLabel
+            // 
+            this.dockerLabel.AutoSize = true;
+            this.dockerLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dockerLabel.Location = new System.Drawing.Point(27, 239);
+            this.dockerLabel.Name = "dockerLabel";
+            this.dockerLabel.Size = new System.Drawing.Size(89, 26);
+            this.dockerLabel.TabIndex = 16;
+            this.dockerLabel.Text = "Docker Path\r\n(Auto-Detected)";
+            // 
+            // dotNetProjectLabel
+            // 
+            this.dotNetProjectLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dotNetProjectLabel.AutoSize = true;
+            this.dotNetProjectLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dotNetProjectLabel.Location = new System.Drawing.Point(487, 37);
+            this.dotNetProjectLabel.Name = "dotNetProjectLabel";
+            this.dotNetProjectLabel.Size = new System.Drawing.Size(81, 39);
+            this.dotNetProjectLabel.TabIndex = 15;
+            this.dotNetProjectLabel.Text = ".Net project to\r\nPublish\r\n\r\n";
+            // 
+            // dotNetProjectList
+            // 
+            this.dotNetProjectList.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dotNetProjectList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.dotNetProjectList.Enabled = false;
+            this.dotNetProjectList.FormattingEnabled = true;
+            this.dotNetProjectList.Location = new System.Drawing.Point(580, 36);
+            this.dotNetProjectList.Name = "dotNetProjectList";
+            this.dotNetProjectList.Size = new System.Drawing.Size(261, 21);
+            this.dotNetProjectList.TabIndex = 14;
             // 
             // loginAfterDeployButton
             // 
@@ -232,7 +305,6 @@ namespace Deployment.Assistant
             // machineListcomboBox
             // 
             this.machineListcomboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.machineListcomboBox.Enabled = false;
             this.machineListcomboBox.FormattingEnabled = true;
             this.machineListcomboBox.Location = new System.Drawing.Point(148, 89);
             this.machineListcomboBox.Name = "machineListcomboBox";
@@ -260,79 +332,6 @@ namespace Deployment.Assistant
             this.assistantTabControl.SelectedIndex = 0;
             this.assistantTabControl.Size = new System.Drawing.Size(898, 771);
             this.assistantTabControl.TabIndex = 0;
-            // 
-            // dotNetProjectLabel
-            // 
-            this.dotNetProjectLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.dotNetProjectLabel.AutoSize = true;
-            this.dotNetProjectLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dotNetProjectLabel.Location = new System.Drawing.Point(487, 37);
-            this.dotNetProjectLabel.Name = "dotNetProjectLabel";
-            this.dotNetProjectLabel.Size = new System.Drawing.Size(81, 39);
-            this.dotNetProjectLabel.TabIndex = 15;
-            this.dotNetProjectLabel.Text = ".Net project to\r\nPublish\r\n\r\n";
-            // 
-            // dotNetProjectList
-            // 
-            this.dotNetProjectList.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.dotNetProjectList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.dotNetProjectList.Enabled = false;
-            this.dotNetProjectList.FormattingEnabled = true;
-            this.dotNetProjectList.Location = new System.Drawing.Point(580, 36);
-            this.dotNetProjectList.Name = "dotNetProjectList";
-            this.dotNetProjectList.Size = new System.Drawing.Size(261, 21);
-            this.dotNetProjectList.TabIndex = 14;
-            // 
-            // dockerPath
-            // 
-            this.dockerPath.AutoSize = true;
-            this.dockerPath.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.dockerPath.Location = new System.Drawing.Point(145, 239);
-            this.dockerPath.Name = "dockerPath";
-            this.dockerPath.Size = new System.Drawing.Size(12, 15);
-            this.dockerPath.TabIndex = 17;
-            this.dockerPath.Text = "-";
-            // 
-            // dockerLabel
-            // 
-            this.dockerLabel.AutoSize = true;
-            this.dockerLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dockerLabel.Location = new System.Drawing.Point(27, 239);
-            this.dockerLabel.Name = "dockerLabel";
-            this.dockerLabel.Size = new System.Drawing.Size(89, 26);
-            this.dockerLabel.TabIndex = 16;
-            this.dockerLabel.Text = "Docker Path\r\n(Auto-Detected)";
-            // 
-            // nginxPath
-            // 
-            this.nginxPath.AutoSize = true;
-            this.nginxPath.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.nginxPath.Location = new System.Drawing.Point(145, 293);
-            this.nginxPath.Name = "nginxPath";
-            this.nginxPath.Size = new System.Drawing.Size(12, 15);
-            this.nginxPath.TabIndex = 19;
-            this.nginxPath.Text = "-";
-            // 
-            // nginxLabel
-            // 
-            this.nginxLabel.AutoSize = true;
-            this.nginxLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nginxLabel.Location = new System.Drawing.Point(28, 294);
-            this.nginxLabel.Name = "nginxLabel";
-            this.nginxLabel.Size = new System.Drawing.Size(89, 26);
-            this.nginxLabel.TabIndex = 18;
-            this.nginxLabel.Text = "Nginx Path\r\n(Auto-Detected)";
-            // 
-            // refreshLogs
-            // 
-            this.refreshLogs.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.refreshLogs.Location = new System.Drawing.Point(793, 383);
-            this.refreshLogs.Name = "refreshLogs";
-            this.refreshLogs.Size = new System.Drawing.Size(75, 23);
-            this.refreshLogs.TabIndex = 20;
-            this.refreshLogs.Text = "Refresh";
-            this.refreshLogs.UseVisualStyleBackColor = true;
-            this.refreshLogs.Click += new System.EventHandler(this.refreshLogs_Click);
             // 
             // MainForm
             // 
