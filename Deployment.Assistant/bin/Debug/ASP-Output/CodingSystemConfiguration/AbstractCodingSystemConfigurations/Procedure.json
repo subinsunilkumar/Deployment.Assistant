@@ -1,0 +1,470 @@
+{
+  "ECG": [
+    {
+      "code": "46825001",
+      "system": "http://snomed.info/sct",
+      "display": "ECG"
+    }
+  ],
+  "diagnostic": [
+    {
+      "code": "http://hl7.org/fhir/STU3/valueset-care-plan-category.html",
+      "display": "Procedure",
+      "system": "procedure"
+    }
+  ],
+
+  "Others": [
+    {
+      "code": "71388002-AIPC-000016",
+      "display": "Others",
+      "system": "http://aipc.siemens-healthineers.com/coding-system"
+
+    }
+  ],
+  "Genetic counseling": [
+    {
+      "code": "79841006",
+      "system": "http://snomed.info/sct",
+      "display": "Genetic Counseling (procedure)"
+    }
+  ],
+  "Radiation Therapy": [
+    {
+      "code": "108290001",
+      "system": "http://snomed.info/sct",
+      "display": "Radiation oncology AND/OR radiotherapy (procedure)"
+    }
+  ],
+  "PET/CT": [
+    {
+      "code": "480621000119104",
+      "system": "http://snomed.info/sct",
+      "display": "PET/CT"
+    },
+    {
+      "code": "temp-82918005-AIPC-000017",
+      "system": "http://aipc.siemens-healthineers.com/coding-system/procedure-group",
+      "display": "PET/CT"
+    }
+  ],
+  "Nuclear Medicine": [
+    {
+      "code": "371572003",
+      "system": "http://snomed.info/sct",
+      "display": "Nuclear medicine procedure (procedure)"
+    }
+  ],
+  "Sampling of lymph node": [
+    {
+      "code": "178292004",
+      "system": "http://snomed.info/sct",
+      "display": "Sampling of lymph node"
+    }
+  ],
+  "Total pneumonectomy": [
+    {
+      "code": "49795001",
+      "system": "http://snomed.info/sct",
+      "display": "Total pneumonectomy"
+    }
+  ],
+  "FDG PET/CT": [
+    {
+      "code": "725928006",
+      "system": "http://snomed.info/sct",
+      "display": "Positron emission tomography with computed tomography fluorodeoxyglucose F18 imaging of base of brain to mid-thigh (procedure)"
+    }
+  ],
+  "TTE": [
+    {
+      "code": "434158009",
+      "system": "http://snomed.info/sct",
+      "display": "Transthoracic three dimensional ultrasonography of heart (procedure)"
+    }
+  ],
+  "Block dissection of mediastinal lymph nodes": [
+    {
+      "code": "178284008",
+      "system": "http://snomed.info/sct",
+      "display": "Block dissection of mediastinal lymph nodes"
+    }
+  ],
+  "Abdominal CT": [
+    {
+      "code": "169070004",
+      "system": "http://snomed.info/sct",
+      "display": "Computed tomography of abdomen (procedure)"
+    }
+  ],
+  "SPECT CT": [
+    {
+      "code": "450438002",
+      "system": "http://snomed.info/sct",
+      "display": "Single photon emission computed tomography with computed tomography (procedure)"
+    }
+  ],
+  "Neoadjuvant chemotherapy": [
+    {
+      "code": "394894008",
+      "system": "http://snomed.info/sct",
+      "display": "Neoadjuvant chemotherapy"
+    }
+  ],
+  "Molecular": [
+    {
+      "code": "405825005",
+      "system": "http://snomed.info/sct",
+      "display": "Molecular genetic test (procedure)"
+    }
+  ],
+  "Radiography of esophagus": [
+    {
+      "code": "34885003",
+      "system": "http://snomed.info/sct",
+      "display": "Radiography of esophagus"
+    }
+  ],
+  "EUS": [
+    {
+      "code": "450556004",
+      "system": "http://snomed.info/sct",
+      "display": "Endoscopic ultrasonography (procedure)"
+    }
+  ],
+  "Mediastinoscopy": [
+    {
+      "code": "261479009",
+      "system": "http://snomed.info/sct",
+      "display": "Mediastinoscopy"
+    }
+  ],
+  "CT Guided Biopsy": [
+    {
+      "code": "277591006",
+      "system": "http://snomed.info/sct",
+      "display": "Computed tomography guided biopsy (procedure)"
+    }
+  ],
+  "Adjuvant chemotherapy": [
+    {
+      "code": "394895009",
+      "system": "http://snomed.info/sct",
+      "display": "Adjuvant chemotherapy"
+    }
+  ],
+  "Bronchoscopy": [
+    {
+      "code": "10847001",
+      "system": "http://snomed.info/sct",
+      "display": "Bronchoscopy"
+    },
+    {
+      "code": "10847001",
+      "system": "http://snomed.info/sct",
+      "display": "Bronchoscopy"
+    }
+  ],
+  "Cystoscopy": [
+    {
+      "code": "24139008",
+      "system": "http://snomed.info/sct",
+      "display": "Cystoscopy"
+    }
+  ],
+  "Radiography pf Abdomen": [
+    {
+      "code": "60654006",
+      "system": "http://snomed.info/sct",
+      "display": "Diagnostic radiography of abdomen (procedure)"
+    }
+  ],
+  "Video assisted thorascopic surgery": [
+    {
+      "code": "262256007",
+      "system": "http://snomed.info/sct",
+      "display": "Video assisted thorascopic surgery"
+    }
+  ],
+  "Bone Scan": [
+    {
+      "code": "temp-41747008-AIPC-000275",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Radioisotope scan of bone (procedure)"
+    }
+  ],
+  "Combined pre-operative chemotherapy and radiotherapy": [
+    {
+      "code": "394934009",
+      "system": "http://snomed.info/sct",
+      "display": "Combined pre-operative chemotherapy and radiotherapy"
+    },
+    {
+      "code": "394934009",
+      "system": "http://snomed.info/sct",
+      "display": "Combined pre-operative chemotherapy and radiotherapy"
+    }
+  ],
+  "Patient encounter": [
+    {
+      "code": "308335008",
+      "system": "http://snomed.info/sct",
+      "display": "Patient encounter procedure (procedure)"
+    }
+  ],
+  "Positron emission tomography with computed tomography of whole body using sodium fluoride (18-F) (procedure)": [
+    {
+      "code": "725931007",
+      "system": "http://snomed.info/sct",
+      "display": "Positron emission tomography with computed tomography of whole body using sodium fluoride (18-F) (procedure)"
+    }
+  ],
+  "Medical oncology": [
+    {
+      "code": "394593009",
+      "system": "http://snomed.info/sct",
+      "display": "Medical oncology"
+    }
+  ],
+  "Magnetic resonance imaging of abdomen": [
+    {
+      "code": "241621009",
+      "system": "http://snomed.info/sct",
+      "display": "Magnetic resonance imaging of abdomen (procedure)"
+    }
+  ],
+  "Chemistry profile": [
+    {
+      "code": "166312007",
+      "system": "http://snomed.info/sct",
+      "display": "Chemistry profile"
+    }
+  ],
+  "Bronchial sleeve resection with pulmonary resection": [
+    {
+      "code": "116165008",
+      "system": "http://snomed.info/sct",
+      "display": "Bronchial sleeve resection with pulmonary resection"
+    }
+  ],
+  "MRI of Pelvis": [
+    {
+      "code": "2690005",
+      "system": "http://snomed.info/sct",
+      "display": "Magnetic resonance imaging of pelvis (procedure)"
+    }
+  ],
+  "Chest CT": [
+    {
+      "code": "169069000",
+      "system": "http://snomed.info/sct",
+      "display": "Computed tomography of chest (procedure)"
+    }
+  ],
+  "Chemotherapy": [
+    {
+      "code": "367336001",
+      "system": "http://snomed.info/sct",
+      "display": "Chemotherapy"
+    }
+  ],
+  "Lobectomy": [
+    {
+      "code": "125571002",
+      "system": "http://snomed.info/sct",
+      "display": "Lobectomy"
+    }
+  ],
+  "Radiotherapy for tumor palliation": [
+    {
+      "code": "168528006",
+      "system": "http://snomed.info/sct",
+      "display": "Palliative course of radiotherapy (procedure)"
+    }
+  ],
+  "Core needle biopsy": [
+    {
+      "code": "9911007",
+      "system": "http://snomed.info/sct",
+      "display": "Core needle biopsy (procedure)"
+    }
+  ],
+  "MRI": [
+    {
+      "code": "temp-113091000-AIPC-000012",
+      "system": "http://aipc.siemens-healthineers.com/coding-system/procedure-group",
+      "display": "MRI"
+    }
+  ],
+  "Biopsy of mediastinal lymph node": [
+    {
+      "code": "234272006",
+      "system": "http://snomed.info/sct",
+      "display": "Biopsy of mediastinal lymph node (procedure)"
+    }
+  ],
+  "PFT": [
+    {
+      "code": "23426006",
+      "system": "http://snomed.info/sct",
+      "display": "Measurement of respiratory function (procedure)"
+    }
+  ],
+  "Lab Test": [
+    {
+      "code": "temp-108252007-AIPC-000014",
+      "system": "http://aipc.siemens-healthineers.com/coding-system/procedure-group",
+      "display": "Laboratory"
+    }
+  ],
+  "Mobile X-ray in ward": [
+    {
+      "code": "168506006",
+      "system": "http://snomed.info/sct",
+      "display": "Mobile X-ray in ward"
+    }
+  ],
+  "Brain MRI with contrast": [
+    {
+      "code": "16327691000119101",
+      "system": "http://snomed.info/sct",
+      "display": "Magnetic resonance imaging of brain with contrast (procedure)"
+    }
+  ],
+  "Imaging of spine": [
+    {
+      "code": "414458006",
+      "system": "http://snomed.info/sct",
+      "display": "Imaging of spine"
+    }
+  ],
+  "Chest x-ray": [
+    {
+      "code": "399208008",
+      "system": "http://snomed.info/sct",
+      "display": "Plain chest X-ray (procedure)"
+    }
+  ],
+  "Ultrasound guided biopsy (procedure)": [
+    {
+      "code": "277667006",
+      "system": "http://snomed.info/sct",
+      "display": "Ultrasound guided biopsy (procedure)"
+    }
+  ],
+  "X-ray": [
+    {
+      "code": "temp-363680008-AIPC-000013",
+      "system": "http://aipc.siemens-healthineers.com/coding-system/procedure-group",
+      "display": "X-ray"
+    }
+  ],
+  "Computed radiography": [
+    {
+      "code": "cr_procedure",
+      "system": "http://mevis.hack",
+      "display": "Computed radiography"
+    }
+  ],
+  "Surgical Biopsy": [
+    {
+      "code": "274330002",
+      "system": "http://snomed.info/sct",
+      "display": "Surgical biopsy (procedure)"
+    }
+  ],
+  "Pathology": [
+    {
+      "code": "temp-71388002-AIPC-000011",
+      "system": "http://aipc.siemens-healthineers.com/coding-system/procedure-group",
+      "display": "Pathology"
+    }
+  ],
+  "CBC": [
+    {
+      "code": "26604007",
+      "system": "http://snomed.info/sct",
+      "display": "Complete blood count"
+    },
+    {
+      "code": "26604007",
+      "system": "http://snomed.info/sct",
+      "display": "Complete blood count (procedure)"
+    }
+  ],
+  "EBUS": [
+    {
+      "code": "441561002",
+      "system": "http://snomed.info/sct",
+      "display": "Endobronchial ultrasound examination of mediastinum (procedure)"
+    }
+  ],
+  "Spinal arthrodesis": [
+    {
+      "code": "55705006",
+      "system": "http://snomed.info/sct",
+      "display": "Spinal arthrodesis"
+    }
+  ],
+  "Sentinel lymph node biopsy": [
+    {
+      "code": "396487001",
+      "system": "http://snomed.info/sct",
+      "display": "Sentinel lymph node biopsy"
+    }
+  ],
+  "Wedge resection": [
+    {
+      "code": "20418004",
+      "system": "http://snomed.info/sct",
+      "display": "Wedge resection"
+    }
+  ],
+  "Physical Examination": [
+    {
+      "code": "5880005",
+      "system": "http://snomed.info/sct",
+      "display": "Physical examination procedure (procedure)"
+    }
+  ],
+  "Immunotherapy": [
+    {
+      "code": "76334006",
+      "system": "http://snomed.info/sct",
+      "display": "Immunotherapy"
+    }
+  ],
+  "CT": [
+    {
+      "code": "399504009",
+      "system": "http://snomed.info/sct",
+      "display": "cT category (Observable Entity)"
+    },
+    {
+      "code": "temp-303678006-AIPC-000009",
+      "system": "http://aipc.siemens-healthineers.com/coding-system/procedure-group",
+      "display": "CT"
+    }
+  ],
+  "Surgery": [
+    {
+      "code": "temp-387713003-AIPC-000025",
+      "system": "http://aipc.siemens-healthineers.com/coding-system/procedure-group",
+      "display": "Surgical"
+    }
+  ],
+  "US": [
+    {
+      "code": "temp-16310003-AIPC-000031",
+      "system": "http://aipc.siemens-healthineers.com/coding-system/procedure-group",
+      "display": "US"
+    }
+  ],
+  "Computed tomography of pelvic organs": [
+    {
+      "code": "169071000",
+      "system": "http://snomed.info/sct",
+      "display": "Computed tomography of pelvis (procedure)"
+    }
+  ]
+}

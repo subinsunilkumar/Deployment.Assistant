@@ -1,0 +1,9 @@
+{
+  "FMC": [
+    {
+      "code": "FMC",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "FMC"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "Assessment": [
+    {
+      "system": "http://snomed.info/sct",
+      "display": "Assessment",
+      "code": "129265001"
+    }
+  ],
+  "GuidelinePositionInfo": [
+    {
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Guideline Position Info",
+      "code": "445528004-AIPC-000001"
+    }
+  ]
+}

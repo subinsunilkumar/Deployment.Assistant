@@ -1,0 +1,31 @@
+{
+  "MDT": [
+    {
+      "code": "399414003",
+      "system": "http://snomed.info/sct",
+      "display": "Team meeting (procedure)"
+    }
+  ],
+  "Decision report": [
+    {
+      "code": "11503-0",
+      "system": "http://loinc.org",
+      "display": "Decision report"
+    }
+  ],
+  "Decision report category code": [
+    {
+      "code": "LP173418-7",
+      "system": "http://loinc.org",
+      "display": "Decision report category code"
+    }
+  ],
+  "Rapidx Score Composition": [
+    {
+      "code": "71388002-AIPC-000018",
+      "display": "Rapidx Score Composition",
+      "system": "http://aipc.siemens-healthineers.com/coding-system"
+    }
+  ]
+
+}

@@ -1,0 +1,37 @@
+{
+  "Urology report": [
+    {
+      "system": "http://aipc.siemens-healthineers.com/coding-system/report-category",
+      "display": "Urology report",
+      "code": "71388002-AIPC-000007"
+    }
+  ],
+  "Discharge report": [
+    {
+      "system": "http://aipc.siemens-healthineers.com/coding-system/report-category",
+      "display": "Discharge report",
+      "code": "71388002-AIPC-000008"
+    }
+  ],
+  "Radiology": [
+    {
+      "system": "http://aipc.siemens-healthineers.com/coding-system/report-category",
+      "display": "Radiology",
+      "code": "71388002-AIPC-000009"
+    }
+  ],
+  "Pathology": [
+    {
+      "system": "http://aipc.siemens-healthineers.com/coding-system/report-category",
+      "display": "Pathology",
+      "code": "71388002-AIPC-000011"
+    }
+  ],
+  "Microbiology": [
+    {
+      "system": "http://aipc.siemens-healthineers.com/coding-system/report-category",
+      "display": "Microbiology",
+      "code": "71388002-AIPC-000012"
+    }
+  ]
+}
