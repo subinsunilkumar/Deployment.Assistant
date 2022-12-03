@@ -32,6 +32,8 @@ namespace Deployment.Assistant
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            deployLabel.Text = string.Empty;
+            clipboard.Text = string.Empty;
             WindowState = FormWindowState.Maximized;
             var urlList = new List<string>()
             {
@@ -120,6 +122,8 @@ namespace Deployment.Assistant
 
         private void browseButton_Click(object sender, EventArgs e)
         {
+            clipboard.Text = string.Empty;
+            deployLabel.Text = string.Empty;
             deploymentList.SelectedIndex = -1;
             var dialog = new OpenFileDialog();
             dialog.Filter = ".sln Files, package.json|*.sln;package.json";
@@ -222,12 +226,12 @@ namespace Deployment.Assistant
             WriteLogs($"Docker Push Successful to {gokarnaLabel}");
         }
 
-        private void BuildAspProject()
+        private async void BuildAspProject()
         {
             var csprojPath = string.Empty;
-            csprojFileList.ToList().ForEach(file=>
+            csprojFileList.ToList().ForEach(file =>
             {
-                if(file.Contains(dotNetProjectList.SelectedItem.ToString()+".csproj"))
+                if (file.Contains(dotNetProjectList.SelectedItem.ToString() + ".csproj"))
                 {
                     csprojPath = file;
                 }
@@ -236,28 +240,32 @@ namespace Deployment.Assistant
             {
                 Directory.CreateDirectory(outputPath);
             }
+            var dockerFile = dockerPath.Text;
             WriteLogs($"Build started for project {dotNetProjectList.SelectedItem}");
-            var buildCommand = $"/c dotnet publish \"{csprojPath}\" -o \"{outputPath}\"  >> \"{deploymentLogger}\" 2>&1";
-            WriteLogs($"Command run {buildCommand}");
-            var cmdProcess = CreateCmdProcess(buildCommand);
-            cmdProcess.Start();
-            cmdProcess.WaitForExit();
-            WriteLogs("Build Success!");
-            var fileContent = File.ReadAllLines(dockerPath.Text);
-            var index = 0;
-            fileContent.ToList().ForEach(content =>
+            await Task.Factory.StartNew(() =>
             {
-                if (content.Contains("COPY"))
+                var buildCommand = $"/c dotnet publish \"{csprojPath}\" -o \"{outputPath}\"  >> \"{deploymentLogger}\" 2>&1";
+                WriteLogs($"Command run {buildCommand}");
+                var cmdProcess = CreateCmdProcess(buildCommand);
+                cmdProcess.Start();
+                cmdProcess.WaitForExit();
+                WriteLogs("Build Success!");
+                var fileContent = File.ReadAllLines(dockerFile);
+                var index = 0;
+                fileContent.ToList().ForEach(content =>
                 {
-                    WriteLogs($"Replacing {content} with COPY . .");
-                    fileContent[index] = "COPY . .";
-                }
-                index++;
+                    if (content.Contains("COPY"))
+                    {
+                        WriteLogs($"Replacing {content} with COPY . .");
+                        fileContent[index] = "COPY . .";
+                    }
+                    index++;
+                });
+                var newPath = Path.Combine(outputPath, "Dockerfile");
+                WriteLogs($"Copying {dockerFile} to {newPath}");
+                File.WriteAllLines(newPath, fileContent);
+                DockerBuildAndPush(outputPath);
             });
-            var newPath = Path.Combine(outputPath, "Dockerfile");
-            WriteLogs($"Copying {dockerPath.Text} to {newPath}");
-            File.WriteAllLines(newPath, fileContent);
-            DockerBuildAndPush(outputPath);
             Connect(machineListcomboBox.SelectedItem.ToString(), deploymentList.SelectedItem.ToString(), imageName.Text);
         }
 
@@ -341,22 +349,23 @@ namespace Deployment.Assistant
                     Invoke(new Action(() =>
                     {
                         deployButton.Enabled = true;
+                        deployLabel.Text = "Deployment Successful!";
                     }));
-                    MessageBox.Show("Deployment Successful!");
                     client.Disconnect();
                 }
             });
 
         }
 
-        private void imageName_Click(object sender, EventArgs e)
+        private async void imageName_Click(object sender, EventArgs e)
         {
             Clipboard.SetText(imageName.Text);
-            MessageBox.Show("Copied to clipboard!");
+            clipboard.Text = "Copied to clipboard!";
         }
 
         private void deploymentList_SelectedIndexChanged(object sender, EventArgs e)
         {
+            clipboard.Text = string.Empty;
             var deploymentName = deploymentList.SelectedItem;
             var userName = $"-{Environment.UserName}";
             if (customNameBox.Text.Replace(" ", string.Empty).Length > 0)
@@ -369,7 +378,8 @@ namespace Deployment.Assistant
 
         private void deployButton_Click(object sender, EventArgs e)
         {
-            if(deploymentList.SelectedIndex == -1)
+            deployLabel.Text = string.Empty;
+            if (deploymentList.SelectedIndex == -1)
             {
                 MessageBox.Show("Please select the Image name before you proceed!");
             }
@@ -429,6 +439,7 @@ namespace Deployment.Assistant
 
         private void customNameBox_TextChanged(object sender, EventArgs e)
         {
+            clipboard.Text = string.Empty;
             var deploymentName = deploymentList.SelectedItem;
             var userName = $"-{Environment.UserName}";
             if (customNameBox.Text.Replace(" ", string.Empty).Length > 0)

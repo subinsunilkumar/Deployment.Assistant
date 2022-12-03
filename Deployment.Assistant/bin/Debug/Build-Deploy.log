@@ -1,9 +1,9 @@
 
-03/12/2022 19:00:55 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:28:57 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Build started for project IDS.Services.BE.CAD
 
-03/12/2022 19:00:55 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:28:57 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Command run /c dotnet publish "D:\Old\New\Repos\CDSS Collaboration\Services.BE.CAD\Source\IDS.Services.BE.CAD\IDS.Services.BE.CAD.csproj" -o "D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\ASP-Output"  >> "D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\Build-Deploy.log" 2>&1
 Microsoft (R) Build Engine version 16.11.3+5d7fe36cf for .NET
@@ -22,33 +22,33 @@ Copyright (C) Microsoft Corporation. All rights reserved.
   IDS.Services.BE.CAD -> D:\Old\New\Repos\CDSS Collaboration\Services.BE.CAD\Source\IDS.Services.BE.CAD\bin\Debug\IDS.Services.BE.CAD.dll
   IDS.Services.BE.CAD -> D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\ASP-Output\
 
-03/12/2022 19:00:59 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:29:00 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Build Success!
 
-03/12/2022 19:00:59 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:29:00 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Replacing COPY ./cadbackendservice . with COPY . .
 
-03/12/2022 19:00:59 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:29:00 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Copying D:\Old\New\Repos\CDSS Collaboration\Services.BE.CAD\Source\IDS.Services.BE.CAD\Dockerfile to D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\ASP-Output\Dockerfile
 
-03/12/2022 19:00:59 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:29:00 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Building Docker Image
 
-03/12/2022 19:00:59 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:29:00 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Command Run /c cd /d D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\ASP-Output & docker build . -t cadbackendservice-z004n44u:latest >> "D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\Build-Deploy.log" 2>&1
 #1 [internal] load build definition from Dockerfile
-#1 sha256:864e9dee9a09e0d29c0bd8ce4d83807c65fce0d95fc5d1b6b04702fe4a42cdb2
-#1 transferring dockerfile: 208B 0.0s done
+#1 sha256:747663b13aeee9c198a885e1b5cf1d7d8fa76f0779c6324178117ad8c481d168
+#1 transferring dockerfile: 208B done
 #1 DONE 0.0s
 
 #2 [internal] load .dockerignore
-#2 sha256:e7fc6eae6434ff329d8a745d2ebe6073058bb70a66cb676b4aa35c837de16af7
-#2 transferring context: 2B done
+#2 sha256:0e3cc2ec4d2cabb8e5b57572b41fc5809f06c565f7bb3e3487c5e44e25914267
+#2 transferring context: 2B 0.0s done
 #2 DONE 0.0s
 
 #3 [internal] load metadata for mcr.microsoft.com/dotnet/core/aspnet:3.1
@@ -60,48 +60,48 @@ Command Run /c cd /d D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\D
 #4 DONE 0.0s
 
 #6 [internal] load build context
-#6 sha256:21e2f0631147bf71db6d1d5d1c970a1261d297c9ef3dae6715288ed279ec7e68
+#6 sha256:23484e0a073eff5000223af1817bf7bd3ae836cac10a04a119968581eb5a7f76
 #6 transferring context: 6.79kB 0.0s done
-#6 DONE 0.0s
+#6 DONE 0.1s
 
 #5 [2/3] WORKDIR /app
 #5 sha256:3eff73019b28c4fabe166208ea67144a220f9f1167ba375dd5506a56785dad88
 #5 CACHED
 
 #7 [3/3] COPY . .
-#7 sha256:91d7bf59218e0ec10460aa4f15cb5c908ecac50f26ab6f157bfba5b83f4ceb72
+#7 sha256:091f023215736bb36c37c6d466d54c52a859eb660bee49b3b4fcc565d45571d7
 #7 CACHED
 
 #8 exporting to image
 #8 sha256:e8c613e07b0b7ff33893b694f7759a10d42e180f2b4dc349fb57dc6b71dcab00
 #8 exporting layers done
-#8 writing image sha256:515bbab93588ab766cc5392af267a438c69f415ae628df4ccbaa43e4f55f23bc done
+#8 writing image sha256:515bbab93588ab766cc5392af267a438c69f415ae628df4ccbaa43e4f55f23bc 0.0s done
 #8 naming to docker.io/library/cadbackendservice-z004n44u:latest done
 #8 DONE 0.0s
 
 Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
 
-03/12/2022 19:01:01 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:29:02 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Docker Build Successful for cadbackendservice-z004n44u:latest
 
-03/12/2022 19:01:01 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:29:02 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Tagging Docker Image
 
-03/12/2022 19:01:01 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:29:02 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Command Run /c cd /d D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\ASP-Output & docker tag cadbackendservice-z004n44u:latest gokarna.azurecr.io/cadbackendservice-z004n44u:latest >> "D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\Build-Deploy.log" 2>&1
 
-03/12/2022 19:01:01 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:29:03 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Docker Tag Successful to gokarna.azurecr.io/cadbackendservice-z004n44u:latest
 
-03/12/2022 19:01:01 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:29:03 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Pushing Docker Image
 
-03/12/2022 19:01:01 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:29:03 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Command Run /c cd /d D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\ASP-Output & docker push gokarna.azurecr.io/cadbackendservice-z004n44u:latest >> "D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\Build-Deploy.log" 2>&1
 The push refers to repository [gokarna.azurecr.io/cadbackendservice-z004n44u]
@@ -115,41 +115,41 @@ dbaf71c29b55: Preparing
 ab38a8497ed4: Waiting
 dbaf71c29b55: Waiting
 b16dc428152e: Layer already exists
-9aaeba8ffab3: Layer already exists
 aae525f0269c: Layer already exists
+b7ebcd96e6bc: Layer already exists
 53efdbd8ea33: Layer already exists
 dbaf71c29b55: Layer already exists
 ab38a8497ed4: Layer already exists
-b7ebcd96e6bc: Layer already exists
+9aaeba8ffab3: Layer already exists
 latest: digest: sha256:adc2c8c2d3c55d75f6de58084feaa2428b25b1e2be52c42e6d944d39fd30db96 size: 1793
 
-03/12/2022 19:01:05 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:29:06 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Docker Push Successful to gokarna.azurecr.io/cadbackendservice-z004n44u:latest
 
-03/12/2022 19:01:05 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:29:06 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Connecting to inblrghma3879ln
 
-03/12/2022 19:01:06 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:29:08 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Successfully connected to inblrghma3879ln
 
-03/12/2022 19:01:06 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:29:08 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Command Run : kubectl get pods -n ai-pc-product
 
-03/12/2022 19:01:07 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:29:09 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 NAME                                           READY   STATUS    RESTARTS   AGE
 amp-manager-5b987cb97-lr7kg                    1/1     Running   0          47d
 auditlogservice-5f4d6fbb9d-dx5f7               1/1     Running   0          48d
 authservice-88f9fd758-jjhfd                    1/1     Running   0          47d
 cad-fe-d4476f687-l2r9z                         1/1     Running   0          47d
-cadbackendservice-7f7c5fd457-z5shn             1/1     Running   0          41s
+cadbackendservice-7f7c5fd457-ztbqp             1/1     Running   0          5m33s
 cadconcordanceservice-557d99d97f-f2z4k         1/1     Running   0          47d
 cadriskcalculatorservice-56d6946d7d-2qrkh      1/1     Running   0          47d
-chest-pain-fe-5f5fd449df-ljln7                 1/1     Running   0          5m51s
+chest-pain-fe-5f5fd449df-ljln7                 1/1     Running   0          33m
 configurationservice-5459457fc6-lnq2h          1/1     Running   0          48d
 csvreaderservice-5f694dc8db-t9f9g              1/1     Running   0          47d
 dicommetadata-74fb96f86f-9pqgm                 1/1     Running   0          47d
@@ -163,8 +163,8 @@ fhir-import-7767fc8db8-4tr9x                   1/1     Running   0          47d
 filesystem-export-device-5bd7c9ccd-g5w7g       1/1     Running   0          47d
 imageaccessservice-775ddb6cfd-dht2s            1/1     Running   0          47d
 import-orchestrator-6b95cf8fdf-w5qhv           1/1     Running   0          47d
-launchpage-5cf87bbf4c-5rgng                    1/1     Running   0          10m
-launchpageservice-684cd686c9-slvgw             1/1     Running   0          17m
+launchpage-5cf87bbf4c-5rgng                    1/1     Running   0          38m
+launchpageservice-684cd686c9-slvgw             1/1     Running   0          45m
 licenseservice-bdd94577b-hcdmh                 1/1     Running   0          47d
 logger-5695b4657c-f56kx                        1/1     Running   0          48d
 loginpage-5d8c7bcffb-ldxtq                     1/1     Running   0          47d
@@ -185,10 +185,19 @@ tika-5776fb956-tfkjt                           1/1     Running   0          47d
 unitconversionservice-68bb5f5c96-9wnlv         1/1     Running   0          47d
 
 
-03/12/2022 19:01:07 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:29:09 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Command Run : kubectl set image deployment/cadbackendservice cadbackendservice=gokarna.azurecr.io/cadbackendservice-z004n44u:latest -n ai-pc-product
 
-03/12/2022 19:01:07 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+03/12/2022 19:29:09 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Command Run : kubectl delete pod cadbackendservice-7f7c5fd457-z5shn -n ai-pc-product
+Command Run : kubectl delete pod cadbackendservice-7f7c5fd457-ztbqp -n ai-pc-product
+
+03/12/2022 19:29:11 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+pod "cadbackendservice-7f7c5fd457-ztbqp" deleted
+
+
+03/12/2022 19:29:11 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Deployment Successful!

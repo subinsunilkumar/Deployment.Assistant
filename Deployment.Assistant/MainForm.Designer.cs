@@ -31,6 +31,8 @@ namespace Deployment.Assistant
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.deploymentTabPage = new System.Windows.Forms.TabPage();
+            this.clipboard = new System.Windows.Forms.Label();
+            this.deployLabel = new System.Windows.Forms.Label();
             this.refreshLogs = new System.Windows.Forms.Button();
             this.nginxPath = new System.Windows.Forms.Label();
             this.nginxLabel = new System.Windows.Forms.Label();
@@ -60,6 +62,8 @@ namespace Deployment.Assistant
             // 
             // deploymentTabPage
             // 
+            this.deploymentTabPage.Controls.Add(this.clipboard);
+            this.deploymentTabPage.Controls.Add(this.deployLabel);
             this.deploymentTabPage.Controls.Add(this.refreshLogs);
             this.deploymentTabPage.Controls.Add(this.nginxPath);
             this.deploymentTabPage.Controls.Add(this.nginxLabel);
@@ -90,10 +94,32 @@ namespace Deployment.Assistant
             this.deploymentTabPage.Text = "Deploy Project";
             this.deploymentTabPage.UseVisualStyleBackColor = true;
             // 
+            // clipboard
+            // 
+            this.clipboard.AutoSize = true;
+            this.clipboard.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clipboard.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.clipboard.Location = new System.Drawing.Point(145, 197);
+            this.clipboard.Name = "clipboard";
+            this.clipboard.Size = new System.Drawing.Size(12, 15);
+            this.clipboard.TabIndex = 22;
+            this.clipboard.Text = "-";
+            // 
+            // deployLabel
+            // 
+            this.deployLabel.AutoSize = true;
+            this.deployLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.deployLabel.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.deployLabel.Location = new System.Drawing.Point(144, 336);
+            this.deployLabel.Name = "deployLabel";
+            this.deployLabel.Size = new System.Drawing.Size(16, 21);
+            this.deployLabel.TabIndex = 21;
+            this.deployLabel.Text = "-";
+            // 
             // refreshLogs
             // 
             this.refreshLogs.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.refreshLogs.Location = new System.Drawing.Point(793, 383);
+            this.refreshLogs.Location = new System.Drawing.Point(781, 383);
             this.refreshLogs.Name = "refreshLogs";
             this.refreshLogs.Size = new System.Drawing.Size(75, 23);
             this.refreshLogs.TabIndex = 20;
@@ -376,6 +402,8 @@ namespace Deployment.Assistant
         private System.Windows.Forms.Label dockerPath;
         private System.Windows.Forms.Label dockerLabel;
         private System.Windows.Forms.Button refreshLogs;
+        private System.Windows.Forms.Label deployLabel;
+        private System.Windows.Forms.Label clipboard;
     }
 }
 
