@@ -1,0 +1,23 @@
+{
+  "hs Cardiac Troponin T": [
+    {
+      "system": "http://loinc.org",
+      "code": "67151-1",
+      "display": "hs Cardiac Troponin T"
+    }
+  ],
+  "Chest Pain": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "29857009",
+      "display": "Chest Pain"
+    }
+  ],
+  "VERIFIED_STATE": [
+    {
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "code": "7093039-AIPC-000006",
+      "display": "PATIENT VERIFIED"
+    }
+  ]
+}
