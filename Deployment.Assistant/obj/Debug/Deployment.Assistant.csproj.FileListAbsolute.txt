@@ -110,3 +110,4 @@ D:\Projects\Deployment.Assistant\Deployment.Assistant\obj\Debug\Deployment.Assis
 D:\Projects\Deployment.Assistant\Deployment.Assistant\obj\Debug\Deployment.Assistant.csproj.CopyComplete
 D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\Renci.SshNet.dll
 D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\Renci.SshNet.xml
+D:\Projects\Deployment.Assistant\Deployment.Assistant\obj\Debug\Deployment.Assistant.csproj.AssemblyReference.cache

@@ -342,13 +342,15 @@ namespace Deployment.Assistant
                     WriteLogs($"Command Run : kubectl delete pod {currentPodName} -n ai-pc-product");
                     result = client.RunCommand(sudoString + $"kubectl delete pod {currentPodName} -n ai-pc-product");
                     WriteLogs(result.Result);
+                    result = client.RunCommand(sudoString + $"kubectl get pods -n ai-pc-product");
+                    WriteLogs(result.Result);
                     WriteLogs("Deployment Successful!");
                 }
                 finally
                 {
                     Invoke(new Action(() =>
                     {
-                        deployLabel.Text = "Deployment Successful!";
+                        deployLabel.Text = "Deployment Successful";
                         deployButton.Enabled = true;
                         deployButton.Enabled = true;
                         dotNetProjectList.Enabled = true;
@@ -365,7 +367,7 @@ namespace Deployment.Assistant
         private async void imageName_Click(object sender, EventArgs e)
         {
             Clipboard.SetText(imageName.Text);
-            clipboard.Text = "Copied to clipboard!";
+            clipboard.Text = "Copied to clipboard";
         }
 
         private void deploymentList_SelectedIndexChanged(object sender, EventArgs e)
@@ -481,5 +483,5 @@ namespace Deployment.Assistant
                 deployLogger.ScrollToCaret();
             }
         }
-        }
+    }
     }
