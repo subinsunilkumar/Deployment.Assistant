@@ -24,6 +24,7 @@ namespace Deployment.Assistant
         string[] csprojFileList;
         DirectoryInfo parentDir;
         string fileName;
+        bool dockerIsRunning = false;
         string outputPath = Path.Combine(Environment.CurrentDirectory, "ASP-Output");
         public MainForm()
         {
@@ -209,21 +210,32 @@ namespace Deployment.Assistant
             var cmdProcess = CreateCmdProcess(command);
             cmdProcess.Start();
             cmdProcess.WaitForExit();
-            WriteLogs($"Docker Build Successful for {dockerLabel}");
-            command = $"/c cd /d {path} & docker tag {dockerLabel} {gokarnaLabel} >> \"{deploymentLogger}\" 2>&1";
-            WriteLogs($"Tagging Docker Image");
-            WriteLogs($"Command Run {command}");
-            cmdProcess = CreateCmdProcess(command);
-            cmdProcess.Start();
-            cmdProcess.WaitForExit();
-            WriteLogs($"Docker Tag Successful to {gokarnaLabel}");
-            command = $"/c cd /d {path} & docker push {gokarnaLabel} >> \"{deploymentLogger}\" 2>&1";
-            WriteLogs($"Pushing Docker Image");
-            WriteLogs($"Command Run {command}");
-            cmdProcess = CreateCmdProcess(command);
-            cmdProcess.Start();
-            cmdProcess.WaitForExit();
-            WriteLogs($"Docker Push Successful to {gokarnaLabel}");
+            if(cmdProcess.ExitCode == 0)
+            {
+                dockerIsRunning = true;
+                WriteLogs($"Docker Build Successful for {dockerLabel}");
+                command = $"/c cd /d {path} & docker tag {dockerLabel} {gokarnaLabel} >> \"{deploymentLogger}\" 2>&1";
+                WriteLogs($"Tagging Docker Image");
+                WriteLogs($"Command Run {command}");
+                cmdProcess = CreateCmdProcess(command);
+                cmdProcess.Start();
+                cmdProcess.WaitForExit();
+                WriteLogs($"Docker Tag Successful to {gokarnaLabel}");
+                command = $"/c cd /d {path} & docker push {gokarnaLabel} >> \"{deploymentLogger}\" 2>&1";
+                WriteLogs($"Pushing Docker Image");
+                WriteLogs($"Command Run {command}");
+                cmdProcess = CreateCmdProcess(command);
+                cmdProcess.Start();
+                cmdProcess.WaitForExit();
+                WriteLogs($"Docker Push Successful to {gokarnaLabel}");
+            }
+            else
+            {
+                dockerIsRunning = false;
+                WriteLogs($"Docker Build Failed for {dockerLabel}");
+                WriteLogs("Docker is not running on your machine!\n\nStart Docker and restart the process again");
+                MessageBox.Show("Docker is not running on your machine!\n\nStart Docker and restart the process again");
+            }
         }
 
         private async void BuildAspProject()
@@ -266,7 +278,10 @@ namespace Deployment.Assistant
                 File.WriteAllLines(newPath, fileContent);
                 DockerBuildAndPush(outputPath);
             });
-            Connect(machineListcomboBox.SelectedItem.ToString(), deploymentList.SelectedItem.ToString(), imageName.Text);
+            if(dockerIsRunning)
+            {
+                Connect(machineListcomboBox.SelectedItem.ToString(), deploymentList.SelectedItem.ToString(), imageName.Text);
+            }
         }
 
         private async void BuildAngularProject()
@@ -280,7 +295,7 @@ namespace Deployment.Assistant
                 cmdProcess.Start();
                 cmdProcess.WaitForExit();
                 WriteLogs("Build Success!");
-                foreach(var file in new[] { nginxPath.Text, dockerPath.Text })
+                foreach (var file in new[] { nginxPath.Text, dockerPath.Text })
                 {
                     var newPath = file.Replace("nginx.conf", "dist\\nginx.conf").Replace("Dockerfile", "dist\\Dockerfile");
                     WriteLogs($"Copying {file} to {newPath}");
@@ -289,7 +304,10 @@ namespace Deployment.Assistant
                 }
                 DockerBuildAndPush(Path.Combine(parentDir.FullName,"dist"));
             });
-            Connect(machineListcomboBox.SelectedItem.ToString(), deploymentList.SelectedItem.ToString(), imageName.Text);
+            if (dockerIsRunning)
+            {
+                Connect(machineListcomboBox.SelectedItem.ToString(), deploymentList.SelectedItem.ToString(), imageName.Text);
+            }
         }
 
         private Process CreateCmdProcess(string buildCommand)
