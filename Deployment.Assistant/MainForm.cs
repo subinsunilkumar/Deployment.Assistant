@@ -282,6 +282,18 @@ namespace Deployment.Assistant
             {
                 Connect(machineListcomboBox.SelectedItem.ToString(), deploymentList.SelectedItem.ToString(), imageName.Text);
             }
+            else
+            {
+                Invoke(new Action(() =>
+                {
+                    deployButton.Enabled = true;
+                    deployButton.Enabled = true;
+                    dotNetProjectList.Enabled = true;
+                    deploymentList.Enabled = true;
+                    machineListcomboBox.Enabled = true;
+                    browseButton.Enabled = true;
+                }));
+            }
         }
 
         private async void BuildAngularProject()
@@ -307,6 +319,18 @@ namespace Deployment.Assistant
             if (dockerIsRunning)
             {
                 Connect(machineListcomboBox.SelectedItem.ToString(), deploymentList.SelectedItem.ToString(), imageName.Text);
+            }
+            else
+            {
+                Invoke(new Action(() =>
+                {
+                    deployButton.Enabled = true;
+                    deployButton.Enabled = true;
+                    dotNetProjectList.Enabled = true;
+                    deploymentList.Enabled = true;
+                    machineListcomboBox.Enabled = true;
+                    browseButton.Enabled = true;
+                }));
             }
         }
 
