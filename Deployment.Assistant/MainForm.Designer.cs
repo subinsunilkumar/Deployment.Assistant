@@ -31,6 +31,10 @@ namespace Deployment.Assistant
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.deploymentTabPage = new System.Windows.Forms.TabPage();
+            this.runCustomCommand = new System.Windows.Forms.Button();
+            this.commandBox = new System.Windows.Forms.TextBox();
+            this.commandLabel = new System.Windows.Forms.Label();
+            this.newInstanceButton = new System.Windows.Forms.Button();
             this.clipboard = new System.Windows.Forms.Label();
             this.deployLabel = new System.Windows.Forms.Label();
             this.refreshLogs = new System.Windows.Forms.Button();
@@ -62,6 +66,10 @@ namespace Deployment.Assistant
             // 
             // deploymentTabPage
             // 
+            this.deploymentTabPage.Controls.Add(this.runCustomCommand);
+            this.deploymentTabPage.Controls.Add(this.commandBox);
+            this.deploymentTabPage.Controls.Add(this.commandLabel);
+            this.deploymentTabPage.Controls.Add(this.newInstanceButton);
             this.deploymentTabPage.Controls.Add(this.clipboard);
             this.deploymentTabPage.Controls.Add(this.deployLabel);
             this.deploymentTabPage.Controls.Add(this.refreshLogs);
@@ -94,6 +102,54 @@ namespace Deployment.Assistant
             this.deploymentTabPage.Text = "Deploy Project";
             this.deploymentTabPage.UseVisualStyleBackColor = true;
             // 
+            // runCustomCommand
+            // 
+            this.runCustomCommand.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.runCustomCommand.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(102)))), ((int)(((byte)(2)))));
+            this.runCustomCommand.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.runCustomCommand.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.runCustomCommand.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.runCustomCommand.Location = new System.Drawing.Point(752, 288);
+            this.runCustomCommand.Name = "runCustomCommand";
+            this.runCustomCommand.Size = new System.Drawing.Size(117, 23);
+            this.runCustomCommand.TabIndex = 26;
+            this.runCustomCommand.Text = "Run Command";
+            this.runCustomCommand.UseVisualStyleBackColor = false;
+            this.runCustomCommand.Click += new System.EventHandler(this.runCustomCommand_Click);
+            // 
+            // commandBox
+            // 
+            this.commandBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.commandBox.Location = new System.Drawing.Point(608, 251);
+            this.commandBox.Name = "commandBox";
+            this.commandBox.Size = new System.Drawing.Size(261, 22);
+            this.commandBox.TabIndex = 25;
+            // 
+            // commandLabel
+            // 
+            this.commandLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.commandLabel.AutoSize = true;
+            this.commandLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.commandLabel.Location = new System.Drawing.Point(467, 255);
+            this.commandLabel.Name = "commandLabel";
+            this.commandLabel.Size = new System.Drawing.Size(60, 13);
+            this.commandLabel.TabIndex = 24;
+            this.commandLabel.Text = "Command";
+            // 
+            // newInstanceButton
+            // 
+            this.newInstanceButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(102)))), ((int)(((byte)(2)))));
+            this.newInstanceButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.newInstanceButton.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newInstanceButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.newInstanceButton.Location = new System.Drawing.Point(158, 339);
+            this.newInstanceButton.Name = "newInstanceButton";
+            this.newInstanceButton.Size = new System.Drawing.Size(147, 23);
+            this.newInstanceButton.TabIndex = 23;
+            this.newInstanceButton.Text = "Deploy Another Parallely";
+            this.newInstanceButton.UseVisualStyleBackColor = false;
+            this.newInstanceButton.Click += new System.EventHandler(this.newInstanceButton_Click);
+            // 
             // clipboard
             // 
             this.clipboard.AutoSize = true;
@@ -110,7 +166,7 @@ namespace Deployment.Assistant
             this.deployLabel.AutoSize = true;
             this.deployLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.deployLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.deployLabel.Location = new System.Drawing.Point(43, 344);
+            this.deployLabel.Location = new System.Drawing.Point(43, 375);
             this.deployLabel.Name = "deployLabel";
             this.deployLabel.Size = new System.Drawing.Size(132, 15);
             this.deployLabel.TabIndex = 21;
@@ -123,7 +179,7 @@ namespace Deployment.Assistant
             this.refreshLogs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.refreshLogs.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
             this.refreshLogs.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.refreshLogs.Location = new System.Drawing.Point(781, 383);
+            this.refreshLogs.Location = new System.Drawing.Point(782, 409);
             this.refreshLogs.Name = "refreshLogs";
             this.refreshLogs.Size = new System.Drawing.Size(75, 23);
             this.refreshLogs.TabIndex = 20;
@@ -204,7 +260,7 @@ namespace Deployment.Assistant
             this.loginAfterDeployButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.loginAfterDeployButton.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
             this.loginAfterDeployButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.loginAfterDeployButton.Location = new System.Drawing.Point(724, 323);
+            this.loginAfterDeployButton.Location = new System.Drawing.Point(752, 339);
             this.loginAfterDeployButton.Name = "loginAfterDeployButton";
             this.loginAfterDeployButton.Size = new System.Drawing.Size(117, 23);
             this.loginAfterDeployButton.TabIndex = 13;
@@ -228,9 +284,9 @@ namespace Deployment.Assistant
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.deployLogger.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deployLogger.Location = new System.Drawing.Point(6, 370);
+            this.deployLogger.Location = new System.Drawing.Point(6, 398);
             this.deployLogger.Name = "deployLogger";
-            this.deployLogger.Size = new System.Drawing.Size(878, 375);
+            this.deployLogger.Size = new System.Drawing.Size(878, 347);
             this.deployLogger.TabIndex = 1;
             this.deployLogger.Text = "";
             // 
@@ -249,7 +305,7 @@ namespace Deployment.Assistant
             // 
             this.buildLogLabel.AutoSize = true;
             this.buildLogLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buildLogLabel.Location = new System.Drawing.Point(6, 344);
+            this.buildLogLabel.Location = new System.Drawing.Point(6, 375);
             this.buildLogLabel.Name = "buildLogLabel";
             this.buildLogLabel.Size = new System.Drawing.Size(31, 13);
             this.buildLogLabel.TabIndex = 10;
@@ -320,7 +376,7 @@ namespace Deployment.Assistant
             this.deployButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deployButton.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
             this.deployButton.ForeColor = System.Drawing.Color.White;
-            this.deployButton.Location = new System.Drawing.Point(580, 323);
+            this.deployButton.Location = new System.Drawing.Point(608, 339);
             this.deployButton.Name = "deployButton";
             this.deployButton.Size = new System.Drawing.Size(117, 23);
             this.deployButton.TabIndex = 4;
@@ -360,6 +416,7 @@ namespace Deployment.Assistant
             this.machineListcomboBox.Name = "machineListcomboBox";
             this.machineListcomboBox.Size = new System.Drawing.Size(261, 21);
             this.machineListcomboBox.TabIndex = 1;
+            this.machineListcomboBox.SelectedIndexChanged += new System.EventHandler(this.machineListcomboBox_SelectedIndexChanged);
             // 
             // browseButton
             // 
@@ -434,6 +491,10 @@ namespace Deployment.Assistant
         private System.Windows.Forms.ComboBox machineListcomboBox;
         private System.Windows.Forms.Button browseButton;
         private System.Windows.Forms.TabControl assistantTabControl;
+        private System.Windows.Forms.Button newInstanceButton;
+        private System.Windows.Forms.Button runCustomCommand;
+        private System.Windows.Forms.TextBox commandBox;
+        private System.Windows.Forms.Label commandLabel;
     }
 }
 

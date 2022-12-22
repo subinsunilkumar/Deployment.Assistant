@@ -20,12 +20,13 @@ namespace Deployment.Assistant
     public partial class MainForm : Form
     {
         IWebDriver driver = null;
-        string deploymentLogger = Path.Combine(Environment.CurrentDirectory, "Build-Deploy.log");
+        string deploymentLogger;
         string[] csprojFileList;
         DirectoryInfo parentDir;
         string fileName;
         bool dockerIsRunning = false;
         string outputPath = Path.Combine(Environment.CurrentDirectory, "ASP-Output");
+        string logsFolder = Path.Combine(Environment.CurrentDirectory, "Logs");
         public MainForm()
         {
             InitializeComponent();
@@ -33,12 +34,17 @@ namespace Deployment.Assistant
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            if(!Directory.Exists(logsFolder))
+            {
+                Directory.CreateDirectory(logsFolder);
+            }
+            deploymentLogger = Path.Combine(logsFolder, $"Build-Deploy-{Regex.Replace(DateTime.Now.ToString().Trim(), "[^a-zA-Z0-9_]+", "-")}.log");
             deployLabel.Text = string.Empty;
             clipboard.Text = string.Empty;
             WindowState = FormWindowState.Maximized;
             var urlList = new List<string>()
             {
-                "inblrghma3879ln","inblrghvsan10ln","inblrghman079ln.rd001.onehc.net"
+                "inblrghma3879ln","inblrghvsan10ln"
             };
             var deploymentlist = new List<string>()
             {
@@ -58,10 +64,6 @@ namespace Deployment.Assistant
             machineListcomboBox.SelectedIndex = 0;
             imageName.Text = "-";
             KillProcessByName("chromedriver");
-            if (File.Exists(deploymentLogger))
-            {
-                File.Delete(deploymentLogger);
-            }
         }
 
         private void KillProcessByName(string name)
@@ -123,6 +125,7 @@ namespace Deployment.Assistant
 
         private void browseButton_Click(object sender, EventArgs e)
         {
+            customNameBox.Text = "";
             clipboard.Text = string.Empty;
             deployLabel.Text = string.Empty;
             deploymentList.SelectedIndex = -1;
@@ -414,6 +417,7 @@ namespace Deployment.Assistant
 
         private void deploymentList_SelectedIndexChanged(object sender, EventArgs e)
         {
+            customNameBox.Text = "";
             clipboard.Text = string.Empty;
             var deploymentName = deploymentList.SelectedItem;
             var userName = $"-{Environment.UserName}";
@@ -514,15 +518,55 @@ namespace Deployment.Assistant
             {
                 if (File.Exists(deploymentLogger))
                 {
-                    var copyFile = Path.Combine(Environment.CurrentDirectory, "Build-Deploy-Copy.log");
+                    var copyFile = Path.Combine(logsFolder, $"Build-Deploy-Copy-{Regex.Replace(DateTime.Now.ToString().Trim(), "[^a-zA-Z0-9_]+", "-")}.log");
                     File.Copy(deploymentLogger, copyFile, true);
                     deployLogger.Text = File.ReadAllText(copyFile);
                     deployLogger.SelectionStart = deployLogger.Text.Length;
+                    if (File.Exists(copyFile))
+                    {
+                        File.Delete(copyFile);
+                    }
                 }
             }
             finally
             {
                 deployLogger.ScrollToCaret();
+            }
+        }
+
+        private void newInstanceButton_Click(object sender, EventArgs e)
+        {
+            Process.Start(Path.Combine(Environment.CurrentDirectory, "Deployment.Assistant.exe"));
+        }
+
+        private void runCustomCommand_Click(object sender, EventArgs e)
+        {
+            var machineName = machineListcomboBox.SelectedItem.ToString();
+            var client = new SshClient(machineName, "aipcroot", "AIPC_DevOps21@ids.com");
+            try
+            {
+                WriteLogs($"Connecting to {machineName}");
+                client.Connect();
+                WriteLogs($"Successfully connected to {machineName}");
+                var sudoString = "echo \"" + "AIPC_DevOps21@ids.com" + "\" | sudo -S ";
+                WriteLogs("Command Run : kubectl get pods -n ai-pc-product");
+                var result = client.RunCommand(sudoString + commandBox.Text.ToString());
+                WriteLogs(result.Result);
+            }
+            finally
+            {
+                client.Disconnect();
+                WriteLogs($"Client {machineName} disconnected.");
+            }
+
+        }
+
+        private void machineListcomboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (machineListcomboBox.SelectedItem.ToString() == "inblrghman079ln.rd001.onehc.net")
+            {
+                browseButton.Enabled = false;
+                deployButton.Enabled = false;
             }
         }
     }

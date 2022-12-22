@@ -1,0 +1,202 @@
+
+13 Dec 2022 14:17:22 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Connecting to inblrghma3879ln
+
+13 Dec 2022 14:17:24 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Successfully connected to inblrghma3879ln
+
+13 Dec 2022 14:17:24 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command Run : kubectl get pods -n ai-pc-product
+
+13 Dec 2022 14:17:24 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+~
+aipc-k8s-config
+CreateKubeConfig.sh
+INBLRGHMAN079LN.rd001.onehc.net.crt
+INBLRGHMAN079LN.rd001.onehc.net.key
+INBLRGHMAN079LN.rd001.onehc.net.pem
+installPathway.log
+patient_delete.yaml
+test-cert.crt
+test-cert.key
+
+
+13 Dec 2022 14:17:24 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Client inblrghma3879ln disconnected.
+
+13 Dec 2022 14:22:30 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Connecting to inblrghma3879ln
+
+13 Dec 2022 14:22:30 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Successfully connected to inblrghma3879ln
+
+13 Dec 2022 14:22:30 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command Run : kubectl get pods -n ai-pc-product
+
+13 Dec 2022 14:22:31 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+datapath: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1376
+        ether 12:d8:73:96:ee:8f  txqueuelen 1000  (Ethernet)
+        RX packets 5230  bytes 691863 (675.6 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+ens192: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.24.27.220  netmask 255.255.255.0  broadcast 172.24.27.255
+        ether 00:50:56:b0:de:c6  txqueuelen 1000  (Ethernet)
+        RX packets 81662208  bytes 17855682888 (16.6 GiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 81690881  bytes 37263186915 (34.7 GiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 1336064144  bytes 2441923258037 (2.2 TiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1336064144  bytes 2441923258037 (2.2 TiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+vethwe-bridge: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1376
+        ether 1e:df:74:e9:1f:f2  txqueuelen 0  (Ethernet)
+        RX packets 10057747  bytes 4944234140 (4.6 GiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 13707716  bytes 4610361625 (4.2 GiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+vethwe-datapath: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1376
+        ether d2:54:b6:49:1c:f9  txqueuelen 0  (Ethernet)
+        RX packets 1336064144  bytes 2441923258037 (2.2 TiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1336064144  bytes 2441923258037 (2.2 TiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+vethwepl5d76e62: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1376
+        ether 36:77:6c:74:94:2f  txqueuelen 0  (Ethernet)
+        RX packets 1336064144  bytes 2441923258037 (2.2 TiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1336064144  bytes 2441923258037 (2.2 TiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+vxlan-6784: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 65535
+        ether 9e:e4:bc:8e:f7:45  txqueuelen 1000  (Ethernet)
+        RX packets 12583012  bytes 5593452680 (5.2 GiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 14208111  bytes 5105216508 (4.7 GiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+weave: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1376
+        inet 10.32.0.1  netmask 255.240.0.0  broadcast 10.47.255.255
+        ether 52:6d:00:f3:0d:ea  txqueuelen 1000  (Ethernet)
+        RX packets 4539119  bytes 3817734286 (3.5 GiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 5774607  bytes 2988455653 (2.7 GiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+
+
+13 Dec 2022 14:22:31 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Client inblrghma3879ln disconnected.
+
+13 Dec 2022 14:22:35 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Connecting to inblrghvsan10ln
+
+13 Dec 2022 14:22:36 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Successfully connected to inblrghvsan10ln
+
+13 Dec 2022 14:22:36 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command Run : kubectl get pods -n ai-pc-product
+
+13 Dec 2022 14:22:36 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+datapath: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1376
+        ether 42:4b:b4:ca:c7:ab  txqueuelen 1000  (Ethernet)
+        RX packets 55755  bytes 2397460 (2.2 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+ens192: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.24.31.17  netmask 255.255.255.0  broadcast 172.24.31.255
+        ether 00:50:56:80:b3:92  txqueuelen 1000  (Ethernet)
+        RX packets 143275017  bytes 28937732717 (26.9 GiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 135663742  bytes 72259966885 (67.2 GiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 1511481020  bytes 339131533791 (315.8 GiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1511481020  bytes 339131533791 (315.8 GiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+vethwe-bridge: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1376
+        ether 16:2d:7c:52:e8:14  txqueuelen 0  (Ethernet)
+        RX packets 21670236  bytes 6845232063 (6.3 GiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 27901491  bytes 9459310092 (8.8 GiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+vethwe-datapath: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1376
+        ether 02:1d:2d:6c:14:d3  txqueuelen 0  (Ethernet)
+        RX packets 1511481020  bytes 339131533791 (315.8 GiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1511481020  bytes 339131533791 (315.8 GiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+vethwepl3f83417: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1376
+        ether 4e:0c:aa:59:44:1a  txqueuelen 0  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+vethwepla826d76: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1376
+        ether d6:0c:16:60:e6:52  txqueuelen 0  (Ethernet)
+        RX packets 1511481020  bytes 339131533791 (315.8 GiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1511481020  bytes 339131533791 (315.8 GiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+vethweplc0382d0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1376
+        ether 9e:8e:6d:9b:a6:9a  txqueuelen 0  (Ethernet)
+        RX packets 21670236  bytes 6845232063 (6.3 GiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 27901491  bytes 9459310092 (8.8 GiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+vxlan-6784: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 65535
+        ether 7e:73:0c:a3:76:e7  txqueuelen 1000  (Ethernet)
+        RX packets 6149503  bytes 2191770964 (2.0 GiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 7276492  bytes 2157322271 (2.0 GiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+weave: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1376
+        inet 10.44.0.0  netmask 255.240.0.0  broadcast 10.47.255.255
+        ether ea:09:33:84:b0:42  txqueuelen 1000  (Ethernet)
+        RX packets 39803600  bytes 7142832393 (6.6 GiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 41670560  bytes 13048566429 (12.1 GiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+
+
+13 Dec 2022 14:22:36 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Client inblrghvsan10ln disconnected.
