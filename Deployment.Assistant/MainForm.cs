@@ -1,18 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System.Diagnostics;
-using System.Threading;
 using Renci.SshNet;
 
 namespace Deployment.Assistant
@@ -44,7 +39,7 @@ namespace Deployment.Assistant
             WindowState = FormWindowState.Maximized;
             var urlList = new List<string>()
             {
-                "inblrghma3879ln","inblrghvsan10ln"
+                "inblrghma3879ln","inblrghvsan10ln", "inblrghman079ln.rd001.onehc.net"
             };
             var deploymentlist = new List<string>()
             {
@@ -549,7 +544,7 @@ namespace Deployment.Assistant
                 client.Connect();
                 WriteLogs($"Successfully connected to {machineName}");
                 var sudoString = "echo \"" + "AIPC_DevOps21@ids.com" + "\" | sudo -S ";
-                WriteLogs("Command Run : kubectl get pods -n ai-pc-product");
+                WriteLogs($"Command Run : {commandBox.Text}");
                 var result = client.RunCommand(sudoString + commandBox.Text.ToString());
                 WriteLogs(result.Result);
             }
@@ -567,6 +562,11 @@ namespace Deployment.Assistant
             {
                 browseButton.Enabled = false;
                 deployButton.Enabled = false;
+            }
+            else
+            {
+                browseButton.Enabled = true;
+                deployButton.Enabled = true;
             }
         }
     }

@@ -1,0 +1,127 @@
+
+27 Dec 2022 15:07:46 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Opening Chrome..
+
+27 Dec 2022 15:07:48 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Navigating to https://inblrghman079ln.rd001.onehc.net/
+
+27 Dec 2022 15:07:51 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Username clinical.admin Entered
+
+27 Dec 2022 15:07:52 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Password ******* Entered
+
+27 Dec 2022 15:07:52 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Login Success to https://inblrghman079ln.rd001.onehc.net/ as clinical.admin
+
+27 Dec 2022 15:08:04 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Connecting to inblrghman079ln.rd001.onehc.net
+
+27 Dec 2022 15:08:05 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Successfully connected to inblrghman079ln.rd001.onehc.net
+
+27 Dec 2022 15:08:05 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command Run : kubectl get pods -n ai-pc-product
+
+27 Dec 2022 15:08:05 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+aipc-k8s-config
+CreateKubeConfig.sh
+
+
+27 Dec 2022 15:08:05 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Client inblrghman079ln.rd001.onehc.net disconnected.
+
+27 Dec 2022 15:08:18 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Connecting to inblrghman079ln.rd001.onehc.net
+
+27 Dec 2022 15:08:19 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Successfully connected to inblrghman079ln.rd001.onehc.net
+
+27 Dec 2022 15:08:19 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command Run : kubectl get pods -n ai-pc-product
+
+27 Dec 2022 15:08:20 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+NAME                                          READY   STATUS             RESTARTS   AGE
+amp-agent-88b7df77-vwk5x                      1/2     CrashLoopBackOff   5176       18d
+amp-manager-5b987cb97-msf97                   1/1     Running            0          18d
+auditlogservice-5d5659c7dd-xg95z              1/1     Running            0          18d
+authservice-6fb69ccf57-4sh89                  1/1     Running            0          18d
+cadbackendservice-84c5f49fcb-scvvp            1/1     Running            0          3d23h
+cadconcordanceservice-557d99d97f-djz67        1/1     Running            0          18d
+cadriskcalculatorservice-56d6946d7d-q2ps7     1/1     Running            0          18d
+chest-pain-fe-5956bb58b9-7w7ds                1/1     Running            0          4d16h
+configurationservice-8bd964db-k7j4k           1/1     Running            0          18d
+csvreaderservice-77f847d4fb-5qnbl             1/1     Running            0          18d
+dicommetadata-74fb96f86f-9xlzl                1/1     Running            0          18d
+doc-import-54bf99db6-4tdqc                    1/1     Running            0          18d
+emailnotificationservice-69f9df6f9f-ftrtm     1/1     Running            0          18d
+error-reporting-device-75c754b79f-66k2c       1/1     Running            0          18d
+export-orchestrator-597cbcccf7-7slxt          1/1     Running            0          18d
+fhir-d598f966c-jlvp8                          1/1     Running            0          18d
+fhir-document-parser-device-5c6fc54b5-2xr5n   1/1     Running            0          18d
+fhir-export-device-67b6fd978c-r79md           1/1     Running            0          18d
+fhir-import-6d66855f59-nl4df                  1/1     Running            0          18d
+filesystem-export-device-5bd7c9ccd-7rcmw      1/1     Running            0          18d
+imageaccessservice-775ddb6cfd-lhfzt           1/1     Running            0          18d
+import-orchestrator-6b95cf8fdf-qh452          1/1     Running            0          18d
+launchpage-869fdf785c-pw826                   1/1     Running            0          4d20h
+launchpageservice-5dcb4fdc9-g548s             1/1     Running            0          6d9h
+licenseservice-576ff5d677-xjrkw               1/1     Running            0          18d
+logger-5695b4657c-w2n46                       1/1     Running            0          18d
+loginpage-5d8c7bcffb-fcdcz                    1/1     Running            0          18d
+nlpaccessservice-5758cc4845-tgfg8             1/1     Running            0          18d
+nlpfhirrenderer-77f4d48f96-bkh2l              1/1     Running            0          18d
+pacs-connector-7dc5c6799c-ff4hg               1/1     Running            0          18d
+patientdeleteservice-85bdb4b4d4-7l9n7         1/1     Running            0          18d
+postgres-c5cbf997f-65lx5                      1/1     Running            0          18d
+rabbitmq-859b96c59d-2b4dw                     1/1     Running            0          18d
+report-type-converter-7f6f784d75-88prm        1/1     Running            0          18d
+reportconverter-5d8cf5647b-29846              1/1     Running            0          18d
+reportcreationservice-7c99659695-bhs9n        1/1     Running            0          18d
+reverse-proxy-c67c75489-ksxqz                 1/1     Running            0          18d
+ruleengineservice-c74f48886-k5pvq             1/1     Running            0          18d
+settingsui-6849c4c946-r4psr                   1/1     Running            0          18d
+snomedqueryservice-5cf86455d9-vt76n           1/1     Running            0          18d
+tika-5776fb956-5zzhl                          1/1     Running            0          18d
+unitconversionservice-9cdf9dc66-vzj9h         1/1     Running            0          18d
+
+
+27 Dec 2022 15:08:20 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Client inblrghman079ln.rd001.onehc.net disconnected.
+
+27 Dec 2022 15:08:29 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Connecting to inblrghman079ln.rd001.onehc.net
+
+27 Dec 2022 15:08:30 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Successfully connected to inblrghman079ln.rd001.onehc.net
+
+27 Dec 2022 15:08:30 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command Run : kubectl get pods -n ai-pc-product
+
+27 Dec 2022 15:08:31 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+aipc-k8s-config
+CreateKubeConfig.sh
+
+
+27 Dec 2022 15:08:31 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Client inblrghman079ln.rd001.onehc.net disconnected.
