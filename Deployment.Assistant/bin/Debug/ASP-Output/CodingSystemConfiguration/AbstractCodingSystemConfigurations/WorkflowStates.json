@@ -1,0 +1,58 @@
+{
+  "DischargeState": [
+    {
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "code": "7093039-AIPC-000006",
+      "display": "DischargeState"
+    }
+  ],
+  "RapidxResultState": [
+    {
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "code": "7093039-AIPC-000013",
+      "display": "RapidxResultState"
+    }
+  ],
+  "DataCompleteState": [
+    {
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "code": "7093039-AIPC-000014",
+      "display": "DataCompleteState"
+    }
+  ],
+  "IncompleteDataState": [
+    {
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "code": "7093039-AIPC-000015",
+      "display": "IncompleteDataState"
+    }
+  ],
+  "SingleTroponinClinicalAssessmentState": [
+    {
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "code": "7093039-AIPC-000016",
+      "display": "SingleTroponinClinicalAssessmentState"
+    }
+  ],
+  "SingleTroponinState": [
+    {
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "code": "7093039-AIPC-000017",
+      "display": "SingleTroponinState"
+    }
+  ],
+  "RapidxResultSuccessState": [
+    {
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "code": "7093039-AIPC-000018",
+      "display": "RapidxResultSuccessState"
+    }
+  ],
+  "RapidxResultFailureState": [
+    {
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "code": "7093039-AIPC-000019",
+      "display": "RapidxResultFailureState"
+    }
+  ]
+}

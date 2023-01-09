@@ -1,0 +1,432 @@
+{
+  "CREA": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "15373003",
+      "display": "CREA"
+    }
+  ],
+  "Albumin": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "52454007",
+      "display": "Albumin"
+    }
+  ],
+  "Blood urea nitrogen (BUN)": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "72341003",
+      "display": "Blood urea nitrogen (BUN)"
+    }
+  ],
+  "eGFR": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "80274001",
+      "display": "eGFR"
+    }
+  ],
+  "Proteinuria": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "29738008",
+      "display": "Proteinuria"
+    }
+  ],
+  "Aspartate aminotransferase (ASAT)": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "26091008",
+      "display": "Aspartate aminotransferase (ASAT)"
+    }
+  ],
+  "Alkaline phosphatase (ALP)": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "57056007",
+      "display": "Alkaline phosphatase (ALP)"
+    }
+  ],
+  "Alanine transaminase (ALT)": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "56935002",
+      "display": "Alanine transaminase (ALT)"
+    }
+  ],
+  "Bilirubin test": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "79706000",
+      "display": "Bilirubin test"
+    }
+  ],
+  "Hemoglobin": [
+    {
+      "system": "http://loinc.org",
+      "code": "718-7",
+      "display": "HB"
+    }
+  ],
+  "Platelets": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "365632008",
+      "display": "Platelets"
+    }
+  ],
+  "Leukocytes": [
+    {
+      "system": "http://loinc.org",
+      "code": "26464-8",
+      "display": "Leukocytes"
+    }
+  ],
+  "Sodium": [
+    {
+      "system": "http://loinc.org",
+      "code": "77139-4",
+      "display": "Sodium"
+    }
+  ],
+  "Potassium": [
+    {
+      "system": "http://loinc.org",
+      "code": "22760-3",
+      "display": "Potassium"
+    }
+  ],
+  "Chloride": [
+    {
+      "system": "http://loinc.org",
+      "code": "77138-6",
+      "display": "Chloride"
+    }
+  ],
+  "Ionized Calcium": [
+    {
+      "system": "http://loinc.org",
+      "code": "17863-2",
+      "display": "Ionized Calcium"
+    }
+  ],
+  "Urea Nitrogen": [
+    {
+      "system": "http://loinc.org",
+      "code": "3094-0",
+      "display": "Urea Nitrogen"
+    }
+  ],
+  "Urea": [
+    {
+      "system": "http://loinc.org",
+      "code": "72903-8",
+      "display": "Urea"
+    }
+  ],
+  "Creatine kinase": [
+    {
+      "system": "http://loinc.org",
+      "code": "50756-6",
+      "display": "Creatine kinase"
+    }
+  ],
+  "pH": [
+    {
+      "system": "http://loinc.org",
+      "code": "11558-4",
+      "display": "pH"
+    }
+  ],
+  "Bicarbonate": [
+    {
+      "system": "http://loinc.org",
+      "code": "1964-6",
+      "display": "Bicarbonate"
+    }
+  ],
+  "CRP": [
+    {
+      "system": "http://loinc.org",
+      "code": "1988-5",
+      "display": "CRP"
+    }
+  ],
+  "Thrombocytes": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "16378004",
+      "display": "Thrombocytes"
+    }
+  ],
+  "LDH": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "259319003",
+      "display": "LDH"
+    }
+  ],
+  "Hs CRP": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "703689005",
+      "display": "Hs CRP"
+    }
+  ],
+  "GOT": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "26091008",
+      "display": "GOT"
+    }
+  ],
+  "GPT": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "56935002",
+      "display": "GPT"
+    }
+  ],
+  "INR": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "165581004",
+      "display": "INR"
+    }
+  ],
+  "PTT": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "42525009",
+      "display": "PTT"
+    }
+  ],
+  "D-dimer": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "25607008",
+      "display": "D-dimer"
+    }
+  ],
+  "Total Cholesterol": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "121868005",
+      "display": "Total cholesterol"
+    }
+  ],
+  "LDL Cholesterol": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "102739008",
+      "display": "LDL Cholesterol"
+    }
+  ],
+  "HDL Cholesterol": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "102737005",
+      "display": "HDL Cholesterol"
+    }
+  ],
+  "Triglycerides": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "85600001",
+      "display": "Triglycerides"
+    }
+  ],
+  "Non-HDL cholesterol": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "312260007",
+      "display": "Non-HDL cholesterol"
+    }
+  ],
+  "High-sensitivity C-reactive protein": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "703689005",
+      "display": "High-sensitivity C-reactive protein"
+    }
+  ],
+  "Lipoprotein (a)": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "116661000",
+      "display": "Lipoprotein (a)"
+    }
+  ],
+  "hs Troponin I": [
+    {
+      "system": "http://loinc.org",
+      "code": "89579-7",
+      "display": "hs Troponin I"
+    }
+  ],
+  "hs Cardiac Troponin T": [
+    {
+      "system": "http://loinc.org",
+      "code": "67151-1",
+      "display": "hs Cardiac Troponin T"
+    }
+  ],
+  "Gamma GT": [
+    {
+      "system": "http://loinc.org",
+      "code": "2324-2",
+      "display": "Gamma GT"
+    }
+  ],
+  "TSH": [
+    {
+      "system": "http://loinc.org",
+      "code": "3016-3",
+      "display": "TSH"
+    }
+  ],
+  "NT-ProBNP": [
+    {
+      "system": "http://loinc.org",
+      "code": "33762-6",
+      "display": "NT-ProBNP"
+    }
+  ],
+  "BNP": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "407059007",
+      "display": "BNP"
+    }
+  ],
+  "Troponin I": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "116886006",
+      "display": "Troponin I"
+    }
+  ],
+  "HbA1c %": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "408591000",
+      "display": "HbA1c %"
+    }
+  ],
+  "Glucose": [
+    {
+      "system": "http://loinc.org",
+      "code": "2345-7",
+      "display": "Glucose"
+    }
+  ],
+  "Plasma ceramides": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "37112001",
+      "display": "Plasma ceramides"
+    }
+  ],
+  "Natriuretic peptides": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "407058004",
+      "display": "Natriuretic peptides"
+    }
+  ],
+  "Diffusion (FEV1 % Predicted)": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "54014004",
+      "display": "Diffusion (FEV1 % Predicted)"
+    }
+  ],
+  "Blood gas (DLCO % Predicted)": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "36421003",
+      "display": "Blood gas (DLCO % Predicted)"
+    }
+  ],
+  "Maximal oxygen consumption (VO2 max)": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "251898000",
+      "display": "Maximal oxygen consumption (VO2 max)"
+    }
+  ],
+  "LaboratoryReport": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "15220000",
+      "display": "Lab Test"
+    }
+  ],
+
+  "PFTReport": [
+    {
+      "system": "http://snomed.info/sct",
+      "code": "23426006",
+      "display": "PFT"
+    }
+  ],
+  "Ferritin (Bld)": [
+    {
+      "system": "http://loinc.org",
+      "code": "24373-3",
+      "display": "Ferritin (Bld)"
+    }
+  ],
+  "Fibrinogen": [
+    {
+      "system": "http://loinc.org",
+      "code": "97016-0",
+      "display": "Fibrinogen Calc (Bld)"
+    }
+  ],
+  "Lactate Arterial": [
+    {
+      "system": "http://loinc.org",
+      "code": "2518-9",
+      "display": "Lactate Arterial"
+    }
+  ],
+  "Lactate Venous": [
+    {
+      "system": "http://loinc.org",
+      "code": "2519-7",
+      "display": "Lactate Venous"
+    }
+  ],
+  "Platelet Volume": [
+    {
+      "system": "http://loinc.org",
+      "code": "28542-9",
+      "display": "Platelet Volume"
+    }
+  ],
+  "Urate": [
+    {
+      "system": "http://loinc.org",
+      "code": "3084-1",
+      "display": "Urate"
+    }
+  ],
+  "Hematocrit": [
+    {
+      "system": "http://loinc.org",
+      "code": "LP15101-6",
+      "display": "Hematocrit"
+    }
+  ],
+  "INR Warfarin": [
+    {
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "code": "71388002-AIPC-000019",
+      "display": "INR Warfarin"
+    }
+  ]
+
+
+}

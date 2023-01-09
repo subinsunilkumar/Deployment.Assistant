@@ -6,6 +6,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Chrome;
 using System.Diagnostics;
 using Renci.SshNet;
@@ -86,13 +87,12 @@ namespace Deployment.Assistant
                 {
                     try
                     {
-                        var DeviceDriver = ChromeDriverService.CreateDefaultService();
+                        var DeviceDriver = EdgeDriverService.CreateDefaultService();
                         DeviceDriver.HideCommandPromptWindow = true;
                         WriteLogs("Opening Chrome..");
-                        ChromeOptions options = new ChromeOptions();
-                        options.AddExcludedArgument("enable-automation");
+                        EdgeOptions options = new EdgeOptions();
                         options.AddAdditionalCapability("useAutomationExtension", false);
-                        driver = new ChromeDriver(DeviceDriver, options);
+                        driver = new EdgeDriver(DeviceDriver);
                         driver.Manage().Window.Maximize();
                         WriteLogs($"Navigating to https://{machineName}/");
                         driver.Navigate().GoToUrl($"https://{machineName}/");

@@ -1,0 +1,1078 @@
+{
+  "Vancomycin": [
+    {
+      "code": "372735009",
+      "system": "http://snomed.info/sct",
+      "display": "Vancomycin"
+    }
+  ],
+  "Linezolid": [
+    {
+      "code": "387056004",
+      "system": "http://snomed.info/sct",
+      "display": "Linezolid"
+    }
+  ],
+  "Beclometasone": [
+    {
+      "code": "116574000",
+      "system": "http://snomed.info/sct",
+      "display": "Beclometasone"
+    }
+  ],
+  "On subcutaneous insulin for diabetes mellitus": [
+    {
+      "code": "473189005",
+      "system": "http://snomed.info/sct",
+      "display": "On subcutaneous insulin for diabetes mellitus"
+    }
+  ],
+  "Docetaxel": [
+    {
+      "code": "386918005",
+      "system": "http://snomed.info/sct",
+      "display": "Docetaxel"
+    }
+  ],
+  "Irbesartanium": [
+    {
+      "code": "386877005",
+      "system": "http://snomed.info/sct",
+      "display": "Irbesartanium"
+    }
+  ],
+  "Metoprolol": [
+    {
+      "code": "372826007",
+      "system": "http://snomed.info/sct",
+      "display": "Metoprolol"
+    }
+  ],
+  "Aspirin": [
+    {
+      "code": "111122008",
+      "system": "http://snomed.info/sct",
+      "display": "Aspirin"
+    },
+    {
+      "code": "387458008",
+      "system": "http://snomed.info/sct",
+      "display": "Aspirin"
+    }
+  ],
+  "Ciprofloxacin": [
+    {
+      "code": "372840008",
+      "system": "http://snomed.info/sct",
+      "display": "Ciprofloxacin"
+    }
+  ],
+  "Daptomycin": [
+    {
+      "code": "406439009",
+      "system": "http://snomed.info/sct",
+      "display": "Daptomycin"
+    }
+  ],
+  "Nitrofurantoin": [
+    {
+      "code": "373543005",
+      "system": "http://snomed.info/sct",
+      "display": "Nitrofurantoin"
+    }
+  ],
+  "Ampicillin": [
+    {
+      "code": "387170002",
+      "system": "http://snomed.info/sct",
+      "display": "Ampicillin"
+    }
+  ],
+  "Levonorgestrel": [
+    {
+      "code": "126109000",
+      "system": "http://snomed.info/sct",
+      "display": "Levonorgestrel"
+    }
+  ],
+  "Vitamin D supplementation": [
+    {
+      "code": "438801000124101",
+      "system": "http://loinc.org",
+      "display": "Vitamin D supplementation"
+    }
+  ],
+  "Amphotericin B": [
+    {
+      "code": "77703004",
+      "system": "http://snomed.info/sct",
+      "display": "Amphotericin B"
+    }
+  ],
+  "Amikacin": [
+    {
+      "code": "387266001",
+      "system": "http://snomed.info/sct",
+      "display": "Amikacin"
+    }
+  ],
+  "pemetrexed": [
+    {
+      "code": "409159000",
+      "system": "http://snomed.info/sct",
+      "display": "Pemetrexed"
+    }
+  ],
+  "Flucloxacillin": [
+    {
+      "code": "387544009",
+      "system": "http://snomed.info/sct",
+      "display": "Flucloxacillin"
+    },
+    {
+      "code": "387544009",
+      "system": "http://snomed.info/sct",
+      "display": "Flucloxacillin"
+    }
+  ],
+  "Non-steroidal antiinflammatoryagent": [
+    {
+      "code": "372665008",
+      "system": "http://snomed.info/sct",
+      "display": "Non-steroidal antiinflammatoryagent"
+    },
+    {
+      "code": "372665008",
+      "system": "http://snomed.info/sct",
+      "display": "Non-steroidal antiinflammatoryagent"
+    }
+  ],
+  "Clindamycin": [
+    {
+      "code": "372786004",
+      "system": "http://snomed.info/sct",
+      "display": "Clindamycin"
+    }
+  ],
+  "Osimertinib": [
+    {
+      "code": "716032009",
+      "system": "http://snomed.info/sct",
+      "display": "Osimertinib"
+    }
+  ],
+  "Fenoterol": [
+    {
+      "code": "349924004",
+      "system": "http://snomed.info/sct",
+      "display": "Fenoterol"
+    }
+  ],
+  "Clarithromycin": [
+    {
+      "code": "387487009",
+      "system": "http://snomed.info/sct",
+      "display": "Clarithromycin"
+    },
+    {
+      "code": "387487009",
+      "system": "http://snomed.info/sct",
+      "display": "Clarithromycin"
+    }
+  ],
+  "Piperacillin andtazobactam": [
+    {
+      "code": "703743007",
+      "system": "http://snomed.info/sct",
+      "display": "Piperacillin andtazobactam"
+    },
+    {
+      "code": "703743007",
+      "system": "http://snomed.info/sct",
+      "display": "Piperacillin andtazobactam"
+    }
+  ],
+  "Ketoconazole": [
+    {
+      "code": "387216007",
+      "system": "http://snomed.info/sct",
+      "display": "Ketoconazole"
+    }
+  ],
+  "Teicoplanin": [
+    {
+      "code": "387529008",
+      "system": "http://snomed.info/sct",
+      "display": "Teicoplanin"
+    }
+  ],
+  "Ethinylestradiol": [
+    {
+      "code": "126097006",
+      "system": "http://snomed.info/sct",
+      "display": "Ethinylestradiol"
+    }
+  ],
+  "Cefuroxime": [
+    {
+      "code": "372833007",
+      "system": "http://snomed.info/sct",
+      "display": "Cefuroxime"
+    }
+  ],
+  "Amlodipine": [
+    {
+      "code": "108537001",
+      "system": "http://snomed.info/sct",
+      "display": "Amlodipine"
+    }
+  ],
+  "Simvastatin": [
+    {
+      "code": "387584000",
+      "system": "http://snomed.info/sct",
+      "display": "Simvastatin"
+    }
+  ],
+  "Dorzolamide": [
+    {
+      "code": "108834004",
+      "system": "http://snomed.info/sct",
+      "display": "Dorzolamide"
+    }
+  ],
+  "Lisinopril": [
+    {
+      "code": "386873009",
+      "system": "http://snomed.info/sct",
+      "display": "Lisinopril"
+    }
+  ],
+  "Afatinib": [
+    {
+      "code": "703579002",
+      "system": "http://snomed.info/sct",
+      "display": "Afatinib"
+    }
+  ],
+  "Tamsulosin": [
+    {
+      "code": "372509005",
+      "system": "http://snomed.info/sct",
+      "display": "Tamsulosin"
+    }
+  ],
+  "Hydrochlorothiazide": [
+    {
+      "code": "91667005",
+      "system": "http://snomed.info/sct",
+      "display": "Hydrochlorothiazide"
+    },
+    {
+      "code": "387525002",
+      "system": "http://snomed.info/sct",
+      "display": "Hydrochlorothiazide"
+    }
+  ],
+  "Bisacodyl": [
+    {
+      "code": "387075009",
+      "system": "http://snomed.info/sct",
+      "display": "Bisacodyl"
+    }
+  ],
+  "Ceftazidime": [
+    {
+      "code": "387200005",
+      "system": "http://snomed.info/sct",
+      "display": "Ceftazidime"
+    }
+  ],
+  "Glyceryl trinitrate": [
+    {
+      "code": "71759000",
+      "system": "http://snomed.info/sct",
+      "display": "Glyceryl trinitrate"
+    }
+  ],
+  "Dacomitinib": [
+    {
+      "code": "781492009",
+      "system": "http://snomed.info/sct",
+      "display": "Dacomitinib"
+    }
+  ],
+  "Cefepime": [
+    {
+      "code": "96048006",
+      "system": "http://snomed.info/sct",
+      "display": "Cefepime"
+    }
+  ],
+  "Glimepiride": [
+    {
+      "code": "109079009",
+      "system": "http://snomed.info/sct",
+      "display": "Glimepiride"
+    }
+  ],
+  "Zopiclone": [
+    {
+      "code": "395929002",
+      "system": "http://snomed.info/sct",
+      "display": "Zopiclone"
+    }
+  ],
+  "Capecitabine": [
+    {
+      "code": "386906001",
+      "system": "http://snomed.info/sct",
+      "display": "Capecitabine"
+    }
+  ],
+  "Colecalciferol": [
+    {
+      "code": "18414002",
+      "system": "http://snomed.info/sct",
+      "display": "Colecalciferol"
+    }
+  ],
+  "Glucosamine": [
+    {
+      "code": "70237008",
+      "system": "http://snomed.info/sct",
+      "display": "Glucosamine"
+    }
+  ],
+  "flucytosine": [
+    {
+      "code": "387155003",
+      "system": "http://snomed.info/sct",
+      "display": "flucytosine"
+    }
+  ],
+  "CalciumColecalciferol": [
+    {
+      "code": "329365001",
+      "system": "http://snomed.info/sct",
+      "display": "CalciumColecalciferol"
+    }
+  ],
+  "Budesonide": [
+    {
+      "code": "395726003",
+      "system": "http://snomed.info/sct",
+      "display": "Budesonide"
+    }
+  ],
+  "Mirtazapine": [
+    {
+      "code": "386847004",
+      "system": "http://snomed.info/sct",
+      "display": "Mirtazapine"
+    }
+  ],
+  "carboplatin": [
+    {
+      "code": "386905002",
+      "system": "http://snomed.info/sct",
+      "display": "Carboplatin"
+    }
+  ],
+  "Candesartan": [
+    {
+      "code": "372512008",
+      "system": "http://snomed.info/sct",
+      "display": "Candesartan"
+    }
+  ],
+  "Oxazepam": [
+    {
+      "code": "387455006",
+      "system": "http://snomed.info/sct",
+      "display": "Oxazepam"
+    }
+  ],
+  "Vitamin C": [
+    {
+      "code": "43706004",
+      "system": "http://snomed.info/sct",
+      "display": "Vitamin C"
+    }
+  ],
+  "Ceritinib": [
+    {
+      "code": "703146007",
+      "system": "http://snomed.info/sct",
+      "display": "Ceritinib"
+    }
+  ],
+  "Acenocoumarol": [
+    {
+      "code": "387457003",
+      "system": "http://snomed.info/sct",
+      "display": "Acenocoumarol"
+    }
+  ],
+  "Lidocaine": [
+    {
+      "code": "82573000",
+      "system": "http://snomed.info/sct",
+      "display": "Lidocaine"
+    }
+  ],
+  "Amylase": [
+    {
+      "code": "387031005",
+      "system": "http://snomed.info/sct",
+      "display": "Amylase"
+    }
+  ],
+  "Enalapril": [
+    {
+      "code": "15222008",
+      "system": "http://snomed.info/sct",
+      "display": "Enalapril"
+    }
+  ],
+  "Piperacillin": [
+    {
+      "code": "372836004",
+      "system": "http://snomed.info/sct",
+      "display": "Piperacillin"
+    }
+  ],
+  "Erythromycin": [
+    {
+      "code": "372694001",
+      "system": "http://snomed.info/sct",
+      "display": "Erythromycin"
+    }
+  ],
+  "Acetylcysteine": [
+    {
+      "code": "387440002",
+      "system": "http://snomed.info/sct",
+      "display": "Acetylcysteine"
+    }
+  ],
+  "Ceftriaxone": [
+    {
+      "code": "372670001",
+      "system": "http://snomed.info/sct",
+      "display": "Ceftriaxone"
+    }
+  ],
+  "Polymyxin B": [
+    {
+      "code": "372824005",
+      "system": "http://snomed.info/sct",
+      "display": "Polymyxin B"
+    }
+  ],
+  "Pimozide": [
+    {
+      "code": "386848009",
+      "system": "http://snomed.info/sct",
+      "display": "Pimozide"
+    }
+  ],
+  "Propranolol": [
+    {
+      "code": "55745002",
+      "system": "http://snomed.info/sct",
+      "display": "Propranolol"
+    }
+  ],
+  "Voriconazole": [
+    {
+      "code": "385469007",
+      "system": "http://snomed.info/sct",
+      "display": "Voriconazole"
+    },
+    {
+      "code": "385469007",
+      "system": "http://snomed.info/sct",
+      "display": "Voriconazole"
+    }
+  ],
+  "Tetracycline": [
+    {
+      "code": "372809001",
+      "system": "http://snomed.info/sct",
+      "display": "Tetracycline"
+    }
+  ],
+  "Rifampicin": [
+    {
+      "code": "387159009",
+      "system": "http://snomed.info/sct",
+      "display": "Rifampicin"
+    }
+  ],
+  "Atenolol": [
+    {
+      "code": "387506000",
+      "system": "http://snomed.info/sct",
+      "display": "Atenolol"
+    }
+  ],
+  "Brinzolamide": [
+    {
+      "code": "386925003",
+      "system": "http://snomed.info/sct",
+      "display": "Brinzolamide"
+    }
+  ],
+  "Brimonidine": [
+    {
+      "code": "372547000",
+      "system": "http://snomed.info/sct",
+      "display": "Brimonidine"
+    }
+  ],
+  "Clopidogrel": [
+    {
+      "code": "386952008",
+      "system": "http://snomed.info/sct",
+      "display": "Clopidogrel"
+    }
+  ],
+  "Gefitinib": [
+    {
+      "code": "407100002",
+      "system": "http://snomed.info/sct",
+      "display": "Gefitinib"
+    }
+  ],
+  "Pantoprazole": [
+    {
+      "code": "317317009",
+      "system": "http://snomed.info/sct",
+      "display": "Pantoprazole"
+    }
+  ],
+  "gemcitabine": [
+    {
+      "code": "386920008",
+      "system": "http://snomed.info/sct",
+      "display": "Gemcitabine"
+    }
+  ],
+  "Alectinib": [
+    {
+      "code": "716039000",
+      "system": "http://snomed.info/sct",
+      "display": "Alectinib"
+    }
+  ],
+  "cisplatin": [
+    {
+      "code": "387318005",
+      "system": "http://snomed.info/sct",
+      "display": "Cisplatin"
+    }
+  ],
+  "Anidulafungin": [
+    {
+      "code": "422157006",
+      "system": "http://snomed.info/sct",
+      "display": "Anidulafungin"
+    }
+  ],
+  "Oxacillin": [
+    {
+      "code": "372868007",
+      "system": "http://snomed.info/sct",
+      "display": "Oxacillin"
+    }
+  ],
+  "Miconazole": [
+    {
+      "code": "372738006",
+      "system": "http://snomed.info/sct",
+      "display": "Miconazole"
+    }
+  ],
+  "Pregabalin": [
+    {
+      "code": "415159003",
+      "system": "http://snomed.info/sct",
+      "display": "Pregabalin"
+    }
+  ],
+  "Contraceptives": [
+    {
+      "code": "108899006",
+      "system": "http://snomed.info/sct",
+      "display": "Contraceptives"
+    }
+  ],
+  "Calcium carbonate": [
+    {
+      "code": "387307005",
+      "system": "http://snomed.info/sct",
+      "display": "Calcium carbonate"
+    }
+  ],
+  "Isosorbidemononitrate": [
+    {
+      "code": "386854005",
+      "system": "http://snomed.info/sct",
+      "display": "Isosorbidemononitrate"
+    }
+  ],
+  "Pravastatin": [
+    {
+      "code": "373566006",
+      "system": "http://snomed.info/sct",
+      "display": "Pravastatin"
+    }
+  ],
+  "Paroxetine": [
+    {
+      "code": "372595009",
+      "system": "http://snomed.info/sct",
+      "display": "Paroxetine"
+    }
+  ],
+  "Omeprazole": [
+    {
+      "code": "387137007",
+      "system": "http://snomed.info/sct",
+      "display": "Omeprazole"
+    }
+  ],
+  "fluconazole": [
+    {
+      "code": "387174006",
+      "system": "http://snomed.info/sct",
+      "display": "fluconazole"
+    }
+  ],
+  "Fentanyl": [
+    {
+      "code": "40648001",
+      "system": "http://snomed.info/sct",
+      "display": "Fentanyl"
+    }
+  ],
+  "Nivolumab": [
+    {
+      "code": "704191007",
+      "system": "http://snomed.info/sct",
+      "display": "Nivolumab"
+    }
+  ],
+  "Buprenorphine": [
+    {
+      "code": "31684002",
+      "system": "http://snomed.info/sct",
+      "display": "Buprenorphine"
+    }
+  ],
+  "Spironolactone": [
+    {
+      "code": "387078006",
+      "system": "http://snomed.info/sct",
+      "display": "Spironolactone"
+    }
+  ],
+  "Methotrexate": [
+    {
+      "code": "387381009",
+      "system": "http://snomed.info/sct",
+      "display": "Methotrexate"
+    }
+  ],
+  "gentamicin": [
+    {
+      "code": "387321007",
+      "system": "http://snomed.info/sct",
+      "display": "gentamicin"
+    }
+  ],
+  "Folic acid": [
+    {
+      "code": "63718003",
+      "system": "http://snomed.info/sct",
+      "display": "Folic acid"
+    }
+  ],
+  "Vitamin K": [
+    {
+      "code": "74226000",
+      "system": "http://snomed.info/sct",
+      "display": "Vitamin K"
+    }
+  ],
+  "Mirabegron": [
+    {
+      "code": "703803006",
+      "system": "http://snomed.info/sct",
+      "display": "Mirabegron"
+    }
+  ],
+  "Macrogol": [
+    {
+      "code": "8030004",
+      "system": "http://snomed.info/sct",
+      "display": "Macrogol"
+    }
+  ],
+  "Erlotinib": [
+    {
+      "code": "414123001",
+      "system": "http://snomed.info/sct",
+      "display": "Erlotinib"
+    }
+  ],
+  "taxel": [
+    {
+      "code": "387374002",
+      "system": "http://snomed.info/sct",
+      "display": "Paclitaxel"
+    }
+  ],
+  "tafluprost": [
+    {
+      "code": "704470009",
+      "system": "http://snomed.info/sct",
+      "display": "tafluprost"
+    }
+  ],
+  "vinblastine": [
+    {
+      "code": "387051009",
+      "system": "http://snomed.info/sct",
+      "display": "Vinblastine "
+    }
+  ],
+  "Cetyl alcohol": [
+    {
+      "code": "412115004",
+      "system": "http://snomed.info/sct",
+      "display": "Cetyl alcohol"
+    }
+  ],
+  "Gliclazide": [
+    {
+      "code": "395731001",
+      "system": "http://snomed.info/sct",
+      "display": "Gliclazide"
+    }
+  ],
+  "Edoxaban": [
+    {
+      "code": "714687009",
+      "system": "http://snomed.info/sct",
+      "display": "Edoxaban"
+    }
+  ],
+  "Vitamin B12": [
+    {
+      "code": "81064004",
+      "system": "http://snomed.info/sct",
+      "display": "Vitamin B12"
+    }
+  ],
+  "Nortriptyline": [
+    {
+      "code": "13432000",
+      "system": "http://snomed.info/sct",
+      "display": "Nortriptyline"
+    }
+  ],
+  "Temazepam": [
+    {
+      "code": "54705000",
+      "system": "http://snomed.info/sct",
+      "display": "Temazepam"
+    }
+  ],
+  "Timolol": [
+    {
+      "code": "85591001",
+      "system": "http://snomed.info/sct",
+      "display": "Timolol"
+    }
+  ],
+  "Benzylpenicillin": [
+    {
+      "code": "323389000",
+      "system": "http://snomed.info/sct",
+      "display": "Benzylpenicillin"
+    }
+  ],
+  "Paracetamol": [
+    {
+      "code": "90332006",
+      "system": "http://snomed.info/sct",
+      "display": "Paracetamol"
+    }
+  ],
+  "Salbutamol": [
+    {
+      "code": "91143003",
+      "system": "http://snomed.info/sct",
+      "display": "Salbutamol"
+    }
+  ],
+  "Amoxicilline": [
+    {
+      "code": "27658006",
+      "system": "http://snomed.info/sct",
+      "display": "Amoxicilline"
+    },
+    {
+      "code": "708558004",
+      "system": "http://snomed.info/sct",
+      "display": "Amoxicilline"
+    }
+  ],
+  "etoposide": [
+    {
+      "code": "387316009",
+      "system": "http://snomed.info/sct",
+      "display": "Etoposide"
+    }
+  ],
+  "Salmeterol": [
+    {
+      "code": "372515005",
+      "system": "http://snomed.info/sct",
+      "display": "Salmeterol"
+    }
+  ],
+  "Oxycodone": [
+    {
+      "code": "414984009",
+      "system": "http://snomed.info/sct",
+      "display": "Oxycodone"
+    }
+  ],
+  "Moxifloxacin": [
+    {
+      "code": "412439003",
+      "system": "http://snomed.info/sct",
+      "display": "Moxifloxacin"
+    }
+  ],
+  "Crizotinib": [
+    {
+      "code": "703637000",
+      "system": "http://snomed.info/sct",
+      "display": "Crizotinib"
+    }
+  ],
+  "Diclofenac": [
+    {
+      "code": "7034005",
+      "system": "http://snomed.info/sct",
+      "display": "Diclofenac"
+    }
+  ],
+  "Prednisolone": [
+    {
+      "code": "116601002",
+      "system": "http://snomed.info/sct",
+      "display": "Prednisolone"
+    }
+  ],
+  "Metformin": [
+    {
+      "code": "372567009",
+      "system": "http://snomed.info/sct",
+      "display": "Metformin"
+    }
+  ],
+  "Furosemide": [
+    {
+      "code": "387475002",
+      "system": "http://snomed.info/sct",
+      "display": "Furosemide"
+    }
+  ],
+  "Magnesium": [
+    {
+      "code": "72717003",
+      "system": "http://snomed.info/sct",
+      "display": "Magnesium"
+    }
+  ],
+  "Brigatinib": [
+    {
+      "code": "736634002",
+      "system": "http://snomed.info/sct",
+      "display": "Brigatinib"
+    }
+  ],
+  "Cefazolin": [
+    {
+      "code": "387470007",
+      "system": "http://snomed.info/sct",
+      "display": "Cefazolin"
+    }
+  ],
+  "Atorvastatin": [
+    {
+      "code": "108600003",
+      "system": "http://snomed.info/sct",
+      "display": "Atorvastatin"
+    }
+  ],
+  "Protein-tyrosinekinase inhibitor": [
+    {
+      "code": "129557000",
+      "system": "http://snomed.info/sct",
+      "display": "Protein-tyrosinekinase inhibitor"
+    }
+  ],
+  "Tigecycline": [
+    {
+      "code": "418313005",
+      "system": "http://snomed.info/sct",
+      "display": "Tigecycline"
+    }
+  ],
+  "fosfomycin": [
+    {
+      "code": "372534005",
+      "system": "http://snomed.info/sct",
+      "display": "fosfomycin"
+    }
+  ],
+  "Triamcinoloneacetonide": [
+    {
+      "code": "395913005",
+      "system": "http://snomed.info/sct",
+      "display": "Triamcinoloneacetonide"
+    }
+  ],
+  "Valsartan": [
+    {
+      "code": "386876001",
+      "system": "http://snomed.info/sct",
+      "display": "Valsartan"
+    }
+  ],
+  "Triacylglycerollipase": [
+    {
+      "code": "72993008",
+      "system": "http://snomed.info/sct",
+      "display": "Triacylglycerollipase"
+    }
+  ],
+  "Trimethoprim": [
+    {
+      "code": "387179001",
+      "system": "http://snomed.info/sct",
+      "display": "Trimethoprim"
+    }
+  ],
+  "Apixaban": [
+    {
+      "code": "703906002",
+      "system": "http://snomed.info/sct",
+      "display": "Apixaban"
+    }
+  ],
+  "Cetirizine": [
+    {
+      "code": "372523007",
+      "system": "http://snomed.info/sct",
+      "display": "Cetirizine"
+    }
+  ],
+  "imipenem": [
+    {
+      "code": "46558003",
+      "system": "http://snomed.info/sct",
+      "display": "imipenem"
+    }
+  ],
+  "Metoprololsuccinate": [
+    {
+      "code": "412432007",
+      "system": "http://snomed.info/sct",
+      "display": "Metoprololsuccinate"
+    }
+  ],
+  "Fosinopril": [
+    {
+      "code": "108569005",
+      "system": "http://snomed.info/sct",
+      "display": "Fosinopril"
+    }
+  ],
+  "Meropenem": [
+    {
+      "code": "387540000",
+      "system": "http://snomed.info/sct",
+      "display": "Meropenem"
+    }
+  ],
+  "isavuconazole": [
+    {
+      "code": "765386003",
+      "system": "http://snomed.info/sct",
+      "display": "isavuconazole"
+    }
+  ],
+  "Tiotropium": [
+    {
+      "code": "407730002",
+      "system": "http://snomed.info/sct",
+      "display": "Tiotropium"
+    }
+  ],
+  "Nicotine patches": [
+    {
+      "code": "346594001",
+      "system": "http://snomed.info/sct",
+      "display": "Nicotine patches"
+    }
+  ],
+  "Codeine": [
+    {
+      "code": "387494007",
+      "system": "http://snomed.info/sct",
+      "display": "Codeine"
+    }
+  ],
+  "Latanoprost": [
+    {
+      "code": "386926002",
+      "system": "http://snomed.info/sct",
+      "display": "Latanoprost"
+    }
+  ],
+  "Dexamethasone": [
+    {
+      "code": "372584003",
+      "system": "http://snomed.info/sct",
+      "display": "Dexamethasone"
+    }
+  ],
+  "Posaconazole": [
+    {
+      "code": "421747003",
+      "system": "http://snomed.info/sct",
+      "display": "Posaconazole"
+    }
+  ],
+  "Tobramycin": [
+    {
+      "code": "373548001",
+      "system": "http://snomed.info/sct",
+      "display": "Tobramycin"
+    }
+  ],
+  "Durvalumab": [
+    {
+      "code": "735230005",
+      "system": "http://snomed.info/sct",
+      "display": "Durvalumab"
+    }
+  ]
+}

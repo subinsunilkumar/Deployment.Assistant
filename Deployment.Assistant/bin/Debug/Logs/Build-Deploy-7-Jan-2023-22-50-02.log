@@ -1,0 +1,395 @@
+
+7 Jan 2023 22:51:57 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Build started for project IDS.Accessories.Services.ReportCreationService
+
+7 Jan 2023 22:51:57 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command run /c dotnet publish "D:\Repos\CDSS Collaboration\Services.ReportCreation\Source\IDS.Accessories.Services.ReportCreationService.csproj" -o "D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\ASP-Output"  >> "D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\Logs\Build-Deploy-7-Jan-2023-22-50-02.log" 2>&1
+Microsoft (R) Build Engine version 16.11.3+5d7fe36cf for .NET
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Determining projects to restore...
+  Restored D:\Repos\CDSS Collaboration\Services.ReportCreation\Source\IDS.Accessories.Services.ReportCreationService.csproj (in 1,21 sec).
+C:\Program Files\dotnet\sdk\5.0.411\Microsoft.CSharp.CurrentVersion.targets(130,9): warning MSB3884: Could not find rule set file "IDS.Accessories.Services.ReportCreationService.ruleset". [D:\Repos\CDSS Collaboration\Services.ReportCreation\Source\IDS.Accessories.Services.ReportCreationService.csproj]
+D:\Repos\CDSS Collaboration\Services.ReportCreation\Source\Startup.cs(48,49): warning ASP0000: Calling 'BuildServiceProvider' from application code results in an additional copy of singleton services being created. Consider alternatives such as dependency injecting services as parameters to 'Configure'. [D:\Repos\CDSS Collaboration\Services.ReportCreation\Source\IDS.Accessories.Services.ReportCreationService.csproj]
+  IDS.Accessories.Services.ReportCreationService -> D:\Repos\CDSS Collaboration\Services.ReportCreation\Source\bin\Debug\IDS.Accessories.Services.ReportCreationService.dll
+  IDS.Accessories.Services.ReportCreationService -> D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\ASP-Output\
+
+7 Jan 2023 22:52:02 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Build Success!
+
+7 Jan 2023 22:52:02 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Replacing COPY ./reportcreationService . with COPY . .
+
+7 Jan 2023 22:52:02 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Copying D:\Repos\CDSS Collaboration\Services.ReportCreation\Source\Dockerfile to D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\ASP-Output\Dockerfile
+
+7 Jan 2023 22:52:02 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Building Docker Image
+
+7 Jan 2023 22:52:02 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command Run /c cd /d D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\ASP-Output & docker build . -t reportcreationservice-z004n44u:latest >> "D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\Logs\Build-Deploy-7-Jan-2023-22-50-02.log" 2>&1
+#1 [internal] load build definition from Dockerfile
+#1 sha256:1b00a6c331360d59fdcc68387817e69ddf4be287526ecb3f86c1295dd578b051
+#1 transferring dockerfile: 235B 0.0s done
+#1 DONE 0.0s
+
+#2 [internal] load .dockerignore
+#2 sha256:5e40f092734bb6e3759f6ad5afbf803b96611847ba507e83d7688dcd6c5e93e1
+#2 transferring context: 2B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for mcr.microsoft.com/dotnet/core/aspnet:3.1
+#3 sha256:6ed55082f004e08158b7de81c6d78949cd5140b3f2899e0f69981d4ae515675f
+#3 DONE 0.5s
+
+#4 [1/3] FROM mcr.microsoft.com/dotnet/core/aspnet:3.1@sha256:e3b773f30a0a6e88d71ce52429f6847627fc9353e491346902ca345760b82bdd
+#4 sha256:dd6a0b4b02b6b19bc0024efc4242484e2cf9ff48ace8c8c336f14713c9aa8e20
+#4 DONE 0.0s
+
+#6 [internal] load build context
+#6 sha256:90c1f8458dd2104824748deabe09fa82f6c585533735f06a8c6dc729e3d4fdc8
+#6 transferring context: 16.82MB 1.2s done
+#6 DONE 1.2s
+
+#5 [2/3] WORKDIR /app
+#5 sha256:db2f23e5bc13a871550659e44c4da16aacf3256f327b0c36aa8bac07d59e49ed
+#5 CACHED
+
+#7 [3/3] COPY . .
+#7 sha256:fe573ec6b2340eb258eca420a4455e163f3646c50fdcf69f890dfc2670ddb56c
+#7 DONE 0.1s
+
+#8 exporting to image
+#8 sha256:e8c613e07b0b7ff33893b694f7759a10d42e180f2b4dc349fb57dc6b71dcab00
+#8 exporting layers 0.1s done
+#8 writing image sha256:7308dbb25d9a6dcc53f40610e2a72f269f89900e19332df5fbb7bb5e2a553158 done
+#8 naming to docker.io/library/reportcreationservice-z004n44u:latest done
+#8 DONE 0.1s
+
+Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
+
+7 Jan 2023 22:52:05 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Docker Build Successful for reportcreationservice-z004n44u:latest
+
+7 Jan 2023 22:52:05 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Tagging Docker Image
+
+7 Jan 2023 22:52:05 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command Run /c cd /d D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\ASP-Output & docker tag reportcreationservice-z004n44u:latest gokarna.azurecr.io/reportcreationservice-z004n44u:latest >> "D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\Logs\Build-Deploy-7-Jan-2023-22-50-02.log" 2>&1
+
+7 Jan 2023 22:52:05 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Docker Tag Successful to gokarna.azurecr.io/reportcreationservice-z004n44u:latest
+
+7 Jan 2023 22:52:05 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Pushing Docker Image
+
+7 Jan 2023 22:52:05 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command Run /c cd /d D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\ASP-Output & docker push gokarna.azurecr.io/reportcreationservice-z004n44u:latest >> "D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\Logs\Build-Deploy-7-Jan-2023-22-50-02.log" 2>&1
+The push refers to repository [gokarna.azurecr.io/reportcreationservice-z004n44u]
+41804b8c60a3: Preparing
+e02e4f376d0c: Preparing
+266e43c7bdef: Preparing
+5ed447f74cec: Preparing
+dc4e06b0c38e: Preparing
+d1797c74036a: Preparing
+7b6f75f8765b: Preparing
+d1797c74036a: Waiting
+7b6f75f8765b: Waiting
+266e43c7bdef: Mounted from cadbackendservice-z004n44u
+dc4e06b0c38e: Mounted from cadbackendservice-z004n44u
+e02e4f376d0c: Mounted from cadbackendservice-z004n44u
+5ed447f74cec: Mounted from cadbackendservice-z004n44u
+d1797c74036a: Mounted from cadbackendservice-z004n44u
+7b6f75f8765b: Mounted from cadbackendservice-z004n44u
+41804b8c60a3: Pushed
+latest: digest: sha256:ba0c265d1efcbb5099a5ad879ce807b9e731831e6a70e6f0472db6fe72575a15 size: 1793
+
+7 Jan 2023 22:52:12 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Docker Push Successful to gokarna.azurecr.io/reportcreationservice-z004n44u:latest
+
+7 Jan 2023 22:52:12 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Connecting to inblrghma3879ln
+
+7 Jan 2023 22:52:13 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Successfully connected to inblrghma3879ln
+
+7 Jan 2023 22:52:13 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command Run : kubectl get pods -n ai-pc-product
+
+7 Jan 2023 22:52:14 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+NAME                                           READY   STATUS    RESTARTS   AGE
+amp-manager-5b987cb97-76xxg                    1/1     Running   1          16d
+auditlogservice-5f4d6fbb9d-4tswt               1/1     Running   0          16d
+authservice-88f9fd758-vvp5w                    1/1     Running   0          16d
+cad-fe-d4476f687-4vn9b                         1/1     Running   0          16d
+cadbackendservice-7f7c5fd457-fvmjm             1/1     Running   0          29h
+cadconcordanceservice-557d99d97f-mgffs         1/1     Running   0          16d
+cadriskcalculatorservice-56d6946d7d-t7fj5      1/1     Running   0          16d
+chest-pain-fe-5f5fd449df-bl4d8                 1/1     Running   0          23h
+configurationservice-5459457fc6-qdmv8          1/1     Running   0          16d
+csvreaderservice-5f694dc8db-kfhbs              1/1     Running   0          16d
+dicommetadata-74fb96f86f-tf6nv                 1/1     Running   0          16d
+doc-import-54bf99db6-gtbgs                     1/1     Running   0          16d
+error-reporting-device-75c754b79f-k8px2        1/1     Running   0          16d
+export-orchestrator-597cbcccf7-vsldx           1/1     Running   0          16d
+fhir-78f89876d4-kxmmn                          1/1     Running   0          16d
+fhir-document-parser-device-67755f977f-qkcvq   1/1     Running   0          16d
+fhir-export-device-67b6fd978c-gpgqs            1/1     Running   0          16d
+fhir-import-7767fc8db8-x8xf9                   1/1     Running   0          16d
+filesystem-export-device-5bd7c9ccd-nllwd       1/1     Running   0          16d
+imageaccessservice-775ddb6cfd-fkgt7            1/1     Running   0          16d
+import-orchestrator-6b95cf8fdf-j74jr           1/1     Running   0          16d
+launchpage-5cf87bbf4c-lbq2v                    1/1     Running   0          17m
+launchpageservice-6bd995c85c-9nz29             1/1     Running   0          15d
+licenseservice-bdd94577b-dmzfh                 1/1     Running   0          16d
+logger-5695b4657c-klh5x                        1/1     Running   0          16d
+loginpage-5d8c7bcffb-9666d                     1/1     Running   0          16d
+nlpaccessservice-5758cc4845-gr4jp              1/1     Running   0          16d
+nlpfhirrenderer-77f4d48f96-xfpcv               1/1     Running   0          16d
+pacs-connector-7dc5c6799c-26zsw                1/1     Running   0          16d
+patientdeleteservice-559d74b5bf-tpj4d          1/1     Running   0          16d
+postgres-c5cbf997f-5c2th                       1/1     Running   0          16d
+rabbitmq-859b96c59d-pqfbg                      1/1     Running   0          16d
+report-type-converter-7f6f784d75-ln8nn         1/1     Running   0          16d
+reportconverter-5d8cf5647b-vc4jm               1/1     Running   0          16d
+reportcreationservice-5c48c6b4df-w5725         1/1     Running   0          16d
+reverse-proxy-69f5b4d855-88ncp                 1/1     Running   0          16d
+ruleengineservice-5bbb6ddfd4-kkc65             1/1     Running   0          16d
+settingsui-6849c4c946-nq9wk                    1/1     Running   0          16d
+snomedqueryservice-5cf86455d9-xjhcd            1/1     Running   0          16d
+tika-5776fb956-r4rmb                           1/1     Running   0          16d
+unitconversionservice-68bb5f5c96-kkdd4         1/1     Running   0          16d
+
+
+7 Jan 2023 22:52:14 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command Run : kubectl set image deployment/reportcreationservice reportcreationservice=gokarna.azurecr.io/reportcreationservice-z004n44u:latest -n ai-pc-product
+
+7 Jan 2023 22:52:14 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+deployment.apps/reportcreationservice image updated
+
+
+7 Jan 2023 22:52:14 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command Run : kubectl delete pod reportcreationservice-5c48c6b4df-w5725 -n ai-pc-product
+
+7 Jan 2023 22:52:21 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+pod "reportcreationservice-5c48c6b4df-w5725" deleted
+
+
+7 Jan 2023 22:52:21 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+NAME                                           READY   STATUS         RESTARTS   AGE
+amp-manager-5b987cb97-76xxg                    1/1     Running        1          16d
+auditlogservice-5f4d6fbb9d-4tswt               1/1     Running        0          16d
+authservice-88f9fd758-vvp5w                    1/1     Running        0          16d
+cad-fe-d4476f687-4vn9b                         1/1     Running        0          16d
+cadbackendservice-7f7c5fd457-fvmjm             1/1     Running        0          29h
+cadconcordanceservice-557d99d97f-mgffs         1/1     Running        0          16d
+cadriskcalculatorservice-56d6946d7d-t7fj5      1/1     Running        0          16d
+chest-pain-fe-5f5fd449df-bl4d8                 1/1     Running        0          23h
+configurationservice-5459457fc6-qdmv8          1/1     Running        0          16d
+csvreaderservice-5f694dc8db-kfhbs              1/1     Running        0          16d
+dicommetadata-74fb96f86f-tf6nv                 1/1     Running        0          16d
+doc-import-54bf99db6-gtbgs                     1/1     Running        0          16d
+error-reporting-device-75c754b79f-k8px2        1/1     Running        0          16d
+export-orchestrator-597cbcccf7-vsldx           1/1     Running        0          16d
+fhir-78f89876d4-kxmmn                          1/1     Running        0          16d
+fhir-document-parser-device-67755f977f-qkcvq   1/1     Running        0          16d
+fhir-export-device-67b6fd978c-gpgqs            1/1     Running        0          16d
+fhir-import-7767fc8db8-x8xf9                   1/1     Running        0          16d
+filesystem-export-device-5bd7c9ccd-nllwd       1/1     Running        0          16d
+imageaccessservice-775ddb6cfd-fkgt7            1/1     Running        0          16d
+import-orchestrator-6b95cf8fdf-j74jr           1/1     Running        0          16d
+launchpage-5cf87bbf4c-lbq2v                    1/1     Running        0          17m
+launchpageservice-6bd995c85c-9nz29             1/1     Running        0          15d
+licenseservice-bdd94577b-dmzfh                 1/1     Running        0          16d
+logger-5695b4657c-klh5x                        1/1     Running        0          16d
+loginpage-5d8c7bcffb-9666d                     1/1     Running        0          16d
+nlpaccessservice-5758cc4845-gr4jp              1/1     Running        0          16d
+nlpfhirrenderer-77f4d48f96-xfpcv               1/1     Running        0          16d
+pacs-connector-7dc5c6799c-26zsw                1/1     Running        0          16d
+patientdeleteservice-559d74b5bf-tpj4d          1/1     Running        0          16d
+postgres-c5cbf997f-5c2th                       1/1     Running        0          16d
+rabbitmq-859b96c59d-pqfbg                      1/1     Running        0          16d
+report-type-converter-7f6f784d75-ln8nn         1/1     Running        0          16d
+reportconverter-5d8cf5647b-vc4jm               1/1     Running        0          16d
+reportcreationservice-5c48c6b4df-9jjfv         1/1     Running        0          6s
+reportcreationservice-6fbb68cc4f-qtbj4         0/1     ErrImagePull   0          6s
+reverse-proxy-69f5b4d855-88ncp                 1/1     Running        0          16d
+ruleengineservice-5bbb6ddfd4-kkc65             1/1     Running        0          16d
+settingsui-6849c4c946-nq9wk                    1/1     Running        0          16d
+snomedqueryservice-5cf86455d9-xjhcd            1/1     Running        0          16d
+tika-5776fb956-r4rmb                           1/1     Running        0          16d
+unitconversionservice-68bb5f5c96-kkdd4         1/1     Running        0          16d
+
+
+7 Jan 2023 22:52:21 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Deployment Successful!
+
+7 Jan 2023 22:52:46 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Opening Chrome..
+
+7 Jan 2023 22:52:49 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Navigating to https://inblrghma3879ln/
+
+7 Jan 2023 22:52:54 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Username clinical.admin Entered
+
+7 Jan 2023 22:52:54 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Password ******* Entered
+
+7 Jan 2023 22:52:54 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Login Success to https://inblrghma3879ln/ as clinical.admin
+
+7 Jan 2023 22:53:14 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Connecting to inblrghma3879ln
+
+7 Jan 2023 22:53:16 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Successfully connected to inblrghma3879ln
+
+7 Jan 2023 22:53:16 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command Run : kubectl get pods -n ai-pc-product
+
+7 Jan 2023 22:53:16 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+NAME                                           READY   STATUS         RESTARTS   AGE
+amp-manager-5b987cb97-76xxg                    1/1     Running        1          16d
+auditlogservice-5f4d6fbb9d-4tswt               1/1     Running        0          16d
+authservice-88f9fd758-vvp5w                    1/1     Running        0          16d
+cad-fe-d4476f687-4vn9b                         1/1     Running        0          16d
+cadbackendservice-7f7c5fd457-fvmjm             1/1     Running        0          29h
+cadconcordanceservice-557d99d97f-mgffs         1/1     Running        0          16d
+cadriskcalculatorservice-56d6946d7d-t7fj5      1/1     Running        0          16d
+chest-pain-fe-5f5fd449df-bl4d8                 1/1     Running        0          23h
+configurationservice-5459457fc6-qdmv8          1/1     Running        0          16d
+csvreaderservice-5f694dc8db-kfhbs              1/1     Running        0          16d
+dicommetadata-74fb96f86f-tf6nv                 1/1     Running        0          16d
+doc-import-54bf99db6-gtbgs                     1/1     Running        0          16d
+error-reporting-device-75c754b79f-k8px2        1/1     Running        0          16d
+export-orchestrator-597cbcccf7-vsldx           1/1     Running        0          16d
+fhir-78f89876d4-kxmmn                          1/1     Running        0          16d
+fhir-document-parser-device-67755f977f-qkcvq   1/1     Running        0          16d
+fhir-export-device-67b6fd978c-gpgqs            1/1     Running        0          16d
+fhir-import-7767fc8db8-x8xf9                   1/1     Running        0          16d
+filesystem-export-device-5bd7c9ccd-nllwd       1/1     Running        0          16d
+imageaccessservice-775ddb6cfd-fkgt7            1/1     Running        0          16d
+import-orchestrator-6b95cf8fdf-j74jr           1/1     Running        0          16d
+launchpage-5cf87bbf4c-lbq2v                    1/1     Running        0          18m
+launchpageservice-6bd995c85c-9nz29             1/1     Running        0          15d
+licenseservice-bdd94577b-dmzfh                 1/1     Running        0          16d
+logger-5695b4657c-klh5x                        1/1     Running        0          16d
+loginpage-5d8c7bcffb-9666d                     1/1     Running        0          16d
+nlpaccessservice-5758cc4845-gr4jp              1/1     Running        0          16d
+nlpfhirrenderer-77f4d48f96-xfpcv               1/1     Running        0          16d
+pacs-connector-7dc5c6799c-26zsw                1/1     Running        0          16d
+patientdeleteservice-559d74b5bf-tpj4d          1/1     Running        0          16d
+postgres-c5cbf997f-5c2th                       1/1     Running        0          16d
+rabbitmq-859b96c59d-pqfbg                      1/1     Running        0          16d
+report-type-converter-7f6f784d75-ln8nn         1/1     Running        0          16d
+reportconverter-5d8cf5647b-vc4jm               1/1     Running        0          16d
+reportcreationservice-5c48c6b4df-9jjfv         1/1     Running        0          62s
+reportcreationservice-6fbb68cc4f-qtbj4         0/1     ErrImagePull   0          62s
+reverse-proxy-69f5b4d855-88ncp                 1/1     Running        0          16d
+ruleengineservice-5bbb6ddfd4-kkc65             1/1     Running        0          16d
+settingsui-6849c4c946-nq9wk                    1/1     Running        0          16d
+snomedqueryservice-5cf86455d9-xjhcd            1/1     Running        0          16d
+tika-5776fb956-r4rmb                           1/1     Running        0          16d
+unitconversionservice-68bb5f5c96-kkdd4         1/1     Running        0          16d
+
+
+7 Jan 2023 22:53:16 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Client inblrghma3879ln disconnected.
+
+7 Jan 2023 22:54:13 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Connecting to inblrghma3879ln
+
+7 Jan 2023 22:54:14 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Successfully connected to inblrghma3879ln
+
+7 Jan 2023 22:54:14 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command Run : kubectl get pods -n ai-pc-product
+
+7 Jan 2023 22:54:14 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+NAME                                           READY   STATUS         RESTARTS   AGE
+amp-manager-5b987cb97-76xxg                    1/1     Running        1          16d
+auditlogservice-5f4d6fbb9d-4tswt               1/1     Running        0          16d
+authservice-88f9fd758-vvp5w                    1/1     Running        0          16d
+cad-fe-d4476f687-4vn9b                         1/1     Running        0          16d
+cadbackendservice-7f7c5fd457-fvmjm             1/1     Running        0          29h
+cadconcordanceservice-557d99d97f-mgffs         1/1     Running        0          16d
+cadriskcalculatorservice-56d6946d7d-t7fj5      1/1     Running        0          16d
+chest-pain-fe-5f5fd449df-bl4d8                 1/1     Running        0          23h
+configurationservice-5459457fc6-qdmv8          1/1     Running        0          16d
+csvreaderservice-5f694dc8db-kfhbs              1/1     Running        0          16d
+dicommetadata-74fb96f86f-tf6nv                 1/1     Running        0          16d
+doc-import-54bf99db6-gtbgs                     1/1     Running        0          16d
+error-reporting-device-75c754b79f-k8px2        1/1     Running        0          16d
+export-orchestrator-597cbcccf7-vsldx           1/1     Running        0          16d
+fhir-78f89876d4-kxmmn                          1/1     Running        0          16d
+fhir-document-parser-device-67755f977f-qkcvq   1/1     Running        0          16d
+fhir-export-device-67b6fd978c-gpgqs            1/1     Running        0          16d
+fhir-import-7767fc8db8-x8xf9                   1/1     Running        0          16d
+filesystem-export-device-5bd7c9ccd-nllwd       1/1     Running        0          16d
+imageaccessservice-775ddb6cfd-fkgt7            1/1     Running        0          16d
+import-orchestrator-6b95cf8fdf-j74jr           1/1     Running        0          16d
+launchpage-5cf87bbf4c-lbq2v                    1/1     Running        0          19m
+launchpageservice-6bd995c85c-9nz29             1/1     Running        0          15d
+licenseservice-bdd94577b-dmzfh                 1/1     Running        0          16d
+logger-5695b4657c-klh5x                        1/1     Running        0          16d
+loginpage-5d8c7bcffb-9666d                     1/1     Running        0          16d
+nlpaccessservice-5758cc4845-gr4jp              1/1     Running        0          16d
+nlpfhirrenderer-77f4d48f96-xfpcv               1/1     Running        0          16d
+pacs-connector-7dc5c6799c-26zsw                1/1     Running        0          16d
+patientdeleteservice-559d74b5bf-tpj4d          1/1     Running        0          16d
+postgres-c5cbf997f-5c2th                       1/1     Running        0          16d
+rabbitmq-859b96c59d-pqfbg                      1/1     Running        0          16d
+report-type-converter-7f6f784d75-ln8nn         1/1     Running        0          16d
+reportconverter-5d8cf5647b-vc4jm               1/1     Running        0          16d
+reportcreationservice-5c48c6b4df-9jjfv         1/1     Running        0          119s
+reportcreationservice-6fbb68cc4f-qtbj4         0/1     ErrImagePull   0          119s
+reverse-proxy-69f5b4d855-88ncp                 1/1     Running        0          16d
+ruleengineservice-5bbb6ddfd4-kkc65             1/1     Running        0          16d
+settingsui-6849c4c946-nq9wk                    1/1     Running        0          16d
+snomedqueryservice-5cf86455d9-xjhcd            1/1     Running        0          16d
+tika-5776fb956-r4rmb                           1/1     Running        0          16d
+unitconversionservice-68bb5f5c96-kkdd4         1/1     Running        0          16d
+
+
+7 Jan 2023 22:54:14 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Client inblrghma3879ln disconnected.

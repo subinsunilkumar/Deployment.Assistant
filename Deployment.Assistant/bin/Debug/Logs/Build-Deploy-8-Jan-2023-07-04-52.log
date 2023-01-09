@@ -1,0 +1,454 @@
+
+8 Jan 2023 07:04:56 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Opening Chrome..
+
+8 Jan 2023 07:04:59 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Navigating to https://inblrghman079ln.rd001.onehc.net/
+
+8 Jan 2023 07:05:02 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Username clinical.admin Entered
+
+8 Jan 2023 07:05:02 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Password ******* Entered
+
+8 Jan 2023 07:05:02 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Login Success to https://inblrghman079ln.rd001.onehc.net/ as clinical.admin
+
+8 Jan 2023 07:06:00 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Build started
+
+8 Jan 2023 07:06:00 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command run /c cd /d "D:\Repos\CDSS Collaboration\App.FE.ChestPain"& ng build --prod  >> "D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\Logs\Build-Deploy-8-Jan-2023-07-04-52.log" 2>&1
+Your global Angular CLI version (14.2.7) is greater than your local version (10.1.3). The local Angular CLI version is used.
+
+To disable this warning use "ng config -g cli.warnings.versionMismatch false".
+Generating ES5 bundles for differential loading...
+ES5 bundle generation complete.
+
+chunk {2} polyfills-es2015.7bf442c9581008ef4e7f.js (polyfills) 171 kB [initial] [rendered]
+chunk {3} polyfills-es5.4453d2fafecf9cae155f.js (polyfills-es5) 264 kB [initial] [rendered]
+chunk {0} runtime-es2015.66c79b9d36e7169e27b0.js (runtime) 1.45 kB [entry] [rendered]
+chunk {0} runtime-es5.66c79b9d36e7169e27b0.js (runtime) 1.45 kB [entry] [rendered]
+chunk {1} main-es2015.df03653eb7d8e33572ce.js (main) 1.48 MB [initial] [rendered]
+chunk {1} main-es5.df03653eb7d8e33572ce.js (main) 1.59 MB [initial] [rendered]
+chunk {4} styles.5081b2ecf63062d2a84f.css (styles) 147 kB [initial] [rendered]
+chunk {scripts} scripts.402eee9195a7220d216a.js (scripts) 2.62 MB [entry] [rendered]
+Date: 2023-01-08T01:38:17.737Z - Hash: 9b15a5a110bcf9a79e45 - Time: 129214ms
+
+WARNING in D:\Repos\CDSS Collaboration\App.FE.ChestPain\source\app\models\data-completeness.model.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+WARNING in D:\Repos\CDSS Collaboration\App.FE.ChestPain\source\app\models\lab-test-model.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+WARNING in D:\Repos\CDSS Collaboration\App.FE.ChestPain\source\app\models\patientnotification.model.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+WARNING in D:\Repos\CDSS Collaboration\App.FE.ChestPain\source\app\models\procedure-row-item.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+WARNING in D:\Repos\CDSS Collaboration\App.FE.ChestPain\source\app\models\report-viewer-model.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+WARNING in D:\Repos\CDSS Collaboration\App.FE.ChestPain\source\app\services\app.config.service.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+WARNING in D:\Repos\CDSS Collaboration\App.FE.ChestPain\source\app\services\interfaces\lab-tests.interface.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+WARNING in D:\Repos\CDSS Collaboration\App.FE.ChestPain\source\app\shared\models\cad.interface.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+WARNING in D:\Repos\CDSS Collaboration\App.FE.ChestPain\source\environments\environment.local.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+WARNING in D:\Repos\CDSS Collaboration\App.FE.ChestPain\source\environments\environment.prod.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+WARNING in D:\Repos\CDSS Collaboration\App.FE.ChestPain\source\translateExtenders\customTranslateHttpLoader.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+WARNING in D:\Repos\CDSS Collaboration\App.FE.ChestPain\source\app\app.module.ts depends on '@ids/common.ui.base-services.auth-handler'. CommonJS or AMD dependencies can cause optimization bailouts.
+For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+
+WARNING in D:\Repos\CDSS Collaboration\App.FE.ChestPain\source\app\risk-assessment\risk-assessment-detail\risk-assessment-detail.component.ts depends on 'chart.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+
+8 Jan 2023 07:08:19 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Build Success!
+
+8 Jan 2023 07:08:19 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Copying D:\Repos\CDSS Collaboration\App.FE.ChestPain\nginx.conf to D:\Repos\CDSS Collaboration\App.FE.ChestPain\dist\nginx.conf
+
+8 Jan 2023 07:08:19 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Successfully copied D:\Repos\CDSS Collaboration\App.FE.ChestPain\nginx.conf to D:\Repos\CDSS Collaboration\App.FE.ChestPain\dist\nginx.conf
+
+8 Jan 2023 07:08:19 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Copying D:\Repos\CDSS Collaboration\App.FE.ChestPain\Dockerfile to D:\Repos\CDSS Collaboration\App.FE.ChestPain\dist\Dockerfile
+
+8 Jan 2023 07:08:19 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Successfully copied D:\Repos\CDSS Collaboration\App.FE.ChestPain\Dockerfile to D:\Repos\CDSS Collaboration\App.FE.ChestPain\dist\Dockerfile
+
+8 Jan 2023 07:08:20 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Building Docker Image
+
+8 Jan 2023 07:08:20 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command Run /c cd /d D:\Repos\CDSS Collaboration\App.FE.ChestPain\dist & docker build . -t chest-pain-fe-z004n44u:latest >> "D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\Logs\Build-Deploy-8-Jan-2023-07-04-52.log" 2>&1
+error during connect: This error may indicate that the docker daemon is not running.: Post "http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.24/build?buildargs=%7B%7D&cachefrom=%5B%5D&cgroupparent=&cpuperiod=0&cpuquota=0&cpusetcpus=&cpusetmems=&cpushares=0&dockerfile=Dockerfile&labels=%7B%7D&memory=0&memswap=0&networkmode=default&rm=1&shmsize=0&t=chest-pain-fe-z004n44u%3Alatest&target=&ulimits=null&version=1": open //./pipe/docker_engine: The system cannot find the file specified.
+
+8 Jan 2023 07:08:33 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Docker Build Failed for chest-pain-fe-z004n44u:latest
+
+8 Jan 2023 07:08:33 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Docker is not running on your machine!
+
+Start Docker and restart the process again
+
+8 Jan 2023 07:10:08 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Build started
+
+8 Jan 2023 07:10:08 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command run /c cd /d "D:\Repos\CDSS Collaboration\App.FE.ChestPain"& ng build --prod  >> "D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\Logs\Build-Deploy-8-Jan-2023-07-04-52.log" 2>&1
+Your global Angular CLI version (14.2.7) is greater than your local version (10.1.3). The local Angular CLI version is used.
+
+To disable this warning use "ng config -g cli.warnings.versionMismatch false".
+Generating ES5 bundles for differential loading...
+ES5 bundle generation complete.
+
+chunk {2} polyfills-es2015.7bf442c9581008ef4e7f.js (polyfills) 171 kB [initial] [rendered]
+chunk {3} polyfills-es5.4453d2fafecf9cae155f.js (polyfills-es5) 264 kB [initial] [rendered]
+chunk {0} runtime-es2015.66c79b9d36e7169e27b0.js (runtime) 1.45 kB [entry] [rendered]
+chunk {0} runtime-es5.66c79b9d36e7169e27b0.js (runtime) 1.45 kB [entry] [rendered]
+chunk {1} main-es2015.c10ecd3fe8ba5c130448.js (main) 1.48 MB [initial] [rendered]
+chunk {1} main-es5.c10ecd3fe8ba5c130448.js (main) 1.59 MB [initial] [rendered]
+chunk {4} styles.5081b2ecf63062d2a84f.css (styles) 147 kB [initial] [rendered]
+chunk {scripts} scripts.402eee9195a7220d216a.js (scripts) 2.62 MB [entry] [rendered]
+Date: 2023-01-08T01:42:26.394Z - Hash: a627379b2e43c5fdb47d - Time: 128066ms
+
+WARNING in D:\Repos\CDSS Collaboration\App.FE.ChestPain\source\app\models\data-completeness.model.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+WARNING in D:\Repos\CDSS Collaboration\App.FE.ChestPain\source\app\models\lab-test-model.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+WARNING in D:\Repos\CDSS Collaboration\App.FE.ChestPain\source\app\models\patientnotification.model.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+WARNING in D:\Repos\CDSS Collaboration\App.FE.ChestPain\source\app\models\procedure-row-item.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+WARNING in D:\Repos\CDSS Collaboration\App.FE.ChestPain\source\app\models\report-viewer-model.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+WARNING in D:\Repos\CDSS Collaboration\App.FE.ChestPain\source\app\services\app.config.service.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+WARNING in D:\Repos\CDSS Collaboration\App.FE.ChestPain\source\app\services\interfaces\lab-tests.interface.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+WARNING in D:\Repos\CDSS Collaboration\App.FE.ChestPain\source\app\shared\models\cad.interface.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+WARNING in D:\Repos\CDSS Collaboration\App.FE.ChestPain\source\environments\environment.local.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+WARNING in D:\Repos\CDSS Collaboration\App.FE.ChestPain\source\environments\environment.prod.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+WARNING in D:\Repos\CDSS Collaboration\App.FE.ChestPain\source\translateExtenders\customTranslateHttpLoader.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+WARNING in D:\Repos\CDSS Collaboration\App.FE.ChestPain\source\app\app.module.ts depends on '@ids/common.ui.base-services.auth-handler'. CommonJS or AMD dependencies can cause optimization bailouts.
+For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+
+WARNING in D:\Repos\CDSS Collaboration\App.FE.ChestPain\source\app\risk-assessment\risk-assessment-detail\risk-assessment-detail.component.ts depends on 'chart.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+
+8 Jan 2023 07:12:29 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Build Success!
+
+8 Jan 2023 07:12:29 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Copying D:\Repos\CDSS Collaboration\App.FE.ChestPain\nginx.conf to D:\Repos\CDSS Collaboration\App.FE.ChestPain\dist\nginx.conf
+
+8 Jan 2023 07:12:29 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Successfully copied D:\Repos\CDSS Collaboration\App.FE.ChestPain\nginx.conf to D:\Repos\CDSS Collaboration\App.FE.ChestPain\dist\nginx.conf
+
+8 Jan 2023 07:12:29 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Copying D:\Repos\CDSS Collaboration\App.FE.ChestPain\Dockerfile to D:\Repos\CDSS Collaboration\App.FE.ChestPain\dist\Dockerfile
+
+8 Jan 2023 07:12:29 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Successfully copied D:\Repos\CDSS Collaboration\App.FE.ChestPain\Dockerfile to D:\Repos\CDSS Collaboration\App.FE.ChestPain\dist\Dockerfile
+
+8 Jan 2023 07:12:29 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Building Docker Image
+
+8 Jan 2023 07:12:29 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command Run /c cd /d D:\Repos\CDSS Collaboration\App.FE.ChestPain\dist & docker build . -t chest-pain-fe-z004n44u:latest >> "D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\Logs\Build-Deploy-8-Jan-2023-07-04-52.log" 2>&1
+#1 [internal] load build definition from Dockerfile
+#1 sha256:d9e9060a6a713a6129c35964a54a7a7dedd66557a6d0e44be36f5fe0e3d7be07
+#1 transferring dockerfile: 32B 0.0s done
+#1 DONE 0.0s
+
+#2 [internal] load .dockerignore
+#2 sha256:45d4376f05bfd1f3da2737051050a8eeaf63b7be4eee825a45fb167ec9f9a16c
+#2 transferring context:
+#2 transferring context: 2B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/nginx:alpine
+#3 sha256:b001d263a254f0e4960d52c837d5764774ef80ad3878c61304052afb6e0e9af2
+#3 DONE 5.2s
+
+#4 [1/4] FROM docker.io/library/nginx:alpine@sha256:dd8a054d7ef030e94a6449783605d6c306c1f69c10c2fa06b66a030e0d1db793
+#4 sha256:69bb3b0d124b71e42fa4e8f3891bd71b0a7ee3c87accab313a257c9b97a38a34
+#4 DONE 0.0s
+
+#6 [internal] load build context
+#6 sha256:cfc353d255de5979419d6ff6864c932146aba0059f921611bd38b452c7e8a96b
+#6 transferring context: 31B
+#6 transferring context: 7.48MB 1.8s done
+#6 DONE 1.9s
+
+#5 [2/4] RUN rm -rf /usr/share/nginx/html/*
+#5 sha256:6b5e129493dbc860ceff6e79c1e65572ba6ef739c546cd324b59fc99d4367303
+#5 CACHED
+
+#7 [3/4] COPY fechestPain/ /usr/share/nginx/html/
+#7 sha256:98b682d5abec4f2da05d07e478fbe6a9fb858f27e0b5848bf1fc1337648e1203
+#7 DONE 0.8s
+
+#8 [4/4] COPY nginx.conf /etc/nginx/nginx.conf
+#8 sha256:a2df26fcffd0f6b12cf75018d3b83f8ae0fe971e6c05cadb8189006e46e2d5c2
+#8 DONE 0.1s
+
+#9 exporting to image
+#9 sha256:e8c613e07b0b7ff33893b694f7759a10d42e180f2b4dc349fb57dc6b71dcab00
+#9 exporting layers
+#9 exporting layers 0.5s done
+#9 writing image sha256:ef13b23baa63b7f8e2de635903296fd8171e096619e1f2c217ee88d37e86ea79
+#9 writing image sha256:ef13b23baa63b7f8e2de635903296fd8171e096619e1f2c217ee88d37e86ea79 done
+#9 naming to docker.io/library/chest-pain-fe-z004n44u:latest done
+#9 DONE 0.5s
+
+Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
+
+8 Jan 2023 07:12:40 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Docker Build Successful for chest-pain-fe-z004n44u:latest
+
+8 Jan 2023 07:12:40 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Tagging Docker Image
+
+8 Jan 2023 07:12:40 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command Run /c cd /d D:\Repos\CDSS Collaboration\App.FE.ChestPain\dist & docker tag chest-pain-fe-z004n44u:latest gokarna.azurecr.io/chest-pain-fe-z004n44u:latest >> "D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\Logs\Build-Deploy-8-Jan-2023-07-04-52.log" 2>&1
+
+8 Jan 2023 07:12:41 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Docker Tag Successful to gokarna.azurecr.io/chest-pain-fe-z004n44u:latest
+
+8 Jan 2023 07:12:41 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Pushing Docker Image
+
+8 Jan 2023 07:12:41 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command Run /c cd /d D:\Repos\CDSS Collaboration\App.FE.ChestPain\dist & docker push gokarna.azurecr.io/chest-pain-fe-z004n44u:latest >> "D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\Logs\Build-Deploy-8-Jan-2023-07-04-52.log" 2>&1
+The push refers to repository [gokarna.azurecr.io/chest-pain-fe-z004n44u]
+f1adbcc8303d: Preparing
+eed1dc92fec5: Preparing
+9364ab082f1c: Preparing
+9e173cdce044: Preparing
+f2d47996fdfa: Preparing
+c23f26e962bd: Preparing
+0511ab7e6edc: Preparing
+ec7e4a91c33b: Preparing
+1fee4bd55a85: Preparing
+ded7a220bb05: Preparing
+c23f26e962bd: Waiting
+0511ab7e6edc: Waiting
+ded7a220bb05: Waiting
+ec7e4a91c33b: Waiting
+1fee4bd55a85: Waiting
+f2d47996fdfa: Layer already exists
+9364ab082f1c: Layer already exists
+9e173cdce044: Layer already exists
+c23f26e962bd: Layer already exists
+ec7e4a91c33b: Layer already exists
+0511ab7e6edc: Layer already exists
+ded7a220bb05: Layer already exists
+1fee4bd55a85: Layer already exists
+f1adbcc8303d: Pushed
+eed1dc92fec5: Pushed
+latest: digest: sha256:be4cefd7459fea17bd4acf756cfc6fb41b626f3c246fab3864748f10f5942557 size: 2407
+
+8 Jan 2023 07:12:50 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Docker Push Successful to gokarna.azurecr.io/chest-pain-fe-z004n44u:latest
+
+8 Jan 2023 07:12:50 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Connecting to inblrghma3879ln
+
+8 Jan 2023 07:12:52 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Successfully connected to inblrghma3879ln
+
+8 Jan 2023 07:12:52 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command Run : kubectl get pods -n ai-pc-product
+
+8 Jan 2023 07:12:53 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+NAME                                           READY   STATUS    RESTARTS   AGE
+amp-manager-5b987cb97-76xxg                    1/1     Running   1          16d
+auditlogservice-5f4d6fbb9d-4tswt               1/1     Running   0          16d
+authservice-88f9fd758-vvp5w                    1/1     Running   0          16d
+cad-fe-d4476f687-4vn9b                         1/1     Running   0          16d
+cadbackendservice-7f7c5fd457-fvmjm             1/1     Running   0          37h
+cadconcordanceservice-557d99d97f-mgffs         1/1     Running   0          16d
+cadriskcalculatorservice-56d6946d7d-t7fj5      1/1     Running   0          16d
+chest-pain-fe-5f5fd449df-flhj9                 1/1     Running   0          6h30m
+configurationservice-5459457fc6-qdmv8          1/1     Running   0          16d
+csvreaderservice-5f694dc8db-kfhbs              1/1     Running   0          16d
+dicommetadata-74fb96f86f-tf6nv                 1/1     Running   0          16d
+doc-import-54bf99db6-gtbgs                     1/1     Running   0          16d
+error-reporting-device-75c754b79f-k8px2        1/1     Running   0          16d
+export-orchestrator-597cbcccf7-vsldx           1/1     Running   0          16d
+fhir-78f89876d4-kxmmn                          1/1     Running   0          16d
+fhir-document-parser-device-67755f977f-qkcvq   1/1     Running   0          16d
+fhir-export-device-67b6fd978c-gpgqs            1/1     Running   0          16d
+fhir-import-7767fc8db8-x8xf9                   1/1     Running   0          16d
+filesystem-export-device-5bd7c9ccd-nllwd       1/1     Running   0          16d
+imageaccessservice-775ddb6cfd-fkgt7            1/1     Running   0          16d
+import-orchestrator-6b95cf8fdf-j74jr           1/1     Running   0          16d
+launchpage-5cf87bbf4c-hqbcw                    1/1     Running   0          7h15m
+launchpageservice-6bd995c85c-9nz29             1/1     Running   0          15d
+licenseservice-bdd94577b-dmzfh                 1/1     Running   0          16d
+logger-5695b4657c-klh5x                        1/1     Running   0          16d
+loginpage-5d8c7bcffb-9666d                     1/1     Running   0          16d
+nlpaccessservice-5758cc4845-gr4jp              1/1     Running   0          16d
+nlpfhirrenderer-77f4d48f96-xfpcv               1/1     Running   0          16d
+pacs-connector-7dc5c6799c-26zsw                1/1     Running   0          16d
+patientdeleteservice-559d74b5bf-tpj4d          1/1     Running   0          16d
+postgres-c5cbf997f-5c2th                       1/1     Running   0          16d
+rabbitmq-859b96c59d-pqfbg                      1/1     Running   0          16d
+report-type-converter-7f6f784d75-ln8nn         1/1     Running   0          16d
+reportconverter-5d8cf5647b-vc4jm               1/1     Running   0          16d
+reportcreationservice-684fdd7b7d-726zw         1/1     Running   0          7h18m
+reverse-proxy-69f5b4d855-88ncp                 1/1     Running   0          16d
+ruleengineservice-5bbb6ddfd4-kkc65             1/1     Running   0          16d
+settingsui-6849c4c946-nq9wk                    1/1     Running   0          16d
+snomedqueryservice-5cf86455d9-xjhcd            1/1     Running   0          16d
+tika-5776fb956-r4rmb                           1/1     Running   0          16d
+unitconversionservice-68bb5f5c96-kkdd4         1/1     Running   0          16d
+
+
+8 Jan 2023 07:12:53 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command Run : kubectl set image deployment/chest-pain-fe chest-pain-fe=gokarna.azurecr.io/chest-pain-fe-z004n44u:latest -n ai-pc-product
+
+8 Jan 2023 07:12:53 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command Run : kubectl delete pod chest-pain-fe-5f5fd449df-flhj9 -n ai-pc-product
+
+8 Jan 2023 07:13:00 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+pod "chest-pain-fe-5f5fd449df-flhj9" deleted
+
+
+8 Jan 2023 07:13:01 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+NAME                                           READY   STATUS    RESTARTS   AGE
+amp-manager-5b987cb97-76xxg                    1/1     Running   1          16d
+auditlogservice-5f4d6fbb9d-4tswt               1/1     Running   0          16d
+authservice-88f9fd758-vvp5w                    1/1     Running   0          16d
+cad-fe-d4476f687-4vn9b                         1/1     Running   0          16d
+cadbackendservice-7f7c5fd457-fvmjm             1/1     Running   0          37h
+cadconcordanceservice-557d99d97f-mgffs         1/1     Running   0          16d
+cadriskcalculatorservice-56d6946d7d-t7fj5      1/1     Running   0          16d
+chest-pain-fe-5f5fd449df-cnpqm                 1/1     Running   0          7s
+configurationservice-5459457fc6-qdmv8          1/1     Running   0          16d
+csvreaderservice-5f694dc8db-kfhbs              1/1     Running   0          16d
+dicommetadata-74fb96f86f-tf6nv                 1/1     Running   0          16d
+doc-import-54bf99db6-gtbgs                     1/1     Running   0          16d
+error-reporting-device-75c754b79f-k8px2        1/1     Running   0          16d
+export-orchestrator-597cbcccf7-vsldx           1/1     Running   0          16d
+fhir-78f89876d4-kxmmn                          1/1     Running   0          16d
+fhir-document-parser-device-67755f977f-qkcvq   1/1     Running   0          16d
+fhir-export-device-67b6fd978c-gpgqs            1/1     Running   0          16d
+fhir-import-7767fc8db8-x8xf9                   1/1     Running   0          16d
+filesystem-export-device-5bd7c9ccd-nllwd       1/1     Running   0          16d
+imageaccessservice-775ddb6cfd-fkgt7            1/1     Running   0          16d
+import-orchestrator-6b95cf8fdf-j74jr           1/1     Running   0          16d
+launchpage-5cf87bbf4c-hqbcw                    1/1     Running   0          7h15m
+launchpageservice-6bd995c85c-9nz29             1/1     Running   0          15d
+licenseservice-bdd94577b-dmzfh                 1/1     Running   0          16d
+logger-5695b4657c-klh5x                        1/1     Running   0          16d
+loginpage-5d8c7bcffb-9666d                     1/1     Running   0          16d
+nlpaccessservice-5758cc4845-gr4jp              1/1     Running   0          16d
+nlpfhirrenderer-77f4d48f96-xfpcv               1/1     Running   0          16d
+pacs-connector-7dc5c6799c-26zsw                1/1     Running   0          16d
+patientdeleteservice-559d74b5bf-tpj4d          1/1     Running   0          16d
+postgres-c5cbf997f-5c2th                       1/1     Running   0          16d
+rabbitmq-859b96c59d-pqfbg                      1/1     Running   0          16d
+report-type-converter-7f6f784d75-ln8nn         1/1     Running   0          16d
+reportconverter-5d8cf5647b-vc4jm               1/1     Running   0          16d
+reportcreationservice-684fdd7b7d-726zw         1/1     Running   0          7h18m
+reverse-proxy-69f5b4d855-88ncp                 1/1     Running   0          16d
+ruleengineservice-5bbb6ddfd4-kkc65             1/1     Running   0          16d
+settingsui-6849c4c946-nq9wk                    1/1     Running   0          16d
+snomedqueryservice-5cf86455d9-xjhcd            1/1     Running   0          16d
+tika-5776fb956-r4rmb                           1/1     Running   0          16d
+unitconversionservice-68bb5f5c96-kkdd4         1/1     Running   0          16d
+
+
+8 Jan 2023 07:13:01 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Deployment Successful!
+
+8 Jan 2023 07:13:02 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Opening Chrome..
+
+8 Jan 2023 07:13:04 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Navigating to https://inblrghma3879ln/
+
+8 Jan 2023 07:13:09 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Username clinical.admin Entered
+
+8 Jan 2023 07:13:10 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Password ******* Entered
+
+8 Jan 2023 07:13:10 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Login Success to https://inblrghma3879ln/ as clinical.admin

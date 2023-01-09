@@ -1,0 +1,87 @@
+{
+  "EGFR": [
+    {
+      "code": "1652368",
+      "system": "https://www.ncbi.nlm.nih.gov/medgen",
+      "display": "EGFR"
+    }
+  ],
+  "ALK": [
+    {
+      "code": "1695930",
+      "system": "https://www.ncbi.nlm.nih.gov/medgen",
+      "display": "ALK"
+    }
+  ],
+  "ROS1": [
+    {
+      "code": "1383390",
+      "system": "https://www.ncbi.nlm.nih.gov/medgen",
+      "display": "ROS1"
+    }
+  ],
+  "BRAFV600E": [
+    {
+      "code": "1636269",
+      "system": "https://www.ncbi.nlm.nih.gov/medgen",
+      "display": "BRAFV600E"
+    }
+  ],
+
+  "NTRK": [
+    {
+      "code": "1675117",
+      "system": "https://www.ncbi.nlm.nih.gov/medgen",
+      "display": "NTRK"
+    }
+  ],
+  "KRAS": [
+    {
+      "code": "858238",
+      "system": "https://www.ncbi.nlm.nih.gov/medgen",
+      "display": "KRAS"
+    }
+  ],
+  "RET": [
+    {
+      "code": "318094",
+      "system": "https://www.ncbi.nlm.nih.gov/medgen",
+      "display": "RET"
+    }
+  ],
+  "MET": [
+    {
+      "code": "1387294",
+      "system": "https://www.ncbi.nlm.nih.gov/medgen",
+      "display": "MET"
+    }
+  ],
+  "ERBB2 (HER2)": [
+    {
+      "code": "1383496",
+      "system": "https://www.ncbi.nlm.nih.gov/medgen",
+      "display": "ERBB2 (HER2)"
+    }
+  ],
+  "TMB (Tumor Mutational Burden)": [
+    {
+      "code": "125389",
+      "system": "https://www.ncbi.nlm.nih.gov/medgen",
+      "display": "TMB (Tumor Mutational Burden)"
+    }
+  ],
+  "positive": [
+    {
+      "code": "10828004",
+      "system": "http://snomed.info/sct",
+      "display": "positive"
+    }
+  ],
+  "negative": [
+    {
+      "code": "260385009",
+      "system": "http://snomed.info/sct",
+      "display": "negative"
+    }
+  ]
+}

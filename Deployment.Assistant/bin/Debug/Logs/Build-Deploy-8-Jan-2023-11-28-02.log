@@ -1,0 +1,692 @@
+
+8 Jan 2023 11:28:06 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Opening Chrome..
+
+8 Jan 2023 11:28:08 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Navigating to https://inblrghman079ln.rd001.onehc.net/
+
+8 Jan 2023 11:28:10 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Username clinical.admin Entered
+
+8 Jan 2023 11:28:10 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Password ******* Entered
+
+8 Jan 2023 11:28:10 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Login Success to https://inblrghman079ln.rd001.onehc.net/ as clinical.admin
+
+8 Jan 2023 11:31:08 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Build started
+
+8 Jan 2023 11:31:08 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command run /c cd /d "D:\Repos\Compare\Apps.FE.LaunchPage"& ng build --prod  >> "D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\Logs\Build-Deploy-8-Jan-2023-11-28-02.log" 2>&1
+Your global Angular CLI version (14.2.7) is greater than your local version (10.1.3). The local Angular CLI version is used.
+
+To disable this warning use "ng config -g cli.warnings.versionMismatch false".
+
+chunk {} runtime.acf0dec4155e77772545.js (runtime) 1.45 kB [entry] [rendered]
+chunk {1} main.271e9064c44cbde67d14.js (main) 781 kB [initial] [rendered]
+chunk {2} polyfills.29c51e94830fd57b2d05.js (polyfills) 179 kB [initial] [rendered]
+chunk {3} polyfills-es5.d6f801260341d3b50649.js (polyfills-es5) 262 kB [initial] [rendered]
+chunk {4} styles.c53f982f07a44d56f956.css (styles) 153 kB [initial] [rendered]
+chunk {scripts} scripts.62c4fd509cd4aa85352d.js (scripts) 2.41 MB [entry] [rendered]
+Date: 2023-01-08T06:01:46.626Z - Hash: 3b94b184cc659be5b513 - Time: 31170ms
+
+WARNING in D:\Repos\Compare\Apps.FE.LaunchPage\source\app\app.module.ts depends on '@ids/common.ui.base-services.auth-handler'. CommonJS or AMD dependencies can cause optimization bailouts.
+For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+
+WARNING in D:\Repos\Compare\Apps.FE.LaunchPage\node_modules\ngx-virtual-scroller\__ivy_ngcc__\fesm2015\ngx-virtual-scroller.js depends on '@tweenjs/tween.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+
+8 Jan 2023 11:31:47 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Build Success!
+
+8 Jan 2023 11:31:47 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Copying D:\Repos\Compare\Apps.FE.LaunchPage\nginx.conf to D:\Repos\Compare\Apps.FE.LaunchPage\dist\nginx.conf
+
+8 Jan 2023 11:31:47 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Successfully copied D:\Repos\Compare\Apps.FE.LaunchPage\nginx.conf to D:\Repos\Compare\Apps.FE.LaunchPage\dist\nginx.conf
+
+8 Jan 2023 11:31:47 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Copying D:\Repos\Compare\Apps.FE.LaunchPage\Dockerfile to D:\Repos\Compare\Apps.FE.LaunchPage\dist\Dockerfile
+
+8 Jan 2023 11:31:47 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Successfully copied D:\Repos\Compare\Apps.FE.LaunchPage\Dockerfile to D:\Repos\Compare\Apps.FE.LaunchPage\dist\Dockerfile
+
+8 Jan 2023 11:31:47 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Building Docker Image
+
+8 Jan 2023 11:31:47 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command Run /c cd /d D:\Repos\Compare\Apps.FE.LaunchPage\dist & docker build . -t launchpage-z004n44u:latest >> "D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\Logs\Build-Deploy-8-Jan-2023-11-28-02.log" 2>&1
+#1 [internal] load build definition from Dockerfile
+#1 sha256:578fc238948bb9fb16320bb03162dfac69d4f3d201ee9655671af477a44cf226
+#1 transferring dockerfile: 32B done
+#1 DONE 0.0s
+
+#2 [internal] load .dockerignore
+#2 sha256:7be62801f415c251259137b40455440af5b348986a4d04d6b7d0abe2168cf5f5
+#2 transferring context: 2B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/nginx:latest
+#3 sha256:06c466a4eb6821b81bd3e48610e5f38dab858b1e9acb01d6e2f6b11c8fabe6bc
+#3 DONE 4.0s
+
+#4 [ 1/14] FROM docker.io/library/nginx:latest@sha256:0047b729188a15da49380d9506d65959cce6d40291ccfb4e039f5dc7efd33286
+#4 sha256:e7bed6aad7b09384eb5e7b7d3e639dafd578232c7fddeff5c60a35fd9c7f8488
+#4 DONE 0.0s
+
+#6 [internal] load build context
+#6 sha256:d5e8946fb416214ca00547f39a16fdce4944d831b9c2bd202ded7c1d958cc8fe
+#6 transferring context: 5.11MB 0.4s done
+#6 DONE 0.4s
+
+#5 [ 2/14] WORKDIR /usr/share/nginx/html
+#5 sha256:977fd11ad066f17453839ddaf396516d5ca43c79c768c95bdf95a39d38091104
+#5 CACHED
+
+#7 [ 3/14] COPY launch-page/ .
+#7 sha256:b1ce86e0aad1a7bfb005302a3698c5ab80ecf555cfc61ef72a1a7d9c2c216ba4
+#7 DONE 0.1s
+
+#8 [ 4/14] COPY nginx.conf /etc/nginx/nginx.conf
+#8 sha256:9c99117e9822b60e3c06fcd4d1ac5fb88870bdf1161c8c441008e4345b1c8f05
+#8 DONE 0.1s
+
+#9 [ 5/14] RUN groupadd --gid 1000 AIPCNonRootUser && useradd --uid 1000 --gid 1000 --home-dir /usr/share/AIPCNonRootUser --no-create-home AIPCNonRootUser
+#9 sha256:277175a38b24b98dc87e93f92aa485bc3364f1a657a4617b3c72d4a593065f97
+#9 DONE 0.5s
+
+#10 [ 6/14] RUN chown -R AIPCNonRootUser:AIPCNonRootUser /var/cache/nginx
+#10 sha256:e8f6a0bcf99fe51ad49183163e263585218694d0f8b524aa6a8de3d8fb43dfb0
+#10 DONE 0.5s
+
+#11 [ 7/14] RUN chmod 770 /var/cache/nginx
+#11 sha256:ce48c5286285f3415adccbd0bb1d45972566ea5523a06b76c6b64405c60b47ef
+#11 DONE 0.6s
+
+#12 [ 8/14] RUN touch /var/run/nginx.pid
+#12 sha256:ae13f727bc4b490881f141957928407bbe34acd7ebf386711cbd1b61b05f8f60
+#12 DONE 0.5s
+
+#13 [ 9/14] RUN chown -R AIPCNonRootUser:AIPCNonRootUser /var/run/nginx.pid
+#13 sha256:1c31a11eebe4c6828182b052c5ee6bb2f00000e9f5aee3c5288d433bd3fafcb3
+#13 DONE 0.6s
+
+#14 [10/14] RUN chmod 770 /var/run/nginx.pid
+#14 sha256:a994209699c467e67a73d6f7a7d8f6aa94e25a9713572b5643fba10de413e2d9
+#14 DONE 0.6s
+
+#15 [11/14] RUN mkdir -p /usr/share/nginx/html/
+#15 sha256:5fc1a3d254bdb352f8626911be7499169c17013e27de68019590f86de5780f54
+#15 DONE 0.6s
+
+#16 [12/14] RUN chown AIPCNonRootUser /usr/share/nginx/html/
+#16 sha256:31f389a5c7a9a10098234a54afa03f8c9dd2d8446162d7fb6603894880d5faeb
+#16 DONE 0.6s
+
+#17 [13/14] RUN chown -R AIPCNonRootUser:AIPCNonRootUser /etc/nginx
+#17 sha256:87b35095e26ff4cf53f9a1ea2005f6180be583c5424100b1fe27a6a21f9d1c65
+#17 DONE 0.7s
+
+#18 [14/14] RUN chmod 770 /etc/nginx
+#18 sha256:1a722babf1582bd2f89afb346da092cdd805e70111c0a21313567a0bc4353aab
+#18 DONE 0.5s
+
+#19 exporting to image
+#19 sha256:e8c613e07b0b7ff33893b694f7759a10d42e180f2b4dc349fb57dc6b71dcab00
+#19 exporting layers
+#19 exporting layers 0.5s done
+#19 writing image sha256:67ecfbde6fc324068a87357db74a2c054e7c456dcefd23c1f74c11e6a9805e33 done
+#19 naming to docker.io/library/launchpage-z004n44u:latest done
+#19 DONE 0.5s
+
+Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
+
+8 Jan 2023 11:31:59 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Docker Build Successful for launchpage-z004n44u:latest
+
+8 Jan 2023 11:31:59 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Tagging Docker Image
+
+8 Jan 2023 11:31:59 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command Run /c cd /d D:\Repos\Compare\Apps.FE.LaunchPage\dist & docker tag launchpage-z004n44u:latest gokarna.azurecr.io/launchpage-z004n44u:latest >> "D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\Logs\Build-Deploy-8-Jan-2023-11-28-02.log" 2>&1
+
+8 Jan 2023 11:32:00 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Docker Tag Successful to gokarna.azurecr.io/launchpage-z004n44u:latest
+
+8 Jan 2023 11:32:00 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Pushing Docker Image
+
+8 Jan 2023 11:32:00 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command Run /c cd /d D:\Repos\Compare\Apps.FE.LaunchPage\dist & docker push gokarna.azurecr.io/launchpage-z004n44u:latest >> "D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\Logs\Build-Deploy-8-Jan-2023-11-28-02.log" 2>&1
+The push refers to repository [gokarna.azurecr.io/launchpage-z004n44u]
+7c1c2ac6defe: Preparing
+a60490d3fe56: Preparing
+e3bcecb6a1e8: Preparing
+dfaa051b9fb4: Preparing
+707a37420ed6: Preparing
+6362bb849529: Preparing
+84ff67acb83c: Preparing
+3177bd7a206f: Preparing
+41e34a2e37ee: Preparing
+61dfe7bf2013: Preparing
+204194cc8b8d: Preparing
+c7920adb0328: Preparing
+5f70bf18a086: Preparing
+c72d75f45e5b: Preparing
+9a0ef04f57f5: Preparing
+d13aea24d2cb: Preparing
+2b3eec357807: Preparing
+2dadbc36c170: Preparing
+8a70d251b653: Preparing
+5f70bf18a086: Waiting
+c72d75f45e5b: Waiting
+9a0ef04f57f5: Waiting
+d13aea24d2cb: Waiting
+2b3eec357807: Waiting
+c7920adb0328: Waiting
+2dadbc36c170: Waiting
+8a70d251b653: Waiting
+3177bd7a206f: Waiting
+41e34a2e37ee: Waiting
+6362bb849529: Waiting
+61dfe7bf2013: Waiting
+204194cc8b8d: Waiting
+84ff67acb83c: Waiting
+a60490d3fe56: Pushed
+dfaa051b9fb4: Pushed
+707a37420ed6: Pushed
+e3bcecb6a1e8: Pushed
+7c1c2ac6defe: Pushed
+6362bb849529: Pushed
+84ff67acb83c: Pushed
+3177bd7a206f: Pushed
+41e34a2e37ee: Pushed
+5f70bf18a086: Layer already exists
+c72d75f45e5b: Layer already exists
+61dfe7bf2013: Pushed
+9a0ef04f57f5: Layer already exists
+d13aea24d2cb: Layer already exists
+2b3eec357807: Layer already exists
+8a70d251b653: Layer already exists
+2dadbc36c170: Layer already exists
+204194cc8b8d: Pushed
+c7920adb0328: Pushed
+latest: digest: sha256:bbac3e67c4c9e38df439eebf20ced7ec7aba0ae329d3bf5c44e2f194612c0ed8 size: 4266
+
+8 Jan 2023 11:32:09 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Docker Push Successful to gokarna.azurecr.io/launchpage-z004n44u:latest
+
+8 Jan 2023 11:32:09 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Connecting to inblrghma3879ln
+
+8 Jan 2023 11:32:10 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Successfully connected to inblrghma3879ln
+
+8 Jan 2023 11:32:10 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command Run : kubectl get pods -n ai-pc-product
+
+8 Jan 2023 11:32:10 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+NAME                                           READY   STATUS    RESTARTS   AGE
+amp-manager-5b987cb97-76xxg                    1/1     Running   1          17d
+auditlogservice-5f4d6fbb9d-4tswt               1/1     Running   0          17d
+authservice-88f9fd758-vvp5w                    1/1     Running   0          17d
+cad-fe-d4476f687-4vn9b                         1/1     Running   0          17d
+cadbackendservice-7f7c5fd457-fvmjm             1/1     Running   0          41h
+cadconcordanceservice-557d99d97f-mgffs         1/1     Running   0          17d
+cadriskcalculatorservice-56d6946d7d-t7fj5      1/1     Running   0          17d
+chest-pain-fe-5f5fd449df-cnpqm                 1/1     Running   0          4h19m
+configurationservice-5459457fc6-qdmv8          1/1     Running   0          17d
+csvreaderservice-5f694dc8db-kfhbs              1/1     Running   0          17d
+dicommetadata-74fb96f86f-tf6nv                 1/1     Running   0          17d
+doc-import-54bf99db6-gtbgs                     1/1     Running   0          17d
+error-reporting-device-75c754b79f-k8px2        1/1     Running   0          17d
+export-orchestrator-597cbcccf7-vsldx           1/1     Running   0          17d
+fhir-78f89876d4-kxmmn                          1/1     Running   0          17d
+fhir-document-parser-device-67755f977f-qkcvq   1/1     Running   0          17d
+fhir-export-device-67b6fd978c-gpgqs            1/1     Running   0          17d
+fhir-import-7767fc8db8-x8xf9                   1/1     Running   0          17d
+filesystem-export-device-5bd7c9ccd-nllwd       1/1     Running   0          17d
+imageaccessservice-775ddb6cfd-fkgt7            1/1     Running   0          17d
+import-orchestrator-6b95cf8fdf-j74jr           1/1     Running   0          17d
+launchpage-5cf87bbf4c-tmvk7                    1/1     Running   0          8m42s
+launchpageservice-6bd995c85c-9nz29             1/1     Running   0          15d
+licenseservice-bdd94577b-dmzfh                 1/1     Running   0          17d
+logger-5695b4657c-klh5x                        1/1     Running   0          17d
+loginpage-5d8c7bcffb-9666d                     1/1     Running   0          17d
+nlpaccessservice-5758cc4845-gr4jp              1/1     Running   0          17d
+nlpfhirrenderer-77f4d48f96-xfpcv               1/1     Running   0          17d
+pacs-connector-7dc5c6799c-26zsw                1/1     Running   0          17d
+patientdeleteservice-559d74b5bf-tpj4d          1/1     Running   0          17d
+postgres-c5cbf997f-5c2th                       1/1     Running   0          17d
+rabbitmq-859b96c59d-pqfbg                      1/1     Running   0          17d
+report-type-converter-7f6f784d75-ln8nn         1/1     Running   0          17d
+reportconverter-5d8cf5647b-vc4jm               1/1     Running   0          17d
+reportcreationservice-684fdd7b7d-726zw         1/1     Running   0          11h
+reverse-proxy-69f5b4d855-88ncp                 1/1     Running   0          17d
+ruleengineservice-5bbb6ddfd4-kkc65             1/1     Running   0          17d
+settingsui-6849c4c946-nq9wk                    1/1     Running   0          17d
+snomedqueryservice-5cf86455d9-xjhcd            1/1     Running   0          17d
+tika-5776fb956-r4rmb                           1/1     Running   0          17d
+unitconversionservice-68bb5f5c96-kkdd4         1/1     Running   0          17d
+
+
+8 Jan 2023 11:32:10 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command Run : kubectl set image deployment/launchpage launchpage=gokarna.azurecr.io/launchpage-z004n44u:latest -n ai-pc-product
+
+8 Jan 2023 11:32:11 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command Run : kubectl delete pod launchpage-5cf87bbf4c-tmvk7 -n ai-pc-product
+
+8 Jan 2023 11:32:50 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+pod "launchpage-5cf87bbf4c-tmvk7" deleted
+
+
+8 Jan 2023 11:32:51 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+NAME                                           READY   STATUS    RESTARTS   AGE
+amp-manager-5b987cb97-76xxg                    1/1     Running   1          17d
+auditlogservice-5f4d6fbb9d-4tswt               1/1     Running   0          17d
+authservice-88f9fd758-vvp5w                    1/1     Running   0          17d
+cad-fe-d4476f687-4vn9b                         1/1     Running   0          17d
+cadbackendservice-7f7c5fd457-fvmjm             1/1     Running   0          41h
+cadconcordanceservice-557d99d97f-mgffs         1/1     Running   0          17d
+cadriskcalculatorservice-56d6946d7d-t7fj5      1/1     Running   0          17d
+chest-pain-fe-5f5fd449df-cnpqm                 1/1     Running   0          4h19m
+configurationservice-5459457fc6-qdmv8          1/1     Running   0          17d
+csvreaderservice-5f694dc8db-kfhbs              1/1     Running   0          17d
+dicommetadata-74fb96f86f-tf6nv                 1/1     Running   0          17d
+doc-import-54bf99db6-gtbgs                     1/1     Running   0          17d
+error-reporting-device-75c754b79f-k8px2        1/1     Running   0          17d
+export-orchestrator-597cbcccf7-vsldx           1/1     Running   0          17d
+fhir-78f89876d4-kxmmn                          1/1     Running   0          17d
+fhir-document-parser-device-67755f977f-qkcvq   1/1     Running   0          17d
+fhir-export-device-67b6fd978c-gpgqs            1/1     Running   0          17d
+fhir-import-7767fc8db8-x8xf9                   1/1     Running   0          17d
+filesystem-export-device-5bd7c9ccd-nllwd       1/1     Running   0          17d
+imageaccessservice-775ddb6cfd-fkgt7            1/1     Running   0          17d
+import-orchestrator-6b95cf8fdf-j74jr           1/1     Running   0          17d
+launchpage-5cf87bbf4c-rqkv6                    1/1     Running   0          40s
+launchpageservice-6bd995c85c-9nz29             1/1     Running   0          15d
+licenseservice-bdd94577b-dmzfh                 1/1     Running   0          17d
+logger-5695b4657c-klh5x                        1/1     Running   0          17d
+loginpage-5d8c7bcffb-9666d                     1/1     Running   0          17d
+nlpaccessservice-5758cc4845-gr4jp              1/1     Running   0          17d
+nlpfhirrenderer-77f4d48f96-xfpcv               1/1     Running   0          17d
+pacs-connector-7dc5c6799c-26zsw                1/1     Running   0          17d
+patientdeleteservice-559d74b5bf-tpj4d          1/1     Running   0          17d
+postgres-c5cbf997f-5c2th                       1/1     Running   0          17d
+rabbitmq-859b96c59d-pqfbg                      1/1     Running   0          17d
+report-type-converter-7f6f784d75-ln8nn         1/1     Running   0          17d
+reportconverter-5d8cf5647b-vc4jm               1/1     Running   0          17d
+reportcreationservice-684fdd7b7d-726zw         1/1     Running   0          11h
+reverse-proxy-69f5b4d855-88ncp                 1/1     Running   0          17d
+ruleengineservice-5bbb6ddfd4-kkc65             1/1     Running   0          17d
+settingsui-6849c4c946-nq9wk                    1/1     Running   0          17d
+snomedqueryservice-5cf86455d9-xjhcd            1/1     Running   0          17d
+tika-5776fb956-r4rmb                           1/1     Running   0          17d
+unitconversionservice-68bb5f5c96-kkdd4         1/1     Running   0          17d
+
+
+8 Jan 2023 11:32:51 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Deployment Successful!
+
+8 Jan 2023 11:38:49 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Opening Chrome..
+
+8 Jan 2023 11:38:51 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Navigating to https://inblrghman079ln.rd001.onehc.net/
+
+8 Jan 2023 11:38:53 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Username clinical.admin Entered
+
+8 Jan 2023 11:38:53 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Password ******* Entered
+
+8 Jan 2023 11:38:54 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Login Success to https://inblrghman079ln.rd001.onehc.net/ as clinical.admin
+
+8 Jan 2023 11:41:46 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Opening Chrome..
+
+8 Jan 2023 11:41:47 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Navigating to https://inblrghma3879ln/
+
+8 Jan 2023 11:41:50 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Username clinical.admin Entered
+
+8 Jan 2023 11:41:50 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Password ******* Entered
+
+8 Jan 2023 11:41:50 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Login Success to https://inblrghma3879ln/ as clinical.admin
+
+8 Jan 2023 11:43:21 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Build started for project IDS.Services.BE.CAD
+
+8 Jan 2023 11:43:21 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command run /c dotnet publish "D:\Repos\CDSS Collaboration\Services.BE.CAD\Source\IDS.Services.BE.CAD\IDS.Services.BE.CAD.csproj" -o "D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\ASP-Output"  >> "D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\Logs\Build-Deploy-8-Jan-2023-11-28-02.log" 2>&1
+Microsoft (R) Build Engine version 16.11.3+5d7fe36cf for .NET
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  IDS.Services.BE.CAD.Common -> D:\Repos\CDSS Collaboration\Services.BE.CAD\Source\IDS.Services.BE.CAD.Common\bin\Debug\IDS.Services.BE.CAD.Common.dll
+  IDS.Services.BE.CAD.CodeSystem -> D:\Repos\CDSS Collaboration\Services.BE.CAD\Source\IDS.Services.BE.CAD.CodeSystem\bin\Debug\IDS.Services.BE.CAD.CodeSystem.dll
+  IDS.Services.BE.CAD.Models -> D:\Repos\CDSS Collaboration\Services.BE.CAD\Source\IDS.Services.BE.CAD.Models\bin\Debug\IDS.Services.BE.CAD.Models.dll
+  IDS.Services.BE.CAD.Fhir -> D:\Repos\CDSS Collaboration\Services.BE.CAD\Source\IDS.Services.BE.CAD.Fhir\bin\Debug\IDS.Services.BE.CAD.Fhir.dll
+  IDS.Services.BE.CAD.RuleEngine -> D:\Repos\CDSS Collaboration\Services.BE.CAD\Source\IDS.Services.BE.CAD.RuleEngine\bin\Debug\netcoreapp3.1\IDS.Services.BE.CAD.RuleEngine.dll
+  IDS.Services.BE.CAD.Models.Core -> D:\Repos\CDSS Collaboration\Services.BE.CAD\Source\IDS.Services.BE.CAD.Models.Core\bin\Debug\IDS.Services.BE.CAD.Models.Core.dll
+  IDS.Services.BE.CAD.StateMachine -> D:\Repos\CDSS Collaboration\Services.BE.CAD\Source\IDS.Services.BE.CAD.StateMachine\bin\Debug\netcoreapp3.1\IDS.Services.BE.CAD.StateMachine.dll
+  IDS.Services.BE.CAD.Fhir.Core -> D:\Repos\CDSS Collaboration\Services.BE.CAD\Source\IDS.Services.BE.CAD.Fhir.Core\bin\Debug\IDS.Services.BE.CAD.Fhir.Core.dll
+  IDS.Services.BE.CAD.EmailNotification.Core -> D:\Repos\CDSS Collaboration\Services.BE.CAD\Source\IDS.Services.BE.CAD.EmailNotification.Core\bin\Debug\netcoreapp3.1\IDS.Services.BE.CAD.EmailNotification.Core.dll
+  IDS.Services.BE.CAD.Rapidx.Core -> D:\Repos\CDSS Collaboration\Services.BE.CAD\Source\IDS.Services.BE.CAD.Rapidx.Core\bin\Debug\netcoreapp3.1\IDS.Services.BE.CAD.Rapidx.Core.dll
+  IDS.Services.BE.CAD.Export.Core -> D:\Repos\CDSS Collaboration\Services.BE.CAD\Source\IDS.Services.BE.CAD.Export.Core\bin\Debug\netcoreapp3.1\IDS.Services.BE.CAD.Export.Core.dll
+  IDS.Services.BE.CAD -> D:\Repos\CDSS Collaboration\Services.BE.CAD\Source\IDS.Services.BE.CAD\bin\Debug\IDS.Services.BE.CAD.dll
+  IDS.Services.BE.CAD -> D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\ASP-Output\
+
+8 Jan 2023 11:43:31 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Build Success!
+
+8 Jan 2023 11:43:31 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Replacing COPY ./cadbackendservice . with COPY . .
+
+8 Jan 2023 11:43:31 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Copying D:\Repos\CDSS Collaboration\Services.BE.CAD\Source\IDS.Services.BE.CAD\Dockerfile to D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\ASP-Output\Dockerfile
+
+8 Jan 2023 11:43:31 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Building Docker Image
+
+8 Jan 2023 11:43:31 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command Run /c cd /d D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\ASP-Output & docker build . -t cadbackendservice-z004n44u:latest >> "D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\Logs\Build-Deploy-8-Jan-2023-11-28-02.log" 2>&1
+#1 [internal] load build definition from Dockerfile
+#1 sha256:8cbd63b7661e7cf8381b32f438b428b525590c951381b51b8d184b223f8d6712
+#1 transferring dockerfile: 208B done
+#1 DONE 0.0s
+
+#2 [internal] load .dockerignore
+#2 sha256:0d61d2794461629c77ea889c4e6a98a24ce671d9e89d4c6a4a2161304d5e46ef
+#2 transferring context: 2B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for mcr.microsoft.com/dotnet/core/aspnet:3.1
+#3 sha256:6ed55082f004e08158b7de81c6d78949cd5140b3f2899e0f69981d4ae515675f
+#3 DONE 0.3s
+
+#4 [1/3] FROM mcr.microsoft.com/dotnet/core/aspnet:3.1@sha256:e3b773f30a0a6e88d71ce52429f6847627fc9353e491346902ca345760b82bdd
+#4 sha256:dd6a0b4b02b6b19bc0024efc4242484e2cf9ff48ace8c8c336f14713c9aa8e20
+#4 DONE 0.0s
+
+#6 [internal] load build context
+#6 sha256:6629e099cd7493573b7467eeb27efa58d1df674e2a7fded9333d52a255cc00ec
+#6 transferring context: 16.82MB 1.3s done
+#6 DONE 1.3s
+
+#5 [2/3] WORKDIR /app
+#5 sha256:db2f23e5bc13a871550659e44c4da16aacf3256f327b0c36aa8bac07d59e49ed
+#5 CACHED
+
+#7 [3/3] COPY . .
+#7 sha256:f4f17a3433c1a769999ef13c19c3d32db63e04bcfb81f6abdbba8c8ba9bcc92b
+#7 DONE 0.1s
+
+#8 exporting to image
+#8 sha256:e8c613e07b0b7ff33893b694f7759a10d42e180f2b4dc349fb57dc6b71dcab00
+#8 exporting layers 0.1s done
+#8 writing image sha256:f3c639f655599dce80970c5f78d1d175e21ffdef26d49037da5156bd584e052a done
+#8 naming to docker.io/library/cadbackendservice-z004n44u:latest done
+#8 DONE 0.1s
+
+Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
+
+8 Jan 2023 11:43:34 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Docker Build Successful for cadbackendservice-z004n44u:latest
+
+8 Jan 2023 11:43:34 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Tagging Docker Image
+
+8 Jan 2023 11:43:34 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command Run /c cd /d D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\ASP-Output & docker tag cadbackendservice-z004n44u:latest gokarna.azurecr.io/cadbackendservice-z004n44u:latest >> "D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\Logs\Build-Deploy-8-Jan-2023-11-28-02.log" 2>&1
+
+8 Jan 2023 11:43:34 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Docker Tag Successful to gokarna.azurecr.io/cadbackendservice-z004n44u:latest
+
+8 Jan 2023 11:43:34 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Pushing Docker Image
+
+8 Jan 2023 11:43:35 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command Run /c cd /d D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\ASP-Output & docker push gokarna.azurecr.io/cadbackendservice-z004n44u:latest >> "D:\Projects\Deployment.Assistant\Deployment.Assistant\bin\Debug\Logs\Build-Deploy-8-Jan-2023-11-28-02.log" 2>&1
+The push refers to repository [gokarna.azurecr.io/cadbackendservice-z004n44u]
+6f4a2c04a16d: Preparing
+e02e4f376d0c: Preparing
+266e43c7bdef: Preparing
+5ed447f74cec: Preparing
+dc4e06b0c38e: Preparing
+d1797c74036a: Preparing
+7b6f75f8765b: Preparing
+d1797c74036a: Waiting
+7b6f75f8765b: Waiting
+dc4e06b0c38e: Layer already exists
+e02e4f376d0c: Layer already exists
+266e43c7bdef: Layer already exists
+5ed447f74cec: Layer already exists
+7b6f75f8765b: Layer already exists
+d1797c74036a: Layer already exists
+6f4a2c04a16d: Pushed
+latest: digest: sha256:a1e55dba85f90a02652d2fb76c1cdbc81a934b5e856181fcf6b62495478ba5d2 size: 1793
+
+8 Jan 2023 11:43:41 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Docker Push Successful to gokarna.azurecr.io/cadbackendservice-z004n44u:latest
+
+8 Jan 2023 11:43:41 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Connecting to inblrghma3879ln
+
+8 Jan 2023 11:43:42 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Successfully connected to inblrghma3879ln
+
+8 Jan 2023 11:43:42 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command Run : kubectl get pods -n ai-pc-product
+
+8 Jan 2023 11:43:43 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+NAME                                           READY   STATUS    RESTARTS   AGE
+amp-manager-5b987cb97-76xxg                    1/1     Running   1          17d
+auditlogservice-5f4d6fbb9d-4tswt               1/1     Running   0          17d
+authservice-88f9fd758-vvp5w                    1/1     Running   0          17d
+cad-fe-d4476f687-4vn9b                         1/1     Running   0          17d
+cadbackendservice-7f7c5fd457-fvmjm             1/1     Running   0          41h
+cadconcordanceservice-557d99d97f-mgffs         1/1     Running   0          17d
+cadriskcalculatorservice-56d6946d7d-t7fj5      1/1     Running   0          17d
+chest-pain-fe-5f5fd449df-cnpqm                 1/1     Running   0          4h30m
+configurationservice-5459457fc6-qdmv8          1/1     Running   0          17d
+csvreaderservice-5f694dc8db-kfhbs              1/1     Running   0          17d
+dicommetadata-74fb96f86f-tf6nv                 1/1     Running   0          17d
+doc-import-54bf99db6-gtbgs                     1/1     Running   0          17d
+error-reporting-device-75c754b79f-k8px2        1/1     Running   0          17d
+export-orchestrator-597cbcccf7-vsldx           1/1     Running   0          17d
+fhir-78f89876d4-kxmmn                          1/1     Running   0          17d
+fhir-document-parser-device-67755f977f-qkcvq   1/1     Running   0          17d
+fhir-export-device-67b6fd978c-gpgqs            1/1     Running   0          17d
+fhir-import-7767fc8db8-x8xf9                   1/1     Running   0          17d
+filesystem-export-device-5bd7c9ccd-nllwd       1/1     Running   0          17d
+imageaccessservice-775ddb6cfd-fkgt7            1/1     Running   0          17d
+import-orchestrator-6b95cf8fdf-j74jr           1/1     Running   0          17d
+launchpage-5cf87bbf4c-rqkv6                    1/1     Running   0          11m
+launchpageservice-6bd995c85c-9nz29             1/1     Running   0          15d
+licenseservice-bdd94577b-dmzfh                 1/1     Running   0          17d
+logger-5695b4657c-klh5x                        1/1     Running   0          17d
+loginpage-5d8c7bcffb-9666d                     1/1     Running   0          17d
+nlpaccessservice-5758cc4845-gr4jp              1/1     Running   0          17d
+nlpfhirrenderer-77f4d48f96-xfpcv               1/1     Running   0          17d
+pacs-connector-7dc5c6799c-26zsw                1/1     Running   0          17d
+patientdeleteservice-559d74b5bf-tpj4d          1/1     Running   0          17d
+postgres-c5cbf997f-5c2th                       1/1     Running   0          17d
+rabbitmq-859b96c59d-pqfbg                      1/1     Running   0          17d
+report-type-converter-7f6f784d75-ln8nn         1/1     Running   0          17d
+reportconverter-5d8cf5647b-vc4jm               1/1     Running   0          17d
+reportcreationservice-684fdd7b7d-726zw         1/1     Running   0          11h
+reverse-proxy-69f5b4d855-88ncp                 1/1     Running   0          17d
+ruleengineservice-5bbb6ddfd4-kkc65             1/1     Running   0          17d
+settingsui-6849c4c946-nq9wk                    1/1     Running   0          17d
+snomedqueryservice-5cf86455d9-xjhcd            1/1     Running   0          17d
+tika-5776fb956-r4rmb                           1/1     Running   0          17d
+unitconversionservice-68bb5f5c96-kkdd4         1/1     Running   0          17d
+
+
+8 Jan 2023 11:43:43 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command Run : kubectl set image deployment/cadbackendservice cadbackendservice=gokarna.azurecr.io/cadbackendservice-z004n44u:latest -n ai-pc-product
+
+8 Jan 2023 11:43:43 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command Run : kubectl delete pod cadbackendservice-7f7c5fd457-fvmjm -n ai-pc-product
+
+8 Jan 2023 11:43:46 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+pod "cadbackendservice-7f7c5fd457-fvmjm" deleted
+
+
+8 Jan 2023 11:43:47 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+NAME                                           READY   STATUS              RESTARTS   AGE
+amp-manager-5b987cb97-76xxg                    1/1     Running             1          17d
+auditlogservice-5f4d6fbb9d-4tswt               1/1     Running             0          17d
+authservice-88f9fd758-vvp5w                    1/1     Running             0          17d
+cad-fe-d4476f687-4vn9b                         1/1     Running             0          17d
+cadbackendservice-7f7c5fd457-gk8nv             0/1     ContainerCreating   0          3s
+cadconcordanceservice-557d99d97f-mgffs         1/1     Running             0          17d
+cadriskcalculatorservice-56d6946d7d-t7fj5      1/1     Running             0          17d
+chest-pain-fe-5f5fd449df-cnpqm                 1/1     Running             0          4h30m
+configurationservice-5459457fc6-qdmv8          1/1     Running             0          17d
+csvreaderservice-5f694dc8db-kfhbs              1/1     Running             0          17d
+dicommetadata-74fb96f86f-tf6nv                 1/1     Running             0          17d
+doc-import-54bf99db6-gtbgs                     1/1     Running             0          17d
+error-reporting-device-75c754b79f-k8px2        1/1     Running             0          17d
+export-orchestrator-597cbcccf7-vsldx           1/1     Running             0          17d
+fhir-78f89876d4-kxmmn                          1/1     Running             0          17d
+fhir-document-parser-device-67755f977f-qkcvq   1/1     Running             0          17d
+fhir-export-device-67b6fd978c-gpgqs            1/1     Running             0          17d
+fhir-import-7767fc8db8-x8xf9                   1/1     Running             0          17d
+filesystem-export-device-5bd7c9ccd-nllwd       1/1     Running             0          17d
+imageaccessservice-775ddb6cfd-fkgt7            1/1     Running             0          17d
+import-orchestrator-6b95cf8fdf-j74jr           1/1     Running             0          17d
+launchpage-5cf87bbf4c-rqkv6                    1/1     Running             0          11m
+launchpageservice-6bd995c85c-9nz29             1/1     Running             0          15d
+licenseservice-bdd94577b-dmzfh                 1/1     Running             0          17d
+logger-5695b4657c-klh5x                        1/1     Running             0          17d
+loginpage-5d8c7bcffb-9666d                     1/1     Running             0          17d
+nlpaccessservice-5758cc4845-gr4jp              1/1     Running             0          17d
+nlpfhirrenderer-77f4d48f96-xfpcv               1/1     Running             0          17d
+pacs-connector-7dc5c6799c-26zsw                1/1     Running             0          17d
+patientdeleteservice-559d74b5bf-tpj4d          1/1     Running             0          17d
+postgres-c5cbf997f-5c2th                       1/1     Running             0          17d
+rabbitmq-859b96c59d-pqfbg                      1/1     Running             0          17d
+report-type-converter-7f6f784d75-ln8nn         1/1     Running             0          17d
+reportconverter-5d8cf5647b-vc4jm               1/1     Running             0          17d
+reportcreationservice-684fdd7b7d-726zw         1/1     Running             0          11h
+reverse-proxy-69f5b4d855-88ncp                 1/1     Running             0          17d
+ruleengineservice-5bbb6ddfd4-kkc65             1/1     Running             0          17d
+settingsui-6849c4c946-nq9wk                    1/1     Running             0          17d
+snomedqueryservice-5cf86455d9-xjhcd            1/1     Running             0          17d
+tika-5776fb956-r4rmb                           1/1     Running             0          17d
+unitconversionservice-68bb5f5c96-kkdd4         1/1     Running             0          17d
+
+
+8 Jan 2023 11:43:47 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Deployment Successful!
+
+8 Jan 2023 12:16:02 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Opening Chrome..
+
+8 Jan 2023 12:16:04 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Navigating to https://inblrghma3879ln/
+
+8 Jan 2023 12:16:08 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Username clinical.admin Entered
+
+8 Jan 2023 12:16:08 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Password ******* Entered
+
+8 Jan 2023 12:16:08 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Login Success to https://inblrghma3879ln/ as clinical.admin
+
+8 Jan 2023 12:16:31 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Opening Chrome..
+
+8 Jan 2023 12:16:32 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Navigating to https://inblrghman079ln.rd001.onehc.net/
+
+8 Jan 2023 12:16:37 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Username clinical.admin Entered
+
+8 Jan 2023 12:16:37 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Password ******* Entered
+
+8 Jan 2023 12:16:37 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Login Success to https://inblrghman079ln.rd001.onehc.net/ as clinical.admin

@@ -1,0 +1,9 @@
+{
+    "Counselling":  [
+                        {
+                            "code":  "409063005",
+                            "system":  "http://snomed.info/sct",
+                            "display":  "Counseling (procedure)"
+                        }
+                    ]
+}

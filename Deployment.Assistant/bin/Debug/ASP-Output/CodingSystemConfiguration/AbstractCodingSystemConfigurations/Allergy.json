@@ -1,0 +1,142 @@
+{
+  "4-quinolones allergy": [
+    {
+      "code": "294483001",
+      "system": "http://snomed.info/sct",
+      "display": "4-quinolones allergy"
+    }
+  ],
+  "Allergic rhinitis caused by pollen": [
+    {
+      "code": "21719001",
+      "system": "http://snomed.info/sct",
+      "display": "Allergic rhinitis caused by pollen"
+    }
+  ],
+  "Allergy to cat dander": [
+    {
+      "code": "232346004",
+      "system": "http://snomed.info/sct",
+      "display": "Allergy to cat dander"
+    }
+  ],
+  "Allergy to nickel": [
+    {
+      "code": "419788000",
+      "system": "http://snomed.info/sct",
+      "display": "Allergy to nickel"
+    }
+  ],
+  "Allergy to penicillin": [
+    {
+      "code": "91936005",
+      "system": "http://snomed.info/sct",
+      "display": "Allergy to penicillin"
+    }
+  ],
+  "Amoxicillin allergy": [
+    {
+      "code": "294505008",
+      "system": "http://snomed.info/sct",
+      "display": "Amoxicillin allergy"
+    }
+  ],
+  "Contact dermatitis caused by adhesive plaster": [
+    {
+      "code": "77560002",
+      "system": "http://snomed.info/sct",
+      "display": "Contact dermatitis caused by adhesive plaster"
+    }
+  ],
+  "Diclofenac allergy": [
+    {
+      "code": "293613006",
+      "system": "http://snomed.info/sct",
+      "display": "Diclofenac allergy"
+    }
+  ],
+  "Flucloxacillin allergy": [
+    {
+      "code": "294502006",
+      "system": "http://snomed.info/sct",
+      "display": "Flucloxacillin allergy"
+    }
+  ],
+  "House dust mite": [
+    {
+      "code": "260147004",
+      "system": "http://snomed.info/sct",
+      "display": "House dust mite"
+    }
+  ],
+  "Infusion reaction to rituximab": [
+    {
+      "code": "442108004",
+      "system": "http://snomed.info/sct",
+      "display": "Infusion reaction to rituximab"
+    }
+  ],
+  "Iodine compounds allergy": [
+    {
+      "code": "294913003",
+      "system": "http://snomed.info/sct",
+      "display": "Iodine compounds allergy"
+    }
+  ],
+  "Latex allergy": [
+    {
+      "code": "300916003",
+      "system": "http://snomed.info/sct",
+      "display": "Latex allergy"
+    }
+  ],
+  "Lisinopril allergy": [
+    {
+      "code": "609542006",
+      "system": "http://snomed.info/sct",
+      "display": "Lisinopril allergy"
+    }
+  ],
+  "Naproxen allergy": [
+    {
+      "code": "293625009",
+      "system": "http://snomed.info/sct",
+      "display": "Naproxen allergy"
+    }
+  ],
+  "Nitrofurantoin allergy": [
+    {
+      "code": "294478009",
+      "system": "http://snomed.info/sct",
+      "display": "Nitrofurantoin allergy"
+    }
+  ],
+  "Non-steroidal anti-inflammatory drug sensitivity": [
+    {
+      "code": "418032008",
+      "system": "http://snomed.info/sct",
+      "display": "Non-steroidal anti-inflammatory drug sensitivity"
+    }
+  ],
+  "Prednisone allergy": [
+    {
+      "code": "294682002",
+      "system": "http://snomed.info/sct",
+      "display": "Prednisone allergy"
+    }
+  ],
+  "Sulfasalazine allergy": [
+    {
+      "code": "293663001",
+      "system": "http://snomed.info/sct",
+      "display": "Sulfasalazine allergyn"
+    }
+  ],
+  "Teicoplanin allergy": [
+    {
+      "code": "294476008",
+      "system": "http://snomed.info/sct",
+      "display": "Teicoplanin allergy"
+    }
+  ]
+}

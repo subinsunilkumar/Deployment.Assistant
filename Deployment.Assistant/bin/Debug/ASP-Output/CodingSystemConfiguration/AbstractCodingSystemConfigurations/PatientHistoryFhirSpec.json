@@ -1,0 +1,1001 @@
+{
+  "History": [
+    {
+      "code": "84100007",
+      "system": "http://snomed.info/sct",
+      "display": "History"
+    }
+  ],
+  "Smoking cessation counseling": [
+    {
+      "code": "384742004",
+      "system": "http://snomed.info/sct",
+      "display": "Smoking cessation counseling"
+    }
+  ],
+  "Palliative care (regime/therapy)": [
+    {
+      "code": "103735009",
+      "system": "http://snomed.info/sct",
+      "display": "Palliative care"
+    }
+  ],
+  "Smoking cessation pharmacotherapy": [
+    {
+      "code": "713700008",
+      "system": "http://snomed.info/sct",
+      "display": "Smoking cessation pharmacotherapy"
+    }
+  ],
+  "Pathology review": [
+    {
+      "code": "88101002",
+      "system": "http://snomed.info/sct",
+      "display": "Pathology review"
+    }
+  ],
+  "Computed tomography of chest and abdomen (procedure)": [
+    {
+      "code": "418891003",
+      "system": "http://snomed.info/sct",
+      "display": "Chest + Upper abdominal diagnostic CT with contrast"
+    }
+  ],
+  "Brain MRI Possibility status": [
+    {
+      "code": "16327691000119101-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Brain MRI possibility status"
+    }
+  ],
+  "Clinical course (attribute)": [
+    {
+      "code": "263502005",
+      "system": "http://snomed.info/sct",
+      "display": "Clinical course (attribute)"
+    }
+  ],
+  "FDG PET/CT scan recently done": [
+    {
+      "code": "725928006-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "FDG PET/CT scan recently done"
+    }
+  ],
+  "High risk patient": [
+    {
+      "code": "723509005-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "High risk patient"
+    }
+  ],
+  "Histologic type (observable entity)": [
+    {
+      "code": "371441004",
+      "system": "http://snomed.info/sct",
+      "display": "Histologic subtype"
+    }
+  ],
+  "Limited number and volume of metastatic lesions amenable to definitive local therapy": [
+    {
+      "code": "260874000-AIPC-000046",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Limited number and volume of metastatic lesions amenable to definitive local therapy"
+    }
+  ],
+  "PFTs recently done": [
+    {
+      "code": "23426006-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "PFTs recently done"
+    }
+  ],
+  "RT induction": [
+    {
+      "code": "108290001-AIPC-000096",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "RT induction"
+    }
+  ],
+  "SABR possibility status": [
+    {
+      "code": "395096001-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "SABR possibility status"
+    }
+  ],
+  "Multiple nodules of lung (finding)": [
+    {
+      "code": "445249002",
+      "system": "http://snomed.info/sct",
+      "display": "Separate pulmonary nodule"
+    }
+  ],
+  "Finding of tobacco smoking consumption": [
+    {
+      "code": "365982000",
+      "system": "http://snomed.info/sct",
+      "display": "Finding of tobacco smoking consumption"
+    }
+  ],
+  "Separate pulmonary nodule (contralateral lobe)": [
+    {
+      "code": "445249002-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Separate pulmonary nodule (contralateral lobe)"
+    }
+  ],
+  "Status of invasion by tumor (observable entity)": [
+    {
+      "code": "370052007",
+      "system": "http://snomed.info/sct",
+      "display": "T3 tumor invasion"
+    }
+  ],
+  "Tumor invasion by site (finding)": [
+    {
+      "code": "385394007",
+      "system": "http://snomed.info/sct",
+      "display": "Tumor invading site"
+    }
+  ],
+  "Conformal radiotherapy (procedure)": [
+    {
+      "code": "441783000",
+      "system": "http://snomed.info/sct",
+      "display": "3D CRT"
+    }
+  ],
+  "Magnetic resonance imaging of brain (procedure)": [
+    {
+      "code": "816077007",
+      "system": "http://snomed.info/sct",
+      "display": "Brain MRI"
+    }
+  ],
+  "Carboplatin": [
+    {
+      "code": "386905002",
+      "system": "http://snomed.info/sct",
+      "display": "Carboplatin"
+    }
+  ],
+  "Computed tomography of thorax with contrast (procedure)": [
+    {
+      "code": "75385009",
+      "system": "http://snomed.info/sct",
+      "display": "Chest CT with contrast"
+    }
+  ],
+  "Computed tomography of chest without contrast (procedure)": [
+    {
+      "code": "395081000119108",
+      "system": "http://snomed.info/sct",
+      "display": "Chest CT without contrast"
+    }
+  ],
+  "Cisplatin": [
+    {
+      "code": "387318005",
+      "system": "http://snomed.info/sct",
+      "display": "Cisplatin"
+    }
+  ],
+  "FBC": [
+    {
+      "code": "26604007",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Complete blood count"
+    },
+    {
+      "code": "26604007",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Complete blood count (procedure)"
+    }
+  ],
+  "Complete definitive chemotherapy + RT": [
+    {
+      "code": "703423002-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Complete definitive chemotherapy + RT"
+    }
+  ],
+  "Excision of mediastinal lymph node (procedure)": [
+    {
+      "code": "234263003",
+      "system": "http://snomed.info/sct",
+      "display": "Dissection"
+    }
+  ],
+  "Durvalumab (substance)": [
+    {
+      "code": "735230005",
+      "system": "http://snomed.info/sct",
+      "display": "Durvalumab"
+    }
+  ],
+  "Etoposide": [
+    {
+      "code": "387316009",
+      "system": "http://snomed.info/sct",
+      "display": "Etoposide"
+    }
+  ],
+  "Gemcitabine (substance)": [
+    {
+      "code": "386920008",
+      "system": "http://snomed.info/sct",
+      "display": "Gemcitabine"
+    }
+  ],
+  "Computed tomography of head with contrast (procedure)": [
+    {
+      "code": "711232001",
+      "system": "http://snomed.info/sct",
+      "display": "Head CT with Contrast"
+    }
+  ],
+  "History taking (procedure)": [
+    {
+      "code": "84100007",
+      "system": "http://snomed.info/sct",
+      "display": "History"
+    }
+  ],
+  "Low dose computed tomography of chest without contrast (procedure)": [
+    {
+      "code": "16334891000119100",
+      "system": "http://snomed.info/sct",
+      "display": "Low dose computed tomography of chest without contrast (procedure)"
+    }
+  ],
+  "Mediastinal lymph nodes sampling (procedure)": [
+    {
+      "code": "178297005",
+      "system": "http://snomed.info/sct",
+      "display": "Mediastinal lymph node sampling"
+    }
+  ],
+  "Spine MRI with contrast": [
+    {
+      "code": "431985004",
+      "system": "http://snomed.info/sct",
+      "display": "Spine MRI with contrast"
+    }
+  ],
+  "MRI of thoracic inlet with contrast": [
+    {
+      "code": "448740003",
+      "system": "http://snomed.info/sct",
+      "display": "MRI of thoracic inlet with contrast"
+    }
+  ],
+  "Observation (Monitoring with Palliative treatment e.g. for symptoms)": [
+    {
+      "code": "103705002",
+      "system": "http://snomed.info/sct",
+      "display": "Observation (Monitoring with Palliative treatment e.g. for symptoms)"
+    }
+  ],
+  "Paclitaxel": [
+    {
+      "code": "387374002",
+      "system": "http://snomed.info/sct",
+      "display": "Paclitaxel"
+    }
+  ],
+  "Pathology diagnosis (contextual qualifier) (qualifier value)": [
+    {
+      "code": "88101002",
+      "system": "http://snomed.info/sct",
+      "display": "Pathology review"
+    }
+  ],
+  "Pemetrexed (substance)": [
+    {
+      "code": "409159000",
+      "system": "http://snomed.info/sct",
+      "display": "Pemetrexed"
+    }
+  ],
+  "Lung excision (procedure)": [
+    {
+      "code": "119746007",
+      "system": "http://snomed.info/sct",
+      "display": "Lung excision (procedure)"
+    }
+  ],
+  "SBRT (Stereotactic radiotherapy)": [
+    {
+      "code": "395096001",
+      "system": "http://snomed.info/sct",
+      "display": "Stereotactic ablative radiotherapy"
+    }
+  ],
+  "Supraclavicular lymph node biopsy (procedure)": [
+    {
+      "code": "396484008",
+      "system": "http://snomed.info/sct",
+      "display": "Stereotactic ablative radiotherapy"
+    }
+  ],
+  "Radiotherapy to thorax (procedure)": [
+    {
+      "code": "711299007",
+      "system": "http://snomed.info/sct",
+      "display": "Thoracic RT"
+    }
+  ],
+  "Vinblastine (substance)": [
+    {
+      "code": "387051009",
+      "system": "http://snomed.info/sct",
+      "display": "Vinblastine "
+    }
+  ],
+  "Vinorelbine (substance)": [
+    {
+      "code": "372541004",
+      "system": "http://snomed.info/sct",
+      "display": "Vinorelbine "
+    }
+  ],
+  "Presence of limited brain metastases": [
+    {
+      "code": "94225005-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Presence of limited brain metastases"
+    }
+  ],
+  "Limited metastatic disease": [
+    {
+      "code": "128462008-AIPC-000283",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Limited metastatic disease"
+    }
+  ],
+  "Disseminated metastatic disease": [
+    {
+      "code": "405843009",
+      "system": "http://snomed.info/sct",
+      "display": "Disseminated metastatic disease"
+    }
+  ],
+  "Multiple metastatic disease": [
+    {
+      "code": "363500001-AIPC-000002",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Multiple metastatic disease"
+    }
+  ],
+  "Symptoms status of brain metastases": [
+    {
+      "code": "94225005-AIPC-000002",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Symptoms status of brain metastases"
+    }
+  ],
+  "Surgical resection warranted for diagnosis of brain metastases": [
+    {
+      "code": "807005-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Surgical resection warranted for diagnosis of brain metastases"
+    }
+  ],
+  "Possibility of definitive therapy for thoracic disease": [
+    {
+      "code": "276239002-AIPC-000244",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Possibility of definitive therapy for thoracic disease"
+    }
+  ],
+  "Small biopsy specimens": [
+    {
+      "code": "258415003-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Small biopsy specimens"
+    }
+  ],
+  "Sensitizing EGFR mutation": [
+    {
+      "code": "1652368",
+      "system": "https://www.ncbi.nlm.nih.gov/medgen",
+      "display": "Sensitizing EGFR mutation"
+    }
+  ],
+  "ALK rearrangement": [
+    {
+      "code": "1695930",
+      "system": "https://www.ncbi.nlm.nih.gov/medgen",
+      "display": "ALK rearrangement"
+    }
+  ],
+  "ROS1 rearrangement": [
+    {
+      "code": "1695516",
+      "system": "https://www.ncbi.nlm.nih.gov/medgen",
+      "display": "ROS1 rearrangement"
+    }
+  ],
+  "BRAF V600E mutation": [
+    {
+      "code": "1636269",
+      "system": "https://www.ncbi.nlm.nih.gov/medgen",
+      "display": "BRAF V600E mutation"
+    }
+  ],
+  "PD-L1 expression": [
+    {
+      "code": "888325",
+      "system": "https://www.ncbi.nlm.nih.gov/medgen",
+      "display": "PD-L1 expression"
+    }
+  ],
+  "PD-L1 [%]": [
+    {
+      "code": "1656250-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "PD-L1 [%]"
+    }
+  ],
+  "NTRK gene fusion": [
+    {
+      "code": "1675117",
+      "system": "https://www.ncbi.nlm.nih.gov/medgen",
+      "display": "NTRK gene fusion"
+    }
+  ],
+  "MET exon 14 skipping mutation": [
+    {
+      "code": "1387294",
+      "system": "https://www.ncbi.nlm.nih.gov/medgen",
+      "display": "MET exon 14 skipping mutation"
+    }
+  ],
+  "RET rearrangement": [
+    {
+      "code": "318094",
+      "system": "https://www.ncbi.nlm.nih.gov/medgen",
+      "display": "RET rearrangement"
+    }
+  ],
+  "Concurrent chemoradiation recently done": [
+    {
+      "code": "703423002-AIPC-000002",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Concurrent chemoradiation recently done"
+    }
+  ],
+  "RT recently done": [
+    {
+      "code": "108290001-AIPC-000097",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "RT recently done"
+    }
+  ],
+  "Photo dynamic therapy recently done": [
+    {
+      "code": "257891001-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Photo dynamic therapy recently done"
+    }
+  ],
+  "Laser surgery recently done": [
+    {
+      "code": "35631009-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Laser surgery recently done"
+    }
+  ],
+  "Endobronchial stenting recently done": [
+    {
+      "code": "103716009-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Endobronchial stenting recently done"
+    }
+  ],
+  "Resection of lung lesion recently done": [
+    {
+      "code": "119746007-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Resection of lung lesion recently done"
+    }
+  ],
+  "EBRT recently done": [
+    {
+      "code": "33195004-AIPC-000214",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "EBRT recently done"
+    }
+  ],
+  "Brachytherapy recently done": [
+    {
+      "code": "152198000-AIPC-000229",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Brachytherapy recently done"
+    }
+  ],
+  "Embolization recently done": [
+    {
+      "code": "122463005-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Embolization recently done"
+    }
+  ],
+  "Systemic therapy for metastatic disease recently done": [
+    {
+      "code": "367336001-AIPC-000025",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Systemic therapy for metastatic disease recently done"
+    }
+  ],
+  "Local therapy for metastases recently done": [
+    {
+      "code": "277132007-AIPC-000085",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Local therapy for metastases recently done"
+    }
+  ],
+  "Pathologic mediastinal LN evaluation recently done": [
+    {
+      "code": "234272006-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Pathologic mediastinal LN evaluation recently done"
+    }
+  ],
+  "Rebiopsy possibility status": [
+    {
+      "code": "86273004-AIPC-000266",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Rebiopsy possibility status"
+    }
+  ],
+  "Malignant pleural effusion (thoracentesis)": [
+    {
+      "code": "83270006-APIC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Malignant pleural effusion (thoracentesis)"
+    }
+  ],
+  "Malignant pericardial effusion (pericardiocentesis)": [
+    {
+      "code": "405546008-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Malignant pericardial effusion (pericardiocentesis)"
+    }
+  ],
+  "Malignant pleural effusion (thoracoscopy)": [
+    {
+      "code": "83270006-AIPC-000002",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Malignant pleural effusion (thoracoscopy)"
+    }
+  ],
+  "Possibility of metastatic lesion biopsy": [
+    {
+      "code": "86273004-AIPC-000265",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Possibility of metastatic lesion biopsy"
+    }
+  ],
+  "Localised symptoms of distant metastases": [
+    {
+      "code": "399409002-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Localised symptoms of distant metastases"
+    }
+  ],
+  "Presence of diffuse brain metastases": [
+    {
+      "code": "94225005-AIPC-000003",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Presence of diffuse brain metastases"
+    }
+  ],
+  "Bone metastases status": [
+    {
+      "code": "94222008",
+      "system": "http://snomed.info/sct",
+      "display": "Bone metastases status"
+    }
+  ],
+  "Risk of fracture": [
+    {
+      "code": "125605004-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Risk of fracture"
+    }
+  ],
+  "Presence of endobronchial obstruction": [
+    {
+      "code": "36925002",
+      "system": "http://snomed.info/sct",
+      "display": "Presence of endobronchial obstruction"
+    }
+  ],
+  "Presence of severe hemoptysis": [
+    {
+      "code": "66857006",
+      "system": "http://snomed.info/sct",
+      "display": "Presence of severe hemoptysis"
+    }
+  ],
+  "Resectable recurrence": [
+    {
+      "code": "25173007-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Resectable recurrence"
+    }
+  ],
+  "Presence of SVC obstruction": [
+    {
+      "code": "766948006",
+      "system": "http://snomed.info/sct",
+      "display": "Presence of SVC obstruction"
+    }
+  ],
+  "Mediastinal lymph node recurrence": [
+    {
+      "code": "25173007-AIPC-000002",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Mediastinal lymph node recurrence"
+    }
+  ],
+  "Brain imaging warranted": [
+    {
+      "code": "441986001-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Brain imaging warranted"
+    }
+  ],
+  "SCC with adenocarcinoma component": [
+    {
+      "code": "402815007-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "SCC with adenocarcinoma component"
+    }
+  ],
+  "Histologic subtype established": [
+    {
+      "code": "88101002-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Histologic subtype established"
+    }
+  ],
+  "Low dose chest CT without contrast": [
+    {
+      "code": "16334891000119106",
+      "system": "http://snomed.info/sct",
+      "display": "Low dose chest CT without contrast"
+    }
+  ],
+  "CT chest and metastatic site with contrast": [
+    {
+      "code": "75385009-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "CT chest and metastatic site with contrast"
+    }
+  ],
+  "CT chest and metastatic site without contrast": [
+    {
+      "code": "395081000119108-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "CT chest and metastatic site without contrast"
+    }
+  ],
+  "Whole brain RT": [
+    {
+      "code": "428412000-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Whole brain RT"
+    }
+  ],
+  "RT of metastatic lesion": [
+    {
+      "code": "108290001-AIPC-000098",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "RT of metastatic lesion"
+    }
+  ],
+  "EBRT": [
+    {
+      "code": "33195004-AIPC-000215",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "EBRT"
+    }
+  ],
+  "EBRT of distant metastases": [
+    {
+      "code": "33195004-AIPC-000212",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "EBRT of distant metastases"
+    }
+  ],
+  "EBRT of brain metastases": [
+    {
+      "code": "33195004-AIPC-000216",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "EBRT of brain metastases"
+    }
+  ],
+  "EBRT of bone metastases": [
+    {
+      "code": "33195004-AIPC-000168",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "EBRT of bone metastases"
+    }
+  ],
+  "Stereotactic ablative radiotherapy": [
+    {
+      "code": "395096001-AIPC-000003",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Stereotactic ablative radiotherapy"
+    }
+  ],
+  "Stereotactic radiosurgery of brain": [
+    {
+      "code": "429584001",
+      "system": "http://snomed.info/sct",
+      "display": "Stereotactic radiosurgery of brain"
+    }
+  ],
+  "Biopsy of lesion of lung": [
+    {
+      "code": "450348001",
+      "system": "http://snomed.info/sct",
+      "display": "Biopsy of lesion of lung"
+    }
+  ],
+  "Biopsy of metastatic lesion": [
+    {
+      "code": "86273004-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Biopsy of metastatic lesion"
+    }
+  ],
+  "Liquid biopsy: cfDNA": [
+    {
+      "code": "86273004-AIPC-000002",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Liquid biopsy: cfDNA"
+    }
+  ],
+  "Mediastinal lymph node sampling": [
+    {
+      "code": "178297005",
+      "system": "http://snomed.info/sct",
+      "display": "Mediastinal lymph node sampling"
+    }
+  ],
+  "Surgical resection of brain": [
+    {
+      "code": "807005",
+      "system": "http://snomed.info/sct",
+      "display": "Surgical resection of brain"
+    }
+  ],
+  "Surgical resection of metastatic lesion": [
+    {
+      "code": "119746007-AIPC-000002",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Surgical resection of metastatic lesion"
+    }
+  ],
+  "Laser surgery of endobronchial obstruction": [
+    {
+      "code": "232598003",
+      "system": "http://snomed.info/sct",
+      "display": "Laser surgery of endobronchial obstruction"
+    }
+  ],
+  "Laser cauterization": [
+    {
+      "code": "128424005",
+      "system": "http://snomed.info/sct",
+      "display": "Laser cauterization"
+    }
+  ],
+  "SVC stenting": [
+    {
+      "code": "232989005",
+      "system": "http://snomed.info/sct",
+      "display": "SVC stenting"
+    }
+  ],
+  "Endobronchial stenting": [
+    {
+      "code": "103716009",
+      "system": "http://snomed.info/sct",
+      "display": "Endobronchial stenting"
+    }
+  ],
+  "Thoracentesis": [
+    {
+      "code": "91602002",
+      "system": "http://snomed.info/sct",
+      "display": "Thoracentesis"
+    }
+  ],
+  "Pericardiocentesis": [
+    {
+      "code": "309849004",
+      "system": "http://snomed.info/sct",
+      "display": "Pericardiocentesis"
+    }
+  ],
+  "Pleurodesis": [
+    {
+      "code": "84572006",
+      "system": "http://snomed.info/sct",
+      "display": "Pleurodesis"
+    }
+  ],
+  "Thoracoscopy": [
+    {
+      "code": "14671001",
+      "system": "http://snomed.info/sct",
+      "display": "Thoracoscopy"
+    }
+  ],
+  "Brachytherapy": [
+    {
+      "code": "152198000-AIPC-000230",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Brachytherapy"
+    }
+  ],
+  "Photodynamic therapy": [
+    {
+      "code": "257891001",
+      "system": "http://snomed.info/sct",
+      "display": "Photodynamic therapy"
+    }
+  ],
+  "Pericardial window": [
+    {
+      "code": "58380004",
+      "system": "http://snomed.info/sct",
+      "display": "Pericardial window"
+    }
+  ],
+  "Orthopedic stabilization": [
+    {
+      "code": "115979005-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Orthopedic stabilization"
+    }
+  ],
+  "Embolization": [
+    {
+      "code": "122463005",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Embolization"
+    }
+  ],
+  "Ambulatory small catheter drainage": [
+    {
+      "code": "238354008",
+      "system": "http://snomed.info/sct",
+      "display": "Ambulatory small catheter drainage"
+    }
+  ],
+  "Restaging": [
+    {
+      "code": "254293002",
+      "system": "http://snomed.info/sct",
+      "display": "Restaging"
+    }
+  ],
+  "Assessment and management of older adults": [
+    {
+      "code": "409002003",
+      "system": "http://snomed.info/sct",
+      "display": "Assessment and management of older adults"
+    }
+  ],
+  "Denosumab": [
+    {
+      "code": "446321003",
+      "system": "http://snomed.info/sct",
+      "display": "Denosumab"
+    }
+  ],
+  "Bisphosphonate therapy": [
+    {
+      "code": "372907000",
+      "system": "http://snomed.info/sct",
+      "display": "Bisphosphonate therapy"
+    }
+  ],
+  "Bevacizumab": [
+    {
+      "code": "409406007",
+      "system": "http://snomed.info/sct",
+      "display": "Bevacizumab"
+    }
+  ],
+  "Ramucirumab": [
+    {
+      "code": "704259004",
+      "system": "http://snomed.info/sct",
+      "display": "Ramucirumab"
+    }
+  ],
+  "Continue systemic therapy": [
+    {
+      "code": "367336001-AIPC-000026",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Continue systemic therapy"
+    }
+  ],
+  "Complete systemic therapy": [
+    {
+      "code": "367336001-AIPC-000023",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Complete systemic therapy"
+    }
+  ],
+  "Interrupt systemic therapy": [
+    {
+      "code": "367336001-AIPC-000024",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "Interrupt systemic therapy"
+    }
+  ],
+  "NTRK testing": [
+    {
+      "code": "786710002-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "NTRK testing"
+    }
+  ],
+  "EGFR mutation testing": [
+    {
+      "code": "1956-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "EGFR mutation testing"
+    }
+  ],
+  "ALK testing": [
+    {
+      "code": "238-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "ALK testing"
+    }
+  ],
+  "ROS1 testing": [
+    {
+      "code": "6098-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "ROS1 testing"
+    }
+  ],
+  "BRAF testing": [
+    {
+      "code": "673-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "BRAF testing"
+    }
+  ],
+  "PD-L1 testing": [
+    {
+      "code": "29126-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "PD-L1 testing"
+    }
+  ],
+  "MET exon 14 skipping testing": [
+    {
+      "code": "1387294-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "MET exon 14 skipping testing"
+    }
+  ],
+  "RET testing": [
+    {
+      "code": "318094-AIPC-000001",
+      "system": "http://aipc.siemens-healthineers.com/coding-system",
+      "display": "RET testing"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+
+8 Jan 2023 10:38:24 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Opening Chrome..
+
+8 Jan 2023 10:38:26 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Navigating to https://inblrghma3879ln/
+
+8 Jan 2023 10:38:28 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Username clinical.admin Entered
+
+8 Jan 2023 10:38:28 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Password ******* Entered
+
+8 Jan 2023 10:38:29 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Login Success to https://inblrghma3879ln/ as clinical.admin
+
+8 Jan 2023 10:38:44 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Opening Chrome..
+
+8 Jan 2023 10:38:45 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Navigating to https://inblrghvsan10ln/
+
+8 Jan 2023 10:38:49 -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Exception Encountered: 
+
+A exception with a null response was thrown sending an HTTP request to the remote WebDriver server for URL http://localhost:65133/session/84c6193e3f02e3e2add7f178bc376fd7/url. The status of the exception was KeepAliveFailure, and the message was: The underlying connection was closed: A connection that was expected to be kept alive was closed by the server.
+
+ If exception includes Chrome driver Update Required, Follow the following steps to update. 
+
+ 1.Visit https://chromedriver.chromium.org/downloads 
+
+ 2.Download latest chromedriver(chromedriver_win32.zip if prompted)
+
+ 3. Extract the zip file and replace chromedriver.exe in the installation folder with the latest one.
